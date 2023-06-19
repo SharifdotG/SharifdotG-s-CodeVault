@@ -1,28 +1,79 @@
-/*
- * This program performs input/output of all basic data types.
- *
- * Author: SharifdotG
+/**
+ * @file input_output.c
+ * @author SharifdotG
+ * @date 2023-06-19
+ * @brief A C program to perform input/output of all basic data types.
  */
 
 #include <stdio.h>
 
+/**
+ * @brief The main function.
+ *
+ * This function prompts the user to enter a value for each of the basic data types,
+ * and then prints the value that was entered.
+ *
+ * @return 0 on success, non-zero on error.
+ */
 int main() {
 
-    /* Declare variables of all basic data types. */
-    //SharifdotG: I added unsigned long long and long double
+    /**
+     * @brief A character variable.
+     */
     char charVal;
+
+    /**
+     * @brief An unsigned character variable.
+     */
     unsigned char unsignedCharVal;
+
+    /**
+     * @brief A short integer variable.
+     */
     short shortVal;
+
+    /**
+     * @brief An integer variable.
+     */
     int intVal;
+
+    /**
+     * @brief An unsigned integer variable.
+     */
     unsigned int unsignedIntVal;
+
+    /**
+     * @brief A long integer variable.
+     */
     long longVal;
+
+    /**
+     * @brief An unsigned long integer variable.
+     */
     unsigned long unsignedLongVal;
+
+    /**
+     * @brief An unsigned long long integer variable.
+     */
     unsigned long long unsignedLongLongVal;
+
+    /**
+     * @brief A float variable.
+     */
     float floatVal;
+
+    /**
+     * @brief A double variable.
+     */
     double doubleVal;
+
+    /**
+     * @brief A long double variable.
+     */
     long double longDoubleVal;
 
-    /* Prompt the user to enter a value for each data type. */
+    // Prompt the user to enter a value for each of the basic data types.
+
     printf("Enter a character: ");
     charVal = getchar();
     getchar();
@@ -58,7 +109,8 @@ int main() {
     printf("Enter a long double: ");
     scanf("%Lf", &longDoubleVal);
 
-    /* Print the values of the variables. */
+    // Print the values that were entered.
+
     printf("\nThe character is: %c\n", charVal);
     printf("The unsigned character is: %c\n", unsignedCharVal);
     printf("The short integer is: %hd\n", shortVal);
@@ -72,5 +124,4 @@ int main() {
     printf("The long double is: %Lf\n", longDoubleVal);
 
     return 0;
-
 }
