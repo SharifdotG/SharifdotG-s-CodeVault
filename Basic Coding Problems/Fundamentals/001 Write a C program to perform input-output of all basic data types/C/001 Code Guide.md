@@ -1,3 +1,5 @@
+# Here are some guidelines for understanding, approaching, and solving the problem:
+
 ## Understanding the problem
 
 The problem statement asks you to write a C program to perform input/output of all basic data types. This means that you need to create variables of each of the basic data types, prompt the user to enter a value for each variable, and then print the value that was entered.
