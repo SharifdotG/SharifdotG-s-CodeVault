@@ -52,4 +52,4 @@ int main() {
 }
 ```
 
-## If you have any queries, you can comment in the repository..
+## If you have any queries, you can comment in the repository.
