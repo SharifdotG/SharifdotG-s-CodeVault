@@ -1,5 +1,5 @@
 /**
- * @file maximum.c
+ * @file maximum_between_two.c
  * @author SharifdotG
  * @date 2023-06-25
  * @brief A C program to find the maximum between two numbers.
