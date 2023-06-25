@@ -47,6 +47,6 @@ Once you have written the code, you need to test it to make sure that it works c
 
 **Asking for Help**
 
-If you are stuck at any point, you can ask for help in the SharifdotG's CodeVault repository. There are many other users who are willing to help you solve the problem.
+If you are stuck at any point, you can ask for help in the SharifdotG's CodeVault repository.
 
 I hope this guideline is helpful. Please let me know if you have any other questions.
