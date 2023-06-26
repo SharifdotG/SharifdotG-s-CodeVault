@@ -23,11 +23,9 @@ December | 31
 
 ## Approaching the problem
 
-Once we understand the problem, we need to come up with a plan for solving it. In this case, the plan is to:
+The first step is to define a variable to store the month number. Then, we need to write a series of if statements to check if the month number is equal to 1, 3, 5, 7, 8, 10, or 12. If it is, we print "The number of days in this month is 31". If the month number is equal to 4, 6, 9, or 11, we print "The number of days in this month is 30". And if the month number is equal to 2, we print "The number of days in this month is 28 or 29".
 
-1. Prompt the user to enter the month number.
-2. Check if the month number is valid.
-3. Print the number of days in the month.
+Finally, if the month number is not equal to any of the values listed above, we print `Invalid month number`.
 
 ## Solving the problem
 
@@ -59,12 +57,12 @@ int main() {
 
 This code first prompts the user to enter the month number. Then, it checks if the month number is valid. If it is, the code prints the number of days in the month. If the month number is invalid, the code prints a message indicating that the month number is invalid.
 
-## Submitting the code
-
-Once you have solved the problem, you can submit your code to the repository. To do this, you will need to create a new file in the repository and add your code to the file. Then, you will need to commit your changes and push them to the repository.
-
 ## Asking for help
 
 If you get stuck while solving the problem, you can ask for help in the repository's discussion forum. There are many other people who are working on the same problems, and they may be able to help you.
 
 I hope this guideline helps you solve the coding problem. If you have any other questions, please feel free to ask me.
+
+## Conclusion
+
+I hope this guideline is helpful. If you have any other coding problems that you'd like me to write a guideline for, please let me know.
