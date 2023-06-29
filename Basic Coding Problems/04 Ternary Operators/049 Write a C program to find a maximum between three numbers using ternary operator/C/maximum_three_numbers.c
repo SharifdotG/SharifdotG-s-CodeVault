@@ -9,13 +9,13 @@
 
 int main() {
     
-    int first_number, second_number, third_number, maximum;
+    int a, second_number, third_number, maximum;
 
     /*
      * Prompt the user to enter the first number.
      */
     printf("Enter the first number: ");
-    scanf("%d", &first_number);
+    scanf("%d", &a);
 
     /*
      * Prompt the user to enter the second number.
