@@ -1,55 +1,60 @@
-# Here are some guidelines on how to understand, approach, and solve the problem:
+Sure, here is the Code Guide for the problem "Write a program to enter two numbers and perform all arithmetic operations."
 
-## Understand the problem
+**The Problem**
 
-The first step is to understand the problem. What are you being asked to do? In this case, you are being asked to write a C program that will:
+This problem asks us to write a program that will allow the user to enter two numbers, and then perform all of the arithmetic operations on those numbers. The operations that we need to perform are addition, subtraction, multiplication, division, and remainder.
 
-1. Enter two numbers from the user.
-2. Perform all arithmetic operations on the two numbers.
-3. Print the results of the arithmetic operations.
+**Code Explanation**
 
-## Approach the problem
-
-Once you understand the problem, you need to approach it in a systematic way. Here are some steps you can follow:
-
-1. Declare the variables you will need. In this case, you will need two variables to store the two numbers entered by the user.
-2. Prompt the user for two numbers. You can use the `printf()` function to print a prompt and the `scanf()` function to read the user's input.
-3. Calculate the sum, difference, product, quotient, and remainder of the two numbers. You can use the `+`, `-`, `*`, `/`, and `%` operators to perform these operations.
-4. Print the results of the arithmetic operations. You can use the `printf()` function to print the results.
-
-## Solve the problem
-
-Now that you have a plan, you can start coding. Here is the complete code for the program:
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    int first_number, second_number;
 
-    // Declare variables.
-    int a, b;
-
-    // Prompt the user for two numbers.
     printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
+    scanf("%d %d", &first_number, &second_number);
 
-    // Calculate the sum, difference, product, quotient, and remainder of the two numbers.
-    int sum = a + b;
-    int difference = a - b;
-    int product = a * b;
-    int quotient = a / b;
-    int remainder = a % b;
+    int sum = first_number + second_number;
+    int difference = first_number - second_number;
+    int product = first_number * second_number;
+    int quotient = first_number / second_number;
+    int remainder = first_number % second_number;
 
-    // Print the results.
     printf("Sum: %d\n", sum);
     printf("Difference: %d\n", difference);
     printf("Product: %d\n", product);
     printf("Quotient: %d\n", quotient);
     printf("Remainder: %d\n", remainder);
 
-    // Return 0 to indicate success.
     return 0;
 }
 ```
 
-## If you have any queries, you can comment in the repository.
+The first step in the code is to declare two variables, `first_number` and `second_number`. These variables will store the two numbers that the user enters.
+
+The next step is to prompt the user to enter the two numbers. This is done using the `printf()` function. The `printf()` function takes two arguments: the first argument is the text that we want to display to the user, and the second argument is the variable that we want to store the user's input in.
+
+Once the user has entered the two numbers, we can perform the arithmetic operations on them. We do this using the following code:
+
+```c
+int sum = first_number + second_number;
+int difference = first_number - second_number;
+int product = first_number * second_number;
+int quotient = first_number / second_number;
+int remainder = first_number % second_number;
+```
+
+This code uses the arithmetic operators `+`, `-`, `*`, `/`, and `%` to perform the addition, subtraction, multiplication, division, and remainder operations on the two numbers.
+
+The final step in the code is to print the results of the arithmetic operations to the user. This is done using the `printf()` function again.
+
+**Conclusion**
+
+This code guide has explained how to write a program that will allow the user to enter two numbers, and then perform all of the arithmetic operations on those numbers. The code for this problem is simple and easy to understand, and it can be used as a starting point for learning how to write arithmetic operations in C.
+
+If you have any questions about the code, please feel free to comment in the repository. I will be happy to answer your questions.
+
+Thank you for reading!
