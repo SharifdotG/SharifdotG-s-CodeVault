@@ -1,22 +1,25 @@
-# Here is the Code Guide for the C++ code:
+# Here is the code guide for the program to perform input-output of all basic data types:
 
-## Understanding the problem
+**The Problem**
 
-The problem statement asks you to write a C++ program to perform input/output of all basic data types. This means that you need to create variables of each of the basic data types, prompt the user to enter a value for each variable, and then print the value that was entered.
+The problem is to write a program that can read and print the values of all basic data types in C++. The basic data types in C++ are:
 
-## Approaching the problem
+* char
+* unsigned char
+* short
+* int
+* unsigned int
+* long
+* unsigned long
+* long long
+* unsigned long long
+* float
+* double
+* long double
 
-Here is a possible approach to solving the problem:
+**Code Explanation**
 
-1. First, you need to include the `iostream` header file.
-2. Next, you need to declare variables of each of the basic data types.
-3. Then, you need to prompt the user to enter a value for each variable.
-4. Then, you need to use the `cin` object to read the user's input and store it in the corresponding variable.
-5. Finally, you need to use the `cout` object to print the value that was entered.
-
-## Solving the problem
-
-Here is the C++ code that solves the problem:
+The code to solve the problem is as follows:
 
 ```c++
 #include <iostream>
@@ -24,83 +27,73 @@ Here is the C++ code that solves the problem:
 using namespace std;
 
 int main() {
+    char character;
+    unsigned char unsigned_character;
+    short short_integer;
+    int integer;
+    unsigned int unsigned_integer;
+    long long_integer;
+    unsigned long unsigned_long;
+    unsigned long long unsigned_long_long;
+    float float_value;
+    double double_value;
+    long double long_double_value;
 
-  // Declare variables of each of the basic data types.
-  char charVal;
-  unsigned char unsignedCharVal;
-  short shortVal;
-  int intVal;
-  unsigned int unsignedIntVal;
-  long longVal;
-  unsigned long unsignedLongVal;
-  unsigned long long unsignedLongLongVal;
-  float floatVal;
-  double doubleVal;
-  long double longDoubleVal;
+    cout << "Enter a character: ";
+    cin >> character;
 
-  // Prompt the user to enter a value for each of the basic data types.
-  cout << "Enter a character: ";
-  cin >> charVal;
+    cout << "Enter an unsigned character: ";
+    cin >> unsigned_character;
 
-  cout << "Enter an unsigned character: ";
-  cin >> unsignedCharVal;
+    cout << "Enter a short integer: ";
+    cin >> short_integer;
 
-  cout << "Enter a short integer: ";
-  cin >> shortVal;
+    cout << "Enter an integer: ";
+    cin >> integer;
 
-  cout << "Enter an integer: ";
-  cin >> intVal;
+    cout << "Enter an unsigned integer: ";
+    cin >> unsigned_integer;
 
-  cout << "Enter an unsigned integer: ";
-  cin >> unsignedIntVal;
+    cout << "Enter a long integer: ";
+    cin >> long_integer;
 
-  cout << "Enter a long integer: ";
-  cin >> longVal;
+    cout << "Enter an unsigned long integer: ";
+    cin >> unsigned_long;
 
-  cout << "Enter an unsigned long integer: ";
-  cin >> unsignedLongVal;
+    cout << "Enter an unsigned long long integer: ";
+    cin >> unsigned_long_long;
 
-  cout << "Enter an unsigned long long integer: ";
-  cin >> unsignedLongLongVal;
+    cout << "Enter a float: ";
+    cin >> float_value;
 
-  cout << "Enter a float: ";
-  cin >> floatVal;
+    cout << "Enter a double: ";
+    cin >> double_value;
 
-  cout << "Enter a double: ";
-  cin >> doubleVal;
+    cout << "Enter a long double: ";
+    cin >> long_double_value;
 
-  cout << "Enter a long double: ";
-  cin >> longDoubleVal;
+    cout << "\nThe character is: " << character << endl;
+    cout << "The unsigned character is: " << unsigned_character << endl;
+    cout << "The short integer is: " << short_integer << endl;
+    cout << "The integer is: " << integer << endl;
+    cout << "The unsigned integer is: " << unsigned_integer << endl;
+    cout << "The long integer is: " << long_integer << endl;
+    cout << "The unsigned long integer is: " << unsigned_long << endl;
+    cout << "The unsigned long long integer is: " << unsigned_long_long << endl;
+    cout << "The float is: " << float_value << endl;
+    cout << "The double is: " << double_value << endl;
+    cout << "The long double is: " << long_double_value << endl;
 
-  // Print the values that were entered.
-  cout << "\nThe character is: " << charVal << endl;
-  cout << "The unsigned character is: " << unsignedCharVal << endl;
-  cout << "The short integer is: " << shortVal << endl;
-  cout << "The integer is: " << intVal << endl;
-  cout << "The unsigned integer is: " << unsignedIntVal << endl;
-  cout << "The long integer is: " << longVal << endl;
-  cout << "The unsigned long integer is: " << unsignedLongVal << endl;
-  cout << "The unsigned long long integer is: " << unsignedLongLongVal << endl;
-  cout << "The float is: " << floatVal << endl;
-  cout << "The double is: " << doubleVal << endl;
-  cout << "The long double is: " << longDoubleVal << endl;
-
-  return 0;
+    return 0;
 }
 ```
 
-## Testing the code
+The code first declares a variable of each of the basic data types. Then, it prompts the user to enter a value for each variable. Finally, it prints the value of each variable.
 
-You can test the code by compiling and running it. When you run the code, it will prompt you to enter a value for each of the basic data types. After you enter a value for each data type, the code will print the value that you entered.
+The `cout` and `cin` objects are used to print and read data from the console. The `cout` object is used to print data to the console, and the `cin` object is used to read data from the console.
 
-## If you have any queries, you can comment in the repository.
+The `endl` manipulator is used to add a newline character to the output.
 
-I hope this helps!
+**Conclusion**
 
-Here are some additional notes that you may find helpful:
-
-* The `iostream` header file is required to use the `cin` and `cout` objects.
-* The `using namespace std` statement is used to shorten the names of the `cin` and `cout` objects.
-* The `endl` manipulator is used to insert a newline character at the end of the output.
-
-I hope this helps! Let me know if you have any other questions.
+This code can be used to read and print the values of all basic data types in C++. If you have any questions about the code, please feel free to comment in the repository.

@@ -1,127 +1,64 @@
-/**
- * @file input_output.cpp
- * @author SharifdotG
- * @date 2023-07-03
- * @brief A C++ program to perform input/output of all basic data types.
- */
-
 #include <iostream>
 
 using namespace std;
 
-/**
- * @brief The main function.
- *
- * This function prompts the user to enter a value for each of the basic data types,
- * and then prints the value that was entered.
- *
- * @return 0 on success, non-zero on error.
- */
 int main() {
-
-    /**
-     * @brief A character variable.
-     */
-    char charVal;
-
-    /**
-     * @brief An unsigned character variable.
-     */
-    unsigned char unsignedCharVal;
-
-    /**
-     * @brief A short integer variable.
-     */
-    short shortVal;
-
-    /**
-     * @brief An integer variable.
-     */
-    int intVal;
-
-    /**
-     * @brief An unsigned integer variable.
-     */
-    unsigned int unsignedIntVal;
-
-    /**
-     * @brief A long integer variable.
-     */
-    long longVal;
-
-    /**
-     * @brief An unsigned long integer variable.
-     */
-    unsigned long unsignedLongVal;
-
-    /**
-     * @brief An unsigned long long integer variable.
-     */
-    unsigned long long unsignedLongLongVal;
-
-    /**
-     * @brief A float variable.
-     */
-    float floatVal;
-
-    /**
-     * @brief A double variable.
-     */
-    double doubleVal;
-
-    /**
-     * @brief A long double variable.
-     */
-    long double longDoubleVal;
-
-    // Prompt the user to enter a value for each of the basic data types.
+    char character;
+    unsigned char unsigned_character;
+    short short_integer;
+    int integer;
+    unsigned int unsigned_integer;
+    long long_integer;
+    unsigned long unsigned_long;
+    unsigned long long unsigned_long_long;
+    float float_value;
+    double double_value;
+    long double long_double_value;
 
     cout << "Enter a character: ";
-    cin >> charVal;
+    cin >> character;
 
     cout << "Enter an unsigned character: ";
-    cin >> unsignedCharVal;
+    cin >> unsigned_character;
 
     cout << "Enter a short integer: ";
-    cin >> shortVal;
+    cin >> short_integer;
 
     cout << "Enter an integer: ";
-    cin >> intVal;
+    cin >> integer;
 
     cout << "Enter an unsigned integer: ";
-    cin >> unsignedIntVal;
+    cin >> unsigned_integer;
 
     cout << "Enter a long integer: ";
-    cin >> longVal;
+    cin >> long_integer;
 
     cout << "Enter an unsigned long integer: ";
-    cin >> unsignedLongVal;
+    cin >> unsigned_long;
 
     cout << "Enter an unsigned long long integer: ";
-    cin >> unsignedLongLongVal;
+    cin >> unsigned_long_long;
 
     cout << "Enter a float: ";
-    cin >> floatVal;
+    cin >> float_value;
 
     cout << "Enter a double: ";
-    cin >> doubleVal;
+    cin >> double_value;
 
     cout << "Enter a long double: ";
-    cin >> longDoubleVal;
+    cin >> long_double_value;
 
-    // Print the values that were entered.
-
-    cout << "\nThe character is: " << charVal << endl;
-    cout << "The unsigned character is: " << unsignedCharVal << endl;
-    cout << "The short integer is: " << shortVal << endl;
-    cout << "The integer is: " << intVal << endl;
-    cout << "The unsigned integer is: " << unsignedIntVal << endl;
-    cout << "The long integer is: " << longVal << endl;
-    cout << "The unsigned long integer is: " << unsignedLongVal << endl;
-    cout << "The unsigned long long integer is: " << unsignedLongLongVal << endl;
-    cout << "The float is: " << floatVal << endl;
-    cout << "The double is: " << doubleVal << endl;
-    cout << "The long double is: " << longDoubleVal << endl;
+    cout << "\nThe character is: " << character << endl;
+    cout << "The unsigned character is: " << unsigned_character << endl;
+    cout << "The short integer is: " << short_integer << endl;
+    cout << "The integer is: " << integer << endl;
+    cout << "The unsigned integer is: " << unsigned_integer << endl;
+    cout << "The long integer is: " << long_integer << endl;
+    cout << "The unsigned long integer is: " << unsigned_long << endl;
+    cout << "The unsigned long long integer is: " << unsigned_long_long << endl;
+    cout << "The float is: " << float_value << endl;
+    cout << "The double is: " << double_value << endl;
+    cout << "The long double is: " << long_double_value << endl;
 
     return 0;
 }

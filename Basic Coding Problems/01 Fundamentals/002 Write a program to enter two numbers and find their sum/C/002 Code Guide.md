@@ -1,39 +1,26 @@
-# Here are some guidelines for understanding, approaching, and solving the problem:
+# Here is the code guide for the C program to enter two numbers and find their sum:
 
-## Understanding the problem
+## The Problem
 
-The first step is to understand the problem. What are you being asked to do? In this case, you are being asked to write a C program that will enter two numbers and find their sum.
+The problem is to write a C program that asks the user to enter two numbers, then finds and prints the sum of the two numbers.
 
-## Approaching the problem
+## Code Explanation
 
-Once you understand the problem, you need to decide how you are going to approach it. There are many different ways to solve this problem, but one possible approach is to use the following steps:
-
-1. Declare three variables: `a`, `b`, and `sum`.
-2. Prompt the user to enter the first number.
-3. Read the first number from the user.
-4. Prompt the user to enter the second number.
-5. Read the second number from the user.
-6. Calculate the sum of the two numbers.
-7. Print the sum of the two numbers.
-
-## Solving the problem
-
-Here is the code that implements the above approach:
+The code is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
-    int a, b, sum;
+    int first_number, second_number, sum;
 
     printf("Enter the first number: ");
-    scanf("%d", &a);
+    scanf("%d", &first_number);
 
     printf("Enter the second number: ");
-    scanf("%d", &b);
+    scanf("%d", &second_number);
 
-    sum = a + b;
+    sum = first_number + second_number;
 
     printf("The sum of the two numbers is: %d\n", sum);
 
@@ -41,60 +28,44 @@ int main() {
 }
 ```
 
-## Commenting your code
+The first line, `#include <stdio.h>`, tells the compiler to include the `stdio.h` header file, which contains the definitions for the `printf()` and `scanf()` functions.
 
-It is always a good idea to comment your code. This will help you and others understand what your code is doing. Here is a commented version of the above code:
+The next line, `int main() {`, marks the beginning of the `main()` function, which is the starting point of the program.
+
+The next three lines, `int first_number, second_number, sum;`, declare three variables: `first_number`, `second_number`, and `sum`. The `first_number` and `second_number` variables will store the two numbers entered by the user, and the `sum` variable will store the sum of the two numbers.
+
+The next three lines,
 
 ```c
-/*
- * This program enters two numbers and finds their sum.
- */
-
-#include <stdio.h>
-
-/*
- * Declare three variables.
- */
-int a, b, sum;
-
-/*
- * Prompt the user to enter the first number.
- */
 printf("Enter the first number: ");
+scanf("%d", &first_number);
 
-/*
- * Read the first number from the user.
- */
-scanf("%d", &a);
-
-/*
- * Prompt the user to enter the second number.
- */
 printf("Enter the second number: ");
-
-/*
- * Read the second number from the user.
- */
-scanf("%d", &b);
-
-/*
- * Calculate the sum of the two numbers.
- */
-sum = a + b;
-
-/*
- * Print the sum of the two numbers.
- */
-printf("The sum of the two numbers is: %d\n", sum);
-
-/*
- * Return 0 on success, non-zero on error.
- */
-return 0;
+scanf("%d", &second_number);
 ```
 
-## Asking for help
+prompt the user to enter the two numbers, and then store the user's input in the `first_number` and `second_number` variables.
 
-If you get stuck, don't be afraid to ask for help. There are many resources available to help you, including online forums, tutorials, and books. You can also ask questions in the comments section of my repository.
+The next line,
 
-I hope this helps!
+```c
+sum = first_number + second_number;
+```
+
+calculates the sum of the two numbers and stores the result in the `sum` variable.
+
+The next line,
+
+```c
+printf("The sum of the two numbers is: %d\n", sum);
+```
+
+prints the sum of the two numbers to the console.
+
+The last line, `return 0;`, marks the end of the `main()` function and returns a value of 0 to the operating system.
+
+## Conclusion
+
+This code guide has explained the problem and the code in detail. If you have any questions, please feel free to comment on the repository.
+
+Thank you for your interest in my code!

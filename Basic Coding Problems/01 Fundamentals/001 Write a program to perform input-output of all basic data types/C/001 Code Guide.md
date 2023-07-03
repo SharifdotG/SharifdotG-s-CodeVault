@@ -1,97 +1,102 @@
-# Here are some guidelines for understanding, approaching, and solving the problem:
+# Here is the Code Guide for the problem `Write a program to perform input-output of all basic data types`.
 
-## Understanding the problem
+## The Problem
 
-The problem statement asks you to write a C program to perform input/output of all basic data types. This means that you need to create variables of each of the basic data types, prompt the user to enter a value for each variable, and then print the value that was entered.
+The problem is to write a program that prompts the user to enter a value for each of the basic data types, and then prints the values that were entered. The basic data types in C are:
 
-## Approaching the problem
+* char
+* unsigned char
+* short
+* int
+* unsigned int
+* long
+* unsigned long
+* unsigned long long
+* float
+* double
+* long double
 
-Here is a possible approach to solving the problem:
+## Code Explanation
 
-1. First, you need to declare variables of each of the basic data types.
-2. Next, you need to prompt the user to enter a value for each variable.
-3. Then, you need to use the `scanf()` function to read the user's input and store it in the corresponding variable.
-4. Finally, you need to use the `printf()` function to print the value that was entered.
-
-## Solving the problem
-
-Here is the C code that solves the problem:
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    char character;
+    unsigned char unsigned_character;
+    short short_integer;
+    int integer;
+    unsigned int unsigned_integer;
+    long long_integer;
+    unsigned long unsigned_long;
+    unsigned long long unsigned_long_long;
+    float float_value;
+    double double_value;
+    long double long_double_value;
 
-  // Declare variables of each of the basic data types.
-  char charVal;
-  unsigned char unsignedCharVal;
-  short shortVal;
-  int intVal;
-  unsigned int unsignedIntVal;
-  long longVal;
-  unsigned long unsignedLongVal;
-  unsigned long long unsignedLongLongVal;
-  float floatVal;
-  double doubleVal;
-  long double longDoubleVal;
+    // Prompt the user to enter a value for each of the basic data types.
+    printf("Enter a character: ");
+    character = getchar();
+    getchar(); // Consume newline character
 
-  // Prompt the user to enter a value for each of the basic data types.
-  printf("Enter a character: ");
-  charVal = getchar();
-  getchar();
+    printf("Enter an unsigned character: ");
+    unsigned_character = getchar();
+    getchar(); // Consume newline character
 
-  printf("Enter an unsigned character: ");
-  unsignedCharVal = getchar();
-  getchar();
+    printf("Enter a short integer: ");
+    scanf("%hd", &short_integer);
 
-  printf("Enter a short integer: ");
-  scanf("%hd", &shortVal);
+    printf("Enter an integer: ");
+    scanf("%d", &integer);
 
-  printf("Enter an integer: ");
-  scanf("%d", &intVal);
+    printf("Enter an unsigned integer: ");
+    scanf("%u", &unsigned_integer);
 
-  printf("Enter an unsigned integer: ");
-  scanf("%u", &unsignedIntVal);
+    printf("Enter a long integer: ");
+    scanf("%ld", &long_integer);
 
-  printf("Enter a long integer: ");
-  scanf("%ld", &longVal);
+    printf("Enter an unsigned long integer: ");
+    scanf("%lu", &unsigned_long);
 
-  printf("Enter an unsigned long integer: ");
-  scanf("%lu", &unsignedLongVal);
+    printf("Enter an unsigned long long integer: ");
+    scanf("%llu", &unsigned_long_long);
 
-  printf("Enter an unsigned long long integer: ");
-  scanf("%llu", &unsignedLongLongVal);
+    printf("Enter a float: ");
+    scanf("%f", &float_value);
 
-  printf("Enter a float: ");
-  scanf("%f", &floatVal);
+    printf("Enter a double: ");
+    scanf("%lf", &double_value);
 
-  printf("Enter a double: ");
-  scanf("%lf", &doubleVal);
+    printf("Enter a long double: ");
+    scanf("%Lf", &long_double_value);
 
-  printf("Enter a long double: ");
-  scanf("%Lf", &longDoubleVal);
+    // Print the values that were entered.
+    printf("\nThe character is: %c\n", character);
+    printf("The unsigned character is: %c\n", unsigned_character);
+    printf("The short integer is: %hd\n", short_integer);
+    printf("The integer is: %d\n", integer);
+    printf("The unsigned integer is: %u\n", unsigned_integer);
+    printf("The long integer is: %ld\n", long_integer);
+    printf("The unsigned long integer is: %lu\n", unsigned_long);
+    printf("The unsigned long long integer is: %llu\n", unsigned_long_long);
+    printf("The float is: %f\n", float_value);
+    printf("The double is: %lf\n", double_value);
+    printf("The long double is: %Lf\n", long_double_value);
 
-  // Print the values that were entered.
-  printf("\nThe character is: %c\n", charVal);
-  printf("The unsigned character is: %c\n", unsignedCharVal);
-  printf("The short integer is: %hd\n", shortVal);
-  printf("The integer is: %d\n", intVal);
-  printf("The unsigned integer is: %u\n", unsignedIntVal);
-  printf("The long integer is: %ld\n", longVal);
-  printf("The unsigned long integer is: %lu\n", unsignedLongVal);
-  printf("The unsigned long long integer is: %llu\n", unsignedLongLongVal);
-  printf("The float is: %f\n", floatVal);
-  printf("The double is: %lf\n", doubleVal);
-  printf("The long double is: %Lf\n", longDoubleVal);
-
-  return 0;
+    return 0;
 }
 ```
 
-## Testing the code
+The first step in the code is to declare variables for each of the basic data types. These variables are used to store the values that the user enters.
 
-You can test the code by compiling and running it. When you run the code, it will prompt you to enter a value for each of the basic data types. After you enter a value for each data type, the code will print the value that you entered.
+The next step is to prompt the user to enter a value for each of the basic data types. The `printf()` function is used to display a prompt on the console. The `scanf()` function is used to read a value from the console and store it in the corresponding variable.
 
-## If you have any queries, you can comment in the repository.
+The final step is to print the values that were entered. The `printf()` function is used to display the values on the console.
 
-I hope this helps!
+## Conclusion
+
+This code can be used to perform input-output of all basic data types in C. To run the code, you can save it as a `.c` file and then compile and run it using a C compiler.
+
+If you have any questions about the code, please feel free to comment in the repository.

@@ -1,24 +1,12 @@
-# Here are some guidelines for understanding, approaching, and solving the problem:
+# Here is the Code Guide for the program to enter two numbers and find their sum:
 
-## Understanding the problem
+**The Problem**
 
-The first step is to understand the problem. What are you being asked to do? In this case, you are being asked to write a C++ program that will enter two numbers and find their sum.
+The problem is to write a program that enters two numbers and finds their sum. The program should first prompt the user to enter the two numbers. Then, the program should add the two numbers and display the sum.
 
-## Approaching the problem
+**Code Explanation**
 
-Once you understand the problem, you need to decide how you are going to approach it. There are many different ways to solve this problem, but one possible approach is to use the following steps:
-
-1. Declare three variables: `a`, `b`, and `sum`.
-2. Prompt the user to enter the first number.
-3. Read the first number from the user.
-4. Prompt the user to enter the second number.
-5. Read the second number from the user.
-6. Calculate the sum of the two numbers.
-7. Print the sum of the two numbers.
-
-## Solving the problem
-
-Here is the code that implements the above approach:
+The code for the program is as follows:
 
 ```c++
 #include <iostream>
@@ -26,16 +14,15 @@ Here is the code that implements the above approach:
 using namespace std;
 
 int main() {
-
-    int a, b, sum;
+    int first_number, second_number, sum;
 
     cout << "Enter the first number: ";
-    cin >> a;
+    cin >> first_number;
 
     cout << "Enter the second number: ";
-    cin >> b;
+    cin >> second_number;
 
-    sum = a + b;
+    sum = first_number + second_number;
 
     cout << "The sum of the two numbers is: " << sum << endl;
 
@@ -43,60 +30,40 @@ int main() {
 }
 ```
 
-## Commenting your code
+The first line of code, `#include <iostream>`, includes the `iostream` header file, which contains the `cout` and `cin` objects that are used to output and input data. The next line of code, `using namespace std;`, tells the compiler to use the `std` namespace, which contains all of the standard C++ library functions.
 
-It is always a good idea to comment your code. This will help you and others understand what your code is doing. Here is a commented version of the above code:
+The `main()` function is the entry point for the program. The first line of the `main()` function, `int first_number, second_number, sum;`, declares three integer variables: `first_number`, `second_number`, and `sum`. The `first_number` and `second_number` variables are used to store the two numbers that the user enters. The `sum` variable is used to store the sum of the two numbers.
+
+The next three lines of code,
 
 ```c++
-/*
- * This program enters two numbers and finds their sum.
- */
-
-#include <iostream>
-
-using namespace std;
-
-/*
- * Declare three variables.
- */
-int a, b, sum;
-
-/*
- * Prompt the user to enter the first number.
- */
 cout << "Enter the first number: ";
+cin >> first_number;
 
-/*
- * Read the first number from the user.
- */
-cin >> a;
-
-/*
- * Prompt the user to enter the second number.
- */
 cout << "Enter the second number: ";
-
-/*
- * Read the second number from the user.
- */
-cin >> b;
-
-/*
- * Calculate the sum of the two numbers.
- */
-sum = a + b;
-
-/*
- * Print the sum of the two numbers.
- */
-cout << "The sum of the two numbers is: " << sum << endl;
-
-/*
- * Return 0 on success, non-zero on error.
- */
-return 0;
+cin >> second_number;
 ```
 
-## Asking for help
+prompt the user to enter the two numbers. The `cout` object is used to output text to the console. The `cin` object is used to input data from the console.
 
-If you get stuck, don't be afraid to ask for help. There are many resources available to help you, including online forums, tutorials, and books. You can also ask questions in the comments section of my repository.
+The next line of code,
+
+```c++
+sum = first_number + second_number;
+```
+
+adds the two numbers and stores the result in the `sum` variable.
+
+The last line of code,
+
+```c++
+cout << "The sum of the two numbers is: " << sum << endl;
+```
+
+displays the sum of the two numbers.
+
+**Conclusion**
+
+This Code Guide has explained the problem and the code for the program to enter two numbers and find their sum. If you have any questions, please feel free to comment on the repository.
+
+Thank you for reading!
