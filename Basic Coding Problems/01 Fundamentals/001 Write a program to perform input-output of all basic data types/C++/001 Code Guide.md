@@ -1,4 +1,4 @@
-Sure, I can help you with that. Here is the Code Guide for the C++ code:
+# Here is the Code Guide for the C++ code:
 
 ## Understanding the problem
 
