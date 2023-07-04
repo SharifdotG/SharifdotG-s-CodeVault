@@ -1,75 +1,63 @@
-# Here is the guideline for the problem:
+# Here is the Code Guide for the problem of converting centimeters to meters and kilometers:
 
-## Understanding the problem
+**The Problem**
 
-The problem is to write a C program that takes the length in centimeter as input and converts it into meter and kilometer. The conversion formulas for centimeter to meter and kilometer are:
+The problem is to write a program that will accept a length in centimeters as input and then convert it to meters and kilometers. The program should print the results to the console.
 
-* 1 centimeter = 0.01 meter
-* 1 centimeter = 0.00001 kilometer
+**Code Explanation**
 
-## Approaching the problem
-
-The first step is to define the variables that will be used in the program. These variables are:
-
-* `centimeter`: The length in centimeter
-* `meter`: The length in meter
-* `kilometer`: The length in kilometer
-
-The next step is to prompt the user to enter the length in centimeter. This can be done using the `printf()` function.
-
-```
-printf("Enter the length in centimeter: ");
-```
-
-The next step is to read the length in centimeter from the user. This can be done using the `scanf()` function.
-
-```
-scanf("%d", &centimeter);
-```
-
-Once the length in centimeter has been read from the user, the next step is to convert it into meter and kilometer. This can be done using the following code:
-
-```
-meter = centimeter / 100.0;
-kilometer = centimeter / 100000.0;
-```
-
-Finally, the length in meter and kilometer should be printed to the console. This can be done using the `printf()` function.
-
-```
-printf("The length in meter is: %f\n", meter);
-printf("The length in kilometer is: %f\n", kilometer);
-```
-
-## Solving the problem
-
-The complete code for the problem is shown below:
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
-    int centimeter;
-    float meter, kilometer;
+    int length_in_cm;
+    float length_in_m, length_in_km;
 
     printf("Enter the length in centimeter: ");
-    scanf("%d", &centimeter);
+    scanf("%d", &length_in_cm);
 
-    meter = centimeter / 100.0;
-    kilometer = centimeter / 100000.0;
+    length_in_m = length_in_cm / 100.0;
+    length_in_km = length_in_cm / 100000.0;
 
-    printf("The length in meter is: %f\n", meter);
-    printf("The length in kilometer is: %f\n", kilometer);
+    printf("The length in meter is: %.2f\n", length_in_m);
+    printf("The length in kilometer is: %.2f\n", length_in_km);
 
     return 0;
 }
 ```
 
-## Further help
+The first step in the code is to declare the variables that will be used. These variables are `length_in_cm`, `length_in_m`, and `length_in_km`. `length_in_cm` will store the length in centimeters as entered by the user. `length_in_m` will store the length in meters, and `length_in_km` will store the length in kilometers.
 
-If you have any further questions about the problem, please feel free to comment in the repository. I will be happy to help.
+The next step is to prompt the user to enter the length in centimeters. This is done with the following line of code:
 
-## Conclusion
+```c
+printf("Enter the length in centimeter: ");
+```
 
-I hope this guideline is helpful. If you have any other questions, please let me know.
+The user will then enter the length in centimeters, and this value will be stored in the `length_in_cm` variable.
+
+The next step is to calculate the length in meters and kilometers. This is done with the following lines of code:
+
+```c
+length_in_m = length_in_cm / 100.0;
+length_in_km = length_in_cm / 100000.0;
+```
+
+The `length_in_m` variable is calculated by dividing the `length_in_cm` variable by 100.0. This is because there are 100 centimeters in one meter. The `length_in_km` variable is calculated by dividing the `length_in_cm` variable by 100000.0. This is because there are 100000 centimeters in one kilometer.
+
+The final step in the code is to print the results to the console. This is done with the following lines of code:
+
+```c
+printf("The length in meter is: %.2f\n", length_in_m);
+printf("The length in kilometer is: %.2f\n", length_in_km);
+```
+
+The first line of code prints the length in meters to the console. The second line of code prints the length in kilometers to the console. The `%.2f` format specifier tells the `printf()` function to print the value with two decimal places.
+
+**Conclusion**
+
+This is the Code Guide for the problem of converting centimeters to meters and kilometers. I hope this explanation is clear and concise. If you have any questions, please feel free to comment in the repository.
+
+Thank you for your question!

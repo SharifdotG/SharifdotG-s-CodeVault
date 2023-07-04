@@ -1,29 +1,12 @@
-# Here is the Code Guide for the C++ code:
+# Here is the code guide for the C++ program to find the perimeter of a rectangle:
 
-**Understanding the problem**
+**The Problem**
 
-The first step to solving any coding problem is to understand the problem. In this case, the problem is to write a C++ program to enter the length and breadth of a rectangle and find its perimeter.
+The problem is to write a program that allows the user to enter the length and breadth of a rectangle and then calculates and prints the perimeter of the rectangle.
 
-To understand the problem, we need to break it down into smaller steps:
+**Code Explanation**
 
-1. Prompt the user to enter the length of the rectangle.
-2. Prompt the user to enter the breadth of the rectangle.
-3. Calculate the perimeter of the rectangle.
-4. Print the perimeter of the rectangle.
-
-**Approaching the problem**
-
-Once we understand the problem, we can start to approach it. There are many different ways to solve this problem, but one simple approach is to use the following steps:
-
-1. Use the `std::cout` object to prompt the user to enter the length of the rectangle.
-2. Use the `std::cin` object to read the user's input and store it in a variable.
-3. Repeat steps 1 and 2 for the breadth of the rectangle.
-4. Calculate the perimeter of the rectangle using the formula `2 * (length + breadth)`.
-5. Use the `std::cout` object to print the perimeter of the rectangle.
-
-**Solving the problem**
-
-The code below solves the problem using the approach outlined above:
+The code for this problem is as follows:
 
 ```c++
 #include <iostream>
@@ -31,38 +14,58 @@ The code below solves the problem using the approach outlined above:
 using namespace std;
 
 int main() {
-
-    // Declare variables to store the length and breadth of the rectangle.
     int length, breadth, perimeter;
 
-    // Prompt the user to enter the length of the rectangle.
     cout << "Enter the length of the rectangle: ";
     cin >> length;
 
-    // Prompt the user to enter the breadth of the rectangle.
     cout << "Enter the breadth of the rectangle: ";
     cin >> breadth;
 
-    // Calculate the perimeter of the rectangle.
     perimeter = 2 * (length + breadth);
 
-    // Print the perimeter of the rectangle.
     cout << "The perimeter of the rectangle is: " << perimeter << endl;
 
     return 0;
 }
 ```
 
-**Asking for help**
+The first line of code, `#include <iostream>`, tells the compiler to include the `iostream` header file. This header file contains the definition of the `cout` and `cin` objects, which are used to output and input data, respectively.
 
-If you have any questions about the problem or the code, please feel free to comment in the repository. I will be happy to help you.
+The next line of code, `using namespace std;`, tells the compiler to use the `std` namespace. This namespace contains all of the standard C++ library functions, including `cout` and `cin`.
 
-I hope this guideline is helpful. Good luck with your coding!
+The next three lines of code, `int length, breadth, perimeter;`, declare three variables of type `int`. The variables `length` and `breadth` will be used to store the length and breadth of the rectangle, respectively. The variable `perimeter` will be used to store the perimeter of the rectangle.
 
-**Additional notes:**
+The next three lines of code,
+```c++
+cout << "Enter the length of the rectangle: ";
+cin >> length;
 
-* The code is commented to explain what each part of the code does.
-* The code is formatted to be easy to read and understand.
-* The code is tested to make sure that it works correctly.
+cout << "Enter the breadth of the rectangle: ";
+cin >> breadth;
+```
+prompt the user to enter the length and breadth of the rectangle. The `cout` object is used to output the prompt, and the `cin` object is used to input the user's response.
 
-I hope this helps! Let me know if you have any other questions.
+The next line of code,
+```c++
+perimeter = 2 * (length + breadth);
+```
+calculates the perimeter of the rectangle. The perimeter of a rectangle is equal to twice the sum of the length and breadth. The `2 *` operator multiplies the sum of the length and breadth by 2.
+
+The next line of code,
+```c++
+cout << "The perimeter of the rectangle is: " << perimeter << endl;
+```
+outputs the perimeter of the rectangle. The `cout` object is used to output the perimeter, and the `endl` manipulator is used to insert a newline character at the end of the output.
+
+The last line of code,
+```c++
+return 0;
+```
+indicates that the program has completed successfully.
+
+**Conclusion**
+
+This code guide has explained the C++ program to find the perimeter of a rectangle in detail. If you have any questions, please feel free to comment in the repository.
+
+Thank you for reading!

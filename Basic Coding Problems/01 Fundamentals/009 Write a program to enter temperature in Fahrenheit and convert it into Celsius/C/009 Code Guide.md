@@ -1,53 +1,21 @@
-# Here is a guideline for the problem:
+# Here is the Code Guide for the problem of converting Fahrenheit to Celsius in C language:
 
-**Understanding the problem**
+## The Problem
 
-The problem asks you to write a C program to enter temperature in Fahrenheit and convert it into Celsius. The first step to solving any problem is to understand it. In this case, we need to understand the following:
+The problem is to write a program that will enter a temperature in Fahrenheit and convert it into Celsius. The formula for converting Fahrenheit to Celsius is:
 
-* What is the input for the program?
-* What is the output for the program?
-* What is the formula for converting Fahrenheit to Celsius?
-
-**Approaching the problem**
-
-Once we understand the problem, we can start to approach it. The first step is to define the variables that we will need. In this case, we will need two variables:
-
-* `fahrenheit`: This variable will store the temperature in Fahrenheit.
-* `celsius`: This variable will store the temperature in Celsius.
-
-The next step is to write the code to prompt the user to enter the temperature in Fahrenheit. We can do this using the `printf()` function.
-
-```
-printf("Enter the temperature in Fahrenheit: ");
+```c
+°C = (°F - 32) * 5 / 9
 ```
 
-The next step is to read the temperature from the user. We can do this using the `scanf()` function.
+## Code Explanation
 
-```
-scanf("%f", &fahrenheit);
-```
-
-The next step is to convert the temperature from Fahrenheit to Celsius. We can do this using the following formula:
-
-```
-celsius = (fahrenheit - 32) * 5 / 9;
-```
-
-The final step is to print the temperature in Celsius. We can do this using the `printf()` function.
-
-```
-printf("The temperature in Celsius is: %f\n", celsius);
-```
-
-**Solving the problem**
-
-Now that we have a plan, we can start to solve the problem. The following code shows the complete solution:
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
     float fahrenheit, celsius;
 
     printf("Enter the temperature in Fahrenheit: ");
@@ -55,16 +23,40 @@ int main() {
 
     celsius = (fahrenheit - 32) * 5 / 9;
 
-    printf("The temperature in Celsius is: %f\n", celsius);
+    printf("The temperature in Celsius is: %.2f\n", celsius);
 
     return 0;
 }
 ```
 
-**Further help**
+The first step in the code is to declare two variables, `fahrenheit` and `celsius`. `fahrenheit` will store the temperature in Fahrenheit, and `celsius` will store the temperature in Celsius.
 
-If you have any queries about the problem or the solution, please feel free to comment in the repository. I will be happy to help.
+The next step is to prompt the user to enter the temperature in Fahrenheit. This is done with the following line of code:
 
-**Conclusion**
+```c
+printf("Enter the temperature in Fahrenheit: ");
+```
 
-This guide has shown you how to understand, approach, and solve the problem of writing a C program to enter temperature in Fahrenheit and convert it into Celsius. I hope you found this guide helpful.
+The user's input is then stored in the `fahrenheit` variable.
+
+The next step is to calculate the temperature in Celsius. This is done with the following line of code:
+
+```c
+celsius = (fahrenheit - 32) * 5 / 9;
+```
+
+This line of code uses the formula for converting Fahrenheit to Celsius to calculate the value of `celsius`.
+
+The final step is to print the temperature in Celsius to the console. This is done with the following line of code:
+
+```c
+printf("The temperature in Celsius is: %.2f\n", celsius);
+```
+
+This line of code uses the `printf()` function to print the value of `celsius` to the console, with two decimal places.
+
+## Conclusion
+
+This code is a simple way to convert Fahrenheit to Celsius in C language. The code is highly detailed and concise, so that everyone can understand it without any issues. If you have any queries, please feel free to comment in the repository.
+
+Thank you for reading!

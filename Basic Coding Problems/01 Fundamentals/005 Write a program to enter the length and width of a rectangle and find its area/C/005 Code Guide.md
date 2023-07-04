@@ -1,56 +1,77 @@
-# Here is the guideline for the problem:
+# Here is the Code Guide for the program to find the area of a rectangle:
 
-## Understanding the Problem
+## The Problem
 
-The problem is to write a C program to enter the length and width of a rectangle and find its area. The area of a rectangle is the length times the width. For example, if the length is 5 and the width is 4, then the area is 5 * 4 = 20.
+The problem is to write a program that enters the length and width of a rectangle and finds its area. The area of a rectangle is the product of its length and width.
 
-## Approaching the Problem
+## Code Explanation
 
-The first step is to define the variables that will be used to store the length, width, and area of the rectangle. The next step is to prompt the user to enter the length and width of the rectangle. Then, the length and width should be read from the user. The area of the rectangle can then be calculated by multiplying the length and width. Finally, the area of the rectangle should be printed to the console.
-
-## Solving the Problem
-
-The code below solves the problem:
+The code is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    int length, width, area;
 
-  int length;
-  int width;
-  int area;
+    printf("Enter the length of the rectangle: ");
+    scanf("%d", &length);
 
-  printf("Enter the length of the rectangle: ");
-  scanf("%d", &length);
+    printf("Enter the width of the rectangle: ");
+    scanf("%d", &width);
 
-  printf("Enter the width of the rectangle: ");
-  scanf("%d", &width);
+    area = length * width;
 
-  area = length * width;
+    printf("The area of the rectangle is: %d\n", area);
 
-  printf("The area of the rectangle is: %d\n", area);
-
-  return 0;
+    return 0;
 }
 ```
 
-This code first defines three variables: `length`, `width`, and `area`. The `length` and `width` variables are used to store the length and width of the rectangle, respectively. The `area` variable is used to store the area of the rectangle.
+The first line, `#include <stdio.h>`, tells the compiler to include the `stdio.h` header file, which contains the definitions for the `printf()` and `scanf()` functions.
 
-The next step is to prompt the user to enter the length and width of the rectangle. This is done using the `printf()` function. The `scanf()` function is then used to read the length and width from the user.
+The next line, `int main() {`, defines the `main()` function, which is the entry point for the program.
 
-The area of the rectangle is then calculated by multiplying the `length` and `width` variables. This is done using the `*` operator.
+The following three lines, `int length, width, area;`, declare three integer variables: `length`, `width`, and `area`. The `length` variable will store the length of the rectangle, the `width` variable will store the width of the rectangle, and the `area` variable will store the area of the rectangle.
 
-Finally, the area of the rectangle is printed to the console using the `printf()` function.
+The next two lines,
 
-## Comments
+```c
+printf("Enter the length of the rectangle: ");
+scanf("%d", &length);
+```
 
-The code is well-commented, which makes it easy to understand. The comments explain what each part of the code does, which is helpful for anyone who wants to learn how the code works.
+prompt the user to enter the length of the rectangle and then read the user's input into the `length` variable.
 
-## Questions
+The next two lines,
 
-If you have any questions about the code, please feel free to comment in the repository. I will be happy to answer your questions.
+```c
+printf("Enter the width of the rectangle: ");
+scanf("%d", &width);
+```
+
+prompt the user to enter the width of the rectangle and then read the user's input into the `width` variable.
+
+The next line,
+
+```c
+area = length * width;
+```
+
+calculates the area of the rectangle and stores it in the `area` variable.
+
+The next line,
+
+```c
+printf("The area of the rectangle is: %d\n", area);
+```
+
+prints the area of the rectangle to the console.
+
+The last line, `return 0;`, returns the value `0` from the `main()` function, which indicates that the program terminated successfully.
 
 ## Conclusion
 
-This guideline should help you understand the problem, approach it, and solve it. If you have any other questions, please feel free to ask.
+This Code Guide has explained the problem and the code in detail. If you have any questions, please feel free to comment in the repository.
+
+Thank you for reading!

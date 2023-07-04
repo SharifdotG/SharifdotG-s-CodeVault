@@ -1,57 +1,51 @@
-# Here is the guideline for the coding problem:
+# Here is the Code Guide for the problem of finding the perimeter of a rectangle:
 
-**Understanding the problem**
+## The Problem
 
-The first step to solving any coding problem is to understand the problem. In this case, the problem is to write a C program to enter the length and breadth of a rectangle and find its perimeter.
+The problem is to write a program that takes the length and breadth of a rectangle as input and prints the perimeter of the rectangle as output.
 
-To understand the problem, we need to break it down into smaller steps:
+The perimeter of a rectangle is the total length of all the sides of the rectangle. It can be calculated using the following formula:
 
-1. Prompt the user to enter the length of the rectangle.
-2. Prompt the user to enter the breadth of the rectangle.
-3. Calculate the perimeter of the rectangle.
-4. Print the perimeter of the rectangle.
+```c
+perimeter = 2 * (length + breadth)
+```
 
-**Approaching the problem**
+where `length` is the length of the rectangle and `breadth` is the breadth of the rectangle.
 
-Once we understand the problem, we can start to approach it. There are many different ways to solve this problem, but one simple approach is to use the following steps:
+## Code Explanation
 
-1. Use the `printf()` function to prompt the user to enter the length of the rectangle.
-2. Use the `scanf()` function to read the user's input and store it in a variable.
-3. Repeat steps 1 and 2 for the breadth of the rectangle.
-4. Calculate the perimeter of the rectangle using the formula `2 * (length + breadth)`.
-5. Use the `printf()` function to print the perimeter of the rectangle.
-
-**Solving the problem**
-
-The code below solves the problem using the approach outlined above:
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
     int length, breadth, perimeter;
 
-    /* Prompt the user to enter the length of the rectangle */
     printf("Enter the length of the rectangle: ");
     scanf("%d", &length);
 
-    /* Prompt the user to enter the breadth of the rectangle */
     printf("Enter the breadth of the rectangle: ");
     scanf("%d", &breadth);
 
-    /* Calculate the perimeter of the rectangle */
     perimeter = 2 * (length + breadth);
 
-    /* Print the perimeter of the rectangle */
     printf("The perimeter of the rectangle is: %d\n", perimeter);
 
     return 0;
 }
 ```
 
-**Asking for help**
+The first step in the code is to declare the variables that will be used. These variables are `length`, `breadth`, and `perimeter`. The `length` and `breadth` variables will store the length and breadth of the rectangle, respectively. The `perimeter` variable will store the perimeter of the rectangle.
 
-If you have any questions about the problem or the code, please feel free to comment in the repository. I will be happy to help you.
+The next step in the code is to get the input from the user. This is done using the `printf()` and `scanf()` functions. The `printf()` function is used to print a message to the user, and the `scanf()` function is used to read input from the user.
 
-I hope this guideline is helpful. Good luck with your coding!
+The next step in the code is to calculate the perimeter of the rectangle. This is done using the `perimeter = 2 * (length + breadth)` formula.
+
+The final step in the code is to print the perimeter of the rectangle. This is done using the `printf()` function.
+
+## Conclusion
+
+This Code Guide has explained the problem of finding the perimeter of a rectangle and the code that solves the problem. If you have any questions, please feel free to comment on the repository.
+
+Thank you for reading!

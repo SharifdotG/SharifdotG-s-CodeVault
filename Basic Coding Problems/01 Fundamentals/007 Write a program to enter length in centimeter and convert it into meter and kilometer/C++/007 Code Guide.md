@@ -1,81 +1,51 @@
-# Here is the Code Guide for the C++ code:
+# Here is the Code Guide for the centimeter to meter and kilometer conversion program:
 
-# Here is the guideline for the problem:
+**Problem:**
 
-## Understanding the problem
+The problem is to write a program that converts a length entered in centimeters to meters and kilometers.
 
-The problem is to write a C++ program that takes the length in centimeter as input and converts it into meter and kilometer. The conversion formulas for centimeter to meter and kilometer are:
+**Code Explanation:**
 
-* 1 centimeter = 0.01 meter
-* 1 centimeter = 0.00001 kilometer
+The code is written in C++ and uses the following libraries:
 
-## Approaching the problem
+* `iostream` for input and output
+* `iomanip` for formatting output
 
-The first step is to include the `iostream` header file. This header file contains the definition of the `cout` and `cin` objects, which are used to print and read data from the console.
+The main function of the program first declares three variables:
 
-The next step is to define the variables that will be used in the program. These variables are:
+* `length_in_cm` to store the length entered by the user in centimeters
+* `length_in_m` to store the length in meters
+* `length_in_km` to store the length in kilometers
 
-* `centimeter`: The length in centimeter
-* `meter`: The length in meter
-* `kilometer`: The length in kilometer
-
-The next step is to prompt the user to enter the length in centimeter. This can be done using the `cout` object.
+The next step is to prompt the user to enter the length in centimeters. This is done using the following code:
 
 ```c++
 cout << "Enter the length in centimeter: ";
+cin >> length_in_cm;
 ```
 
-The next step is to read the length in centimeter from the user. This can be done using the `cin` object.
+Once the length has been entered, the program converts it to meters and kilometers using the following code:
 
 ```c++
-cin >> centimeter;
+length_in_m = length_in_cm / 100.0;
+length_in_km = length_in_cm / 100000.0;
 ```
 
-Once the length in centimeter has been read from the user, the next step is to convert it into meter and kilometer. This can be done using the following code:
+The final step is to print the results to the console. This is done using the following code:
 
 ```c++
-meter = centimeter / 100.0;
-kilometer = centimeter / 100000.0;
+cout << "The length in meter is: " << fixed << setprecision(2) << length_in_m << endl;
+cout << "The length in kilometer is: " << fixed << setprecision(2) << length_in_km << endl;
 ```
 
-Finally, the length in meter and kilometer should be printed to the console. This can be done using the `cout` object.
+The `fixed` and `setprecision` manipulators are used to format the output to two decimal places.
 
-```c++
-cout << "The length in meter is: " << meter << endl;
-cout << "The length in kilometer is: " << kilometer << endl;
-```
+**Conclusion:**
 
-## Solving the problem
+This concludes the Code Guide for the centimeter to meter and kilometer conversion program. If you have any questions, please feel free to comment in the repository.
 
-The complete code for the problem is shown below:
+**Additional Notes:**
 
-```c++
-#include <iostream>
-
-using namespace std;
-
-int main() {
-
-    int centimeter;
-    float meter, kilometer;
-
-    cout << "Enter the length in centimeter: ";
-    cin >> centimeter;
-
-    meter = centimeter / 100.0;
-    kilometer = centimeter / 100000.0;
-
-    cout << "The length in meter is: " << meter << endl;
-    cout << "The length in kilometer is: " << kilometer << endl;
-
-    return 0;
-}
-```
-
-## Further help
-
-If you have any further questions about the problem, please feel free to comment in the repository. I will be happy to help.
-
-## Conclusion
-
-I hope this guideline is helpful. If you have any other questions, please let me know.
+* The code can be easily modified to convert lengths entered in other units, such as inches or feet.
+* The code can also be modified to print the results in different formats, such as scientific notation or engineering notation.
+* The code can be used as a starting point for other projects that require length conversion.

@@ -1,52 +1,56 @@
-# Here is the code guide for the C++ code:
+# Here is the Code Guide for the program to enter the radius of a circle and find its diameter, circumference and area:
 
-**Understanding the problem**
+## The Problem
 
-The problem is to write a C++ program that enters the radius of a circle and finds its diameter, circumference, and area. The diameter is the distance across the circle through the center, the circumference is the distance around the circle, and the area is the amount of space enclosed by the circle.
+The problem is to write a program that will:
 
-**Approaching the problem**
+1. Prompt the user to enter the radius of a circle.
+2. Calculate the diameter, circumference and area of the circle.
+3. Display the results to the user.
 
-The first step is to define the variables that will be used in the program. These variables will store the radius, diameter, circumference, and area of the circle. The next step is to prompt the user to enter the radius of the circle. The radius will be read from the user using the `std::cin` object. The diameter, circumference, and area of the circle can then be calculated using the following formulas:
+## Code Explanation
 
-```
-diameter = 2 * radius;
-circumference = 2 * 3.14 * radius;
-area = 3.14 * radius * radius;
-```
-
-The final step is to print the diameter, circumference, and area of the circle. This can be done using the `std::cout` object.
-
-**Solving the problem**
-
-The code below solves the problem:
+The code for this program is as follows:
 
 ```c++
 #include <iostream>
 
 using namespace std;
 
-int main() {
+int main()
+{
+    int radius;
+    float diameter, circumference, area;
 
-  int radius;
-  float diameter, circumference, area;
+    cout << "Enter the radius of the circle: ";
+    cin >> radius;
 
-  cout << "Enter the radius of the circle: ";
-  cin >> radius;
+    diameter = 2 * radius;
+    circumference = 2 * 3.14 * radius;
+    area = 3.14 * radius * radius;
 
-  diameter = 2 * radius;
-  circumference = 2 * 3.14 * radius;
-  area = 3.14 * radius * radius;
+    cout << "The diameter of the circle is: " << diameter << endl;
+    cout << "The circumference of the circle is: " << circumference << endl;
+    cout << "The area of the circle is: " << area << endl;
 
-  cout << "The diameter of the circle is: " << diameter << endl;
-  cout << "The circumference of the circle is: " << circumference << endl;
-  cout << "The area of the circle is: " << area << endl;
-
-  return 0;
+    return 0;
 }
 ```
 
-**Questions**
+The first line of code, `#include <iostream>`, tells the compiler to include the `iostream` header file. This header file contains the definition of the `cout` object, which is used to output text to the console.
 
-If you have any questions about the problem or the code, please feel free to ask. I will be happy to help.
+The next line of code, `using namespace std;`, tells the compiler to use the `std` namespace. This namespace contains all of the standard C++ library functions, including `cin` and `cout`.
 
-I hope this helps!
+The `main()` function is the entry point for the program. It is where the program starts executing.
+
+The first statement in the `main()` function, `cout << "Enter the radius of the circle: ";`, prompts the user to enter the radius of the circle. The `cin >> radius` statement then reads the user's input into the `radius` variable.
+
+The next three statements, `diameter = 2 * radius;`, `circumference = 2 * 3.14 * radius;` and `area = 3.14 * radius * radius;`, calculate the diameter, circumference and area of the circle.
+
+The final three statements, `cout << "The diameter of the circle is: " << diameter << endl;`, `cout << "The circumference of the circle is: " << circumference << endl;` and `cout << "The area of the circle is: " << area << endl;`, display the results to the user.
+
+## Conclusion
+
+This code guide has explained the problem and the code for a program that will calculate the diameter, circumference and area of a circle. If you have any questions, please feel free to comment in the repository.
+
+Thank you for your time!

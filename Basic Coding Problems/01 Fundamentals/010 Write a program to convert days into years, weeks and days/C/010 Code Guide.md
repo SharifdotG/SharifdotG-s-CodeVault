@@ -1,57 +1,73 @@
-# Here is a guideline for the problem:
+# Here is the Code Guide for the C program to convert days into years, weeks and days:
 
-**Understanding the problem**
+**The Problem**
 
-The problem asks you to write a C program to convert days into years, weeks, and days. This means that you need to take an input number of days and print the number of years, weeks, and days that make up that number of days.
+The problem is to write a program that takes a number of days as input and outputs the number of years, weeks, and days that correspond to that number of days.
 
-**Approaching the problem**
+**Code Explanation**
 
-There are a few different ways to approach this problem. One way is to use the following formula:
-
-```
-years = days / 365
-weeks = (days % 365) / 7
-days = (days % 365) % 7
-```
-
-This formula calculates the number of years, weeks, and days from the input number of days.
-
-Another way to approach the problem is to use a loop. In this case, you would start by initializing the variables `years`, `weeks`, and `days` to 0. Then, you would loop through the input number of days, incrementing `years` by 1 for every 365 days, incrementing `weeks` by 1 for every 7 days, and incrementing `days` by 1 for every day that is not a multiple of 7.
-
-**Solving the problem**
-
-The code below solves the problem using the first approach:
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    int number_of_days;
+    int years;
+    int weeks;
+    int remaining_days;
 
-    /* Declare variables */
-    int days, years, weeks;
-
-    /* Get the number of days from the user */
     printf("Enter the number of days: ");
-    scanf("%d", &days);
+    scanf("%d", &number_of_days);
 
-    /* Calculate the number of years, weeks, and days */
-    years = days / 365;
-    weeks = (days % 365) / 7;
-    days = (days % 365) % 7;
+    years = number_of_days / 365;
+    remaining_days = number_of_days % 365;
+    weeks = remaining_days / 7;
+    remaining_days = remaining_days % 7;
 
-    /* Print the results */
     printf("Years: %d\n", years);
     printf("Weeks: %d\n", weeks);
-    printf("Days: %d\n", days);
+    printf("Days: %d\n", remaining_days);
 
     return 0;
 }
 ```
 
-This code first declares three variables: `days`, `years`, and `weeks`. Then, it gets the number of days from the user. Next, it calculates the number of years, weeks, and days using the formula above. Finally, it prints the results.
+The first step in the code is to declare the variables that will be used. These variables are:
 
-**Asking for help**
+* `number_of_days`: This variable will store the number of days that is entered by the user.
+* `years`: This variable will store the number of years that correspond to the number of days entered by the user.
+* `weeks`: This variable will store the number of weeks that correspond to the number of days entered by the user.
+* `remaining_days`: This variable will store the number of days that are left over after the number of years and weeks have been calculated.
 
-If you have any queries about the problem or the code, you can ask for help in the repository. There is a comment section where you can post your questions.
+The next step in the code is to get the number of days from the user. This is done using the `scanf()` function.
 
-I hope this helps!
+```c
+printf("Enter the number of days: ");
+scanf("%d", &number_of_days);
+```
+
+The next step in the code is to calculate the number of years, weeks, and remaining days. This is done using the following code:
+
+```c
+years = number_of_days / 365;
+remaining_days = number_of_days % 365;
+weeks = remaining_days / 7;
+remaining_days = remaining_days % 7;
+```
+
+The `/` operator is used to divide the number of days by 365, which gives the number of years. The `%` operator is used to find the remainder after the number of days is divided by 365, which gives the number of days that are left over. The `/` operator is then used to divide the number of days that are left over by 7, which gives the number of weeks. The `%` operator is then used to find the remainder after the number of days that are left over are divided by 7, which gives the number of days that are left over.
+
+The final step in the code is to print the number of years, weeks, and remaining days. This is done using the following code:
+
+```c
+printf("Years: %d\n", years);
+printf("Weeks: %d\n", weeks);
+printf("Days: %d\n", remaining_days);
+```
+
+**Conclusion**
+
+This Code Guide has explained the problem and the code for the C program to convert days into years, weeks and days. If you have any questions, please feel free to comment in the repository.
+
+Thank you for reading!
