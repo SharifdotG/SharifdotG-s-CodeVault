@@ -1,62 +1,49 @@
-# Here is the guideline for the coding problem:
+# Here is the Code Guide for the C program to enter two angles of a triangle and find the third angle:
 
-**How to understand the problem**
+**Problem**
 
-The first step to solving any coding problem is to understand the problem. In this case, the problem is to write a C program to enter two angles of a triangle and find the third angle.
+The problem is to write a C program that can enter two angles of a triangle and find the third angle. The angles of a triangle must add up to 180 degrees, so the third angle can be found by subtracting the two known angles from 180 degrees.
 
-To understand the problem, we need to know the following:
+**Code Explanation**
 
-* What is a triangle?
-* What are the three angles of a triangle?
-* How do we calculate the third angle of a triangle?
-
-**How to approach the problem**
-
-Once we understand the problem, we need to approach it in a systematic way. The following steps can be used to approach this problem:
-
-1. Define the variables that will be used in the program.
-2. Write the code to prompt the user to enter the two angles of the triangle.
-3. Write the code to read the two angles from the user.
-4. Write the code to calculate the third angle of the triangle.
-5. Write the code to print the third angle of the triangle.
-
-**How to solve the problem**
-
-The code below solves the problem:
+The code is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    int first_angle, second_angle, third_angle;
 
-  int first_angle;
-  int second_angle;
-  int third_angle;
+    printf("Enter the first angle: ");
+    scanf("%d", &first_angle);
 
-  printf("Enter the first angle: ");
-  scanf("%d", &first_angle);
+    printf("Enter the second angle: ");
+    scanf("%d", &second_angle);
 
-  printf("Enter the second angle: ");
-  scanf("%d", &second_angle);
+    third_angle = 180 - (first_angle + second_angle);
 
-  third_angle = 180 - (first_angle + second_angle);
+    printf("The third angle of the triangle is: %d\n", third_angle);
 
-  printf("The third angle of the triangle is: %d\n", third_angle);
-
-  return 0;
+    return 0;
 }
 ```
 
-This code first defines three variables: `first_angle`, `second_angle`, and `third_angle`. These variables will be used to store the three angles of the triangle.
+The first step is to declare three variables: `first_angle`, `second_angle`, and `third_angle`. These variables will be used to store the three angles of the triangle.
 
-The code then prompts the user to enter the two angles of the triangle. The user's input is read into the `first_angle` and `second_angle` variables.
+The next step is to prompt the user to enter the first and second angles of the triangle. This is done using the `printf()` function.
 
-The code then calculates the third angle of the triangle. The third angle is calculated by subtracting the sum of the first two angles from 180 degrees.
+The third step is to calculate the third angle of the triangle. The third angle is equal to 180 degrees minus the sum of the first and second angles. This is calculated using the following expression:
 
-Finally, the code prints the third angle of the triangle to the console.
+```
+third_angle = 180 - (first_angle + second_angle);
+```
 
-**How to get help**
+The fourth step is to print the third angle of the triangle to the console. This is done using the `printf()` function.
 
-If you have any questions about the problem or the code, you can post a comment in the repository. I will be happy to help you.
+The final step is to return 0 from the main function. This indicates that the program has terminated successfully.
 
-I hope this guideline helps you to understand and solve the coding problem.
+**Conclusion**
+
+This Code Guide has explained how to write a C program to enter two angles of a triangle and find the third angle. The code is highly detailed and concise, so that everyone can understand it without any issues. If you have any queries, you can comment in the repository anytime.
+
+I hope this helps! Let me know if you have any other questions.
