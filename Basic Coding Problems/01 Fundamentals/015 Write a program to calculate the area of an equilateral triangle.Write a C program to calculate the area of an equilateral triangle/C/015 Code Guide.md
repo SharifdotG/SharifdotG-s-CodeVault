@@ -1,68 +1,49 @@
-# Here is the guideline for the C program to calculate the area of an equilateral triangle:
+# Here is the Code Guide for the program to calculate the area of an equilateral triangle:
 
-**Understanding the problem**
+**The Problem**
 
-The problem is to write a C program that calculates the area of an equilateral triangle. An equilateral triangle is a triangle with all three sides of equal length. The area of an equilateral triangle can be calculated using the following formula:
+The problem is to write a program that calculates the area of an equilateral triangle. An equilateral triangle is a triangle with all three sides of equal length. The area of an equilateral triangle can be calculated using the following formula:
 
-```
+```c
 area = (sqrt(3) / 4) * side * side
 ```
 
-where `side` is the length of one of the sides of the triangle.
+where `side` is the length of one side of the triangle.
 
-**Approaching the problem**
+**Code Explanation**
 
-The first step in solving this problem is to define the variables that will be used in the program. The following variables are needed:
-
-* `side`: The length of one of the sides of the triangle.
-* `area`: The area of the triangle.
-
-The next step is to write the code that prompts the user to enter the side length of the triangle. The following code can be used to do this:
-
-```
-printf("Enter the side of the equilateral triangle: ");
-scanf("%f", &side);
-```
-
-The next step is to write the code that calculates the area of the triangle. The following code can be used to do this:
-
-```
-area = (sqrt(3) / 4) * side * side;
-```
-
-The final step is to write the code that prints the area of the triangle to the console. The following code can be used to do this:
-
-```
-printf("The area of the equilateral triangle is: %f\n", area);
-```
-
-**Solving the problem**
-
-The complete C program to calculate the area of an equilateral triangle is shown below:
+The code for the program is as follows:
 
 ```c
 #include <stdio.h>
 #include <math.h>
 
 int main() {
+    float side, area;
 
-  float side, area;
+    printf("Enter the side of the equilateral triangle: ");
+    scanf("%f", &side);
 
-  printf("Enter the side of the equilateral triangle: ");
-  scanf("%f", &side);
+    area = (sqrt(3) / 4) * side * side;
 
-  area = (sqrt(3) / 4) * side * side;
+    printf("The area of the equilateral triangle is: %f\n", area);
 
-  printf("The area of the equilateral triangle is: %f\n", area);
-
-  return 0;
+    return 0;
 }
 ```
 
-**Further queries**
+The first line of code includes the `stdio.h` header file, which contains the `printf()` and `scanf()` functions. The second line includes the `math.h` header file, which contains the `sqrt()` function.
 
-If you have any further queries about this problem, please feel free to comment them in the repository. I will be happy to answer them.
+The `main()` function is the starting point of the program. The first line of the `main()` function prompts the user to enter the side of the equilateral triangle. The second line of the `main()` function reads the user's input and stores it in the `side` variable.
+
+The third line of the `main()` function calculates the area of the equilateral triangle using the formula given above. The `sqrt()` function is used to calculate the square root of 3.
+
+The fourth line of the `main()` function prints the area of the equilateral triangle to the console.
+
+The last line of the `main()` function returns the value 0, which indicates that the program has successfully completed.
 
 **Conclusion**
 
-I hope this guideline has been helpful. Please let me know if you have any other questions.
+This Code Guide has explained the problem and the code for the program to calculate the area of an equilateral triangle. If you have any questions, please feel free to comment on the repository.
+
+Thank you for reading!

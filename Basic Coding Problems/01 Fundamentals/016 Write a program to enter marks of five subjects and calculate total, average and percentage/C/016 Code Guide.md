@@ -1,24 +1,17 @@
-# Here is a detailed guideline for the problem:
+# Here is the Code Guide for the program to enter marks of five subjects and calculate total, average and percentage:
 
-**Understanding the Problem**
+**Problem**
 
-The problem is to write a C program to enter marks of five subjects and calculate total, average and percentage. The first step to solving this problem is to understand what the problem is asking for. What are the input and output of the program? What are the steps involved in calculating the total, average and percentage?
+The problem is to write a program that will allow the user to enter the marks of five subjects and then calculate the total, average and percentage of the marks.
 
-**Approaching the Problem**
+**Code Explanation**
 
-Once you understand the problem, you can start approaching the solution. The first step is to identify the variables that you will need to store the input and output of the program. In this case, you will need variables to store the marks of the five subjects, the total marks, the average marks and the percentage.
-
-The next step is to write the code to calculate the total, average and percentage. The total marks can be calculated by simply adding the marks of the five subjects. The average marks can be calculated by dividing the total marks by 5. The percentage can be calculated by multiplying the total marks by 100 and dividing by 500.
-
-**Solving the Problem**
-
-The code to solve the problem is shown below:
+The code for this program is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
     int subject1, subject2, subject3, subject4, subject5;
     int total;
     float average;
@@ -39,14 +32,44 @@ int main() {
 }
 ```
 
-This code first prompts the user to enter the marks of the five subjects. Then, it calculates the total, average and percentage of the marks. Finally, it prints the results to the console.
+The first step in the code is to declare the variables that will be used. These variables are:
 
-**Testing the Solution**
+* `subject1`, `subject2`, `subject3`, `subject4`, `subject5`: These variables are used to store the marks of the five subjects.
+* `total`: This variable is used to store the total marks of the five subjects.
+* `average`: This variable is used to store the average marks of the five subjects.
+* `percentage`: This variable is used to store the percentage of the total marks of the five subjects.
 
-Once you have written the code, you need to test it to make sure that it works correctly. You can test the code by entering different sets of marks and checking the results.
+The next step in the code is to prompt the user to enter the marks of the five subjects. This is done using the following code:
 
-**Asking for Help**
+```c
+printf("Enter the marks of the subjects: ");
+scanf("%d %d %d %d %d", &subject1, &subject2, &subject3, &subject4, &subject5);
+```
 
-If you are stuck at any point, you can ask for help in the SharifdotG's CodeVault repository.
+The `printf()` function is used to print a message to the user. The `scanf()` function is used to read the marks of the five subjects from the user.
 
-I hope this guideline is helpful. Please let me know if you have any other questions.
+The next step in the code is to calculate the total, average and percentage of the marks. This is done using the following code:
+
+```c
+total = subject1 + subject2 + subject3 + subject4 + subject5;
+average = total / 5.0;
+percentage = (total / 500.0) * 100;
+```
+
+The `total` variable is calculated by adding the values of the `subject1`, `subject2`, `subject3`, `subject4` and `subject5` variables. The `average` variable is calculated by dividing the `total` variable by 5.0. The `percentage` variable is calculated by multiplying the `total` variable by 100 and then dividing by 500.0.
+
+The final step in the code is to print the total, average and percentage of the marks. This is done using the following code:
+
+```c
+printf("The total marks of the subjects is: %d\n", total);
+printf("The average marks of the subjects is: %.2f\n", average);
+printf("The percentage of the total marks of the subjects is: %.2f%%\n", percentage);
+```
+
+The `printf()` function is used to print the total, average and percentage of the marks to the user.
+
+**Conclusion**
+
+This Code Guide has explained the problem and the code for the program to enter marks of five subjects and calculate total, average and percentage. I hope this Code Guide has been helpful. If you have any questions, please feel free to comment in the repository.
+
+Thank you for reading!

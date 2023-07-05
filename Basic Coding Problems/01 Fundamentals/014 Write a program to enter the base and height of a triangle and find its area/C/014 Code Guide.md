@@ -1,72 +1,51 @@
-# Here is the guideline for the problem:
+# Here is the code guide for the C program to enter the base and height of a triangle and find its area:
 
-## Understanding the problem
+**The Problem**
 
-The problem is to write a C program that enters the base and height of a triangle and finds its area. The area of a triangle is calculated as:
+The problem is to write a program that allows the user to enter the base and height of a triangle, and then calculates and prints the area of the triangle.
 
-```
-area = (1/2) * base * height
-```
+The area of a triangle is defined as (1/2) * base * height.
 
-where base is the length of the base of the triangle and height is the length of the altitude from the opposite vertex to the base.
+**Code Explanation**
 
-## Approaching the problem
-
-The first step is to define the variables that will be used in the program. These variables are:
-
-* `base`: The length of the base of the triangle.
-* `height`: The length of the altitude from the opposite vertex to the base.
-* `area`: The area of the triangle.
-
-The next step is to prompt the user to enter the base and height of the triangle. This can be done using the `printf()` and `scanf()` functions.
-
-```
-printf("Enter the base of the triangle: ");
-scanf("%f", &base);
-
-printf("Enter the height of the triangle: ");
-scanf("%f", &height);
-```
-
-Once the base and height of the triangle have been entered, the area can be calculated using the following code:
-
-```
-area = 0.5 * base * height;
-```
-
-Finally, the area can be printed to the console using the `printf()` function.
-
-```
-printf("The area of the triangle is: %f\n", area);
-```
-
-## Solving the problem
-
-The complete code for the problem is shown below.
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    float base, height, area;
 
-  float base, height, area;
+    printf("Enter the base of the triangle: ");
+    scanf("%f", &base);
 
-  printf("Enter the base of the triangle: ");
-  scanf("%f", &base);
+    printf("Enter the height of the triangle: ");
+    scanf("%f", &height);
 
-  printf("Enter the height of the triangle: ");
-  scanf("%f", &height);
+    area = 0.5 * base * height;
 
-  area = 0.5 * base * height;
+    printf("The area of the triangle is: %.2f\n", area);
 
-  printf("The area of the triangle is: %f\n", area);
-
-  return 0;
+    return 0;
 }
 ```
 
-## Further help
+The first step in the code is to declare the variables that will be used. These variables are `base`, `height`, and `area`. The `base` and `height` variables will store the values of the base and height of the triangle, respectively. The `area` variable will store the calculated area of the triangle.
 
-If you have any questions about the problem or the code, please feel free to comment in the repository.
+The next step in the code is to prompt the user to enter the base and height of the triangle. This is done using the `printf()` function. The `scanf()` function is then used to read the user's input and store it in the `base` and `height` variables.
 
-I hope this helps!
+The next step in the code is to calculate the area of the triangle. This is done using the following formula:
+
+```c
+area = 0.5 * base * height
+```
+
+The `0.5` coefficient is used because the area of a triangle is equal to half the product of the base and height.
+
+The final step in the code is to print the calculated area of the triangle. This is done using the `printf()` function.
+
+**Conclusion**
+
+This code guide has explained the problem and the code for a C program that allows the user to enter the base and height of a triangle, and then calculates and prints the area of the triangle. If you have any questions about the code, please feel free to comment in the repository.
+
+Thank you for reading!
