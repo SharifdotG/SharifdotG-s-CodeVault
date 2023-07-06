@@ -1,4 +1,4 @@
-# CODE HINT - Read This Before You See The Code!**
+# CODE HINT - Read This Before You See The Code!
 
 This problem asks you to write a program that will enter two numbers from the user and then calculate and display the sum of those two numbers.
 
@@ -12,7 +12,7 @@ To solve this problem, you will need to:
 
 Here is an example of an algorithm for solving this problem:
 
-```ts
+```java
 1. Declare two variables, `num1` and `num2`, to store the two numbers that the user will enter.
 2. Prompt the user to enter the two numbers.
 3. Read the two numbers from the user using the `scanf()` function.
@@ -22,7 +22,7 @@ Here is an example of an algorithm for solving this problem:
 
 Here is an example of pseudocode for solving this problem:
 
-```ts
+```java
 START
   DECLARE num1, num2 AS INTEGER
   INPUT num1, num2
