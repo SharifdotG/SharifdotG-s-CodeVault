@@ -1,6 +1,4 @@
-# Here is a Code Hint for the problem "Write a program to enter two numbers and find their sum":
-
-**CODE HINT - Read This Before You See The Code!**
+# CODE HINT - Read This Before You See The Code!**
 
 This problem asks you to write a program that will enter two numbers from the user and then calculate and display the sum of those two numbers.
 
