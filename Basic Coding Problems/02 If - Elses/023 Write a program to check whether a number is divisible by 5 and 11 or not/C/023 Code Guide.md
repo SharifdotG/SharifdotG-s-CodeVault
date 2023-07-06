@@ -1,48 +1,25 @@
-# Here is the guideline for the C program to check whether a number is divisible by 5 and 11 or not:
+# Here is the Code Guide for the program to check whether a number is divisible by 5 and 11 or not:
 
-## Understanding the Problem
+**The Problem**
 
-The problem is to write a C program that takes a number as input and outputs whether the number is divisible by both 5 and 11.
+The problem is to write a program that checks whether a number is divisible by 5 and 11 or not. The program should first prompt the user to enter a number. Then, the program should check if the number is divisible by 5 and 11. If the number is divisible by both 5 and 11, then the program should print a message saying that the number is divisible by 5 and 11. Otherwise, the program should print a message saying that the number is not divisible by 5 and 11.
 
-## Approaching the Problem
+**Code Explanation**
 
-The first step is to understand the divisibility rules for 5 and 11. A number is divisible by 5 if the remainder of the number when divided by 5 is 0. A number is divisible by 11 if the difference between the sum of the digits at odd positions and the sum of the digits at even positions is either 0 or a multiple of 11.
-
-Once we understand the divisibility rules, we can start writing the code. The first step is to declare a variable to store the number entered by the user. Then, we need to prompt the user to enter a number and read the number entered by the user.
-
-The next step is to check if the number is divisible by both 5 and 11. We can do this by using the following code:
-
-```c
-if (number % 5 == 0 && number % 11 == 0) {
-
-    printf("%d is divisible by 5 and 11.\n", number);
-} else {
-
-    printf("%d is not divisible by 5 and 11.\n", number);
-}
-```
-
-This code first checks if the number is divisible by 5. If it is, then the code checks if the number is divisible by 11. If it is, then the code prints a message indicating that the number is divisible by both 5 and 11. Otherwise, the code prints a message indicating that the number is not divisible by 5 and 11.
-
-## Solving the Problem
-
-The complete code for the problem is shown below:
+The code for the program is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
     int number;
 
     printf("Enter a number: ");
     scanf("%d", &number);
 
     if (number % 5 == 0 && number % 11 == 0) {
-
         printf("%d is divisible by 5 and 11.\n", number);
     } else {
-
         printf("%d is not divisible by 5 and 11.\n", number);
     }
 
@@ -50,10 +27,18 @@ int main() {
 }
 ```
 
-## Asking for Help
+The first line of code, `#include <stdio.h>`, tells the compiler to include the `stdio.h` header file. This header file contains the declarations for the `printf()` and `scanf()` functions, which are used to print and read data from the console.
 
-If you have any questions about the problem or the code, please feel free to ask for help in the repository. I will be happy to help you.
+The next line of code, `int main()`, defines the `main()` function. This is the entry point for the program.
 
-## Conclusion
+The next few lines of code prompt the user to enter a number and then store the number in the `number` variable.
 
-I hope this guideline was helpful. Please let me know if you have any other questions.
+The `if` statement checks if the `number` variable is divisible by both 5 and 11. If it is, then the `printf()` function is used to print a message saying that the number is divisible by 5 and 11. Otherwise, the `printf()` function is used to print a message saying that the number is not divisible by 5 and 11.
+
+The last line of code, `return 0;`, returns the value 0 from the `main()` function. This indicates that the program terminated successfully.
+
+**Conclusion**
+
+This Code Guide should help you to understand the problem and the code for the program to check whether a number is divisible by 5 and 11 or not. If you have any questions, please feel free to comment in the repository.
+
+Thank you for your time.

@@ -1,52 +1,47 @@
-# Here is the guideline for the C program to find a maximum between four numbers:
+# Here is the Code Guide for the program to find a maximum between four numbers:
 
-**Understanding the problem**
+**The Problem**
 
-The problem is to write a C program that finds the maximum number between four numbers. The program should first prompt the user to enter four numbers. Then, it should compare the numbers and print the maximum number.
+The problem is to write a program that takes four numbers as input and outputs the maximum number.
 
-**Approaching the problem**
+**Code Explanation**
 
-The first step is to declare four variables to store the four numbers entered by the user. Then, the program should prompt the user to enter the four numbers. Once the numbers have been entered, the program should compare them and find the maximum number. The maximum number can be found by using a series of if statements.
-
-**Solving the problem**
-
-The following code shows how to solve the problem:
+The code is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    int first, second, third, fourth;
 
-  int first_number;
-  int second_number;
-  int third_number;
-  int fourth_number;
+    printf("Enter four numbers: ");
+    scanf("%d %d %d %d", &first, &second, &third, &fourth);
 
-  printf("Enter four numbers:\n");
-  scanf("%d %d %d %d", &first_number, &second_number, &third_number, &fourth_number);
+    int max = first;
+    if (second > max) {
+        max = second;
+    } if (third > max) {
+        max = third;
+    } if (fourth > max) {
+        max = fourth;
+    }
 
-  if (first_number > second_number && first_number > third_number && first_number > fourth_number) {
-    printf("%d is the maximum number.\n", first_number);
-  } else if (second_number > first_number && second_number > third_number && second_number > fourth_number) {
-    printf("%d is the maximum number.\n", second_number);
-  } else if (third_number > first_number && third_number > second_number && third_number > fourth_number) {
-    printf("%d is the maximum number.\n", third_number);
-  } else {
-    printf("%d is the maximum number.\n", fourth_number);
-  }
+    printf("The maximum number is: %d\n", max);
 
-  return 0;
+    return 0;
 }
 ```
 
-This code first declares four variables to store the four numbers entered by the user. Then, the program prompts the user to enter the four numbers. Once the numbers have been entered, the program compares them and finds the maximum number. The maximum number is printed by the last printf statement.
+The first step is to declare four variables to store the four numbers. The variables are named `first`, `second`, `third`, and `fourth`.
 
-**Testing the program**
+The next step is to prompt the user to enter the four numbers. This is done using the `printf()` function. The `scanf()` function is used to read the four numbers from the user.
 
-The program can be tested by entering four different numbers. The program should print the maximum number among the four numbers entered.
+The next step is to find the maximum number. This is done by initializing a variable `max` to the value of `first`. Then, we use the `if` statement to compare the value of `max` with the values of `second`, `third`, and `fourth`. If the value of any of these variables is greater than the value of `max`, then the value of `max` is updated to the value of that variable.
 
-**Asking for help**
+Finally, we use the `printf()` function to print the maximum number.
 
-If you have any questions about the program, you can ask for help in the SharifdotG's CodeVault repository. You can also post a comment on the repository and someone will help you.
+**Conclusion**
 
-I hope this guideline is helpful. Please let me know if you have any other questions.
+This code can be used to find the maximum number between four numbers. If you have any questions, please feel free to comment in the repository.
+
+I hope this helps! Let me know if you have any other questions.

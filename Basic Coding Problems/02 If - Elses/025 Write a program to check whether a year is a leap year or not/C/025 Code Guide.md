@@ -1,31 +1,17 @@
-# Here is the guideline for the C program to check whether a year is a leap year or not:
+# Here is the Code Guide for the leap year program in C:
 
-## Understanding the problem
+**The Problem**
 
-The problem is to write a C program that takes a year as input and prints whether it is a leap year or not. A leap year is a year that has 366 days, instead of the usual 365 days. Leap years occur every four years, except for century years that are not divisible by 400.
+The problem is to write a program to check whether a year is a leap year or not. A leap year is a year that has 366 days, instead of the usual 365 days. Leap years occur every four years, except for years that are divisible by 100 but not by 400.
 
-## Approaching the problem
+**Code Explanation**
 
-The first step is to define the variables that will be used in the program. The main variables are the year to be checked and the result of the check.
-
-The next step is to write the code that prompts the user to enter a year and reads the year from the user.
-
-The third step is to write the code that checks whether the year is a leap year. The following conditions must be met for a year to be a leap year:
-
-* The year must be divisible by 4.
-* The year must not be divisible by 100, unless it is also divisible by 400.
-
-The fourth step is to write the code that prints the result of the check.
-
-## Solving the problem
-
-The following code solves the problem:
+The code to check whether a year is a leap year is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
     int year;
 
     printf("Enter a year: ");
@@ -41,10 +27,38 @@ int main() {
 }
 ```
 
-## Further clarification
+The first line of code, `#include <stdio.h>`, includes the `stdio.h` header file, which contains the definitions for the `printf()` and `scanf()` functions.
 
-If you have any further clarifications, please feel free to comment in the repository. I will be happy to answer your questions.
+The next line of code, `int main()`, declares the `main()` function, which is the entry point for the program.
 
-## Conclusion
+The `printf()` function is used to print the following message to the console:
 
-This program is a simple way to check whether a year is a leap year or not. It can be used to learn about the rules for leap years and to practice using the if statement in C.
+```c
+Enter a year:
+```
+
+The `scanf()` function is used to read the year from the user.
+
+The `if` statement checks whether the year is divisible by 4 and not divisible by 100, or if the year is divisible by 400. If the year meets either of these conditions, then it is a leap year. Otherwise, it is not a leap year.
+
+The `printf()` function is used to print the following message to the console:
+
+```c
+%d is a leap year
+```
+
+or
+
+```c
+%d is not a leap year
+```
+
+depending on whether the year is a leap year or not.
+
+The `return 0;` statement indicates that the program has terminated successfully.
+
+**Conclusion**
+
+This code guide has explained how to write a program to check whether a year is a leap year or not. If you have any questions, please feel free to comment on the repository.
+
+Thank you for reading!

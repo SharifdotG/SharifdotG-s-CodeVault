@@ -1,56 +1,47 @@
-# Here is the guideline for the problem:
+# Here is the code guide for finding the maximum between three numbers:
 
-## Understanding the Problem
+**Problem:**
 
-The problem is to write a C program to find a maximum between three numbers. The program should first ask the user to enter three numbers. Then, it should compare the three numbers and print the maximum number.
+The problem is to write a program that takes three numbers as input and prints the maximum number.
 
-## Approaching the Problem
+**Code Explanation:**
 
-The following steps can be used to approach the problem:
-
-1. Declare three variables to store the three numbers entered by the user.
-2. Prompt the user to enter three numbers.
-3. Read the three numbers entered by the user into the variables declared in step 1.
-4. Compare the three numbers and find the maximum number.
-5. Print the maximum number.
-
-## Solving the Problem
-
-The following code solves the problem:
+The code is as follows:
 
 ```c
 #include <stdio.h>
 
-int main()
-{
-
-    int first_number;
-    int second_number;
-    int third_number;
-
+int main() {
+    int num1, num2, num3;
     printf("Enter three numbers: ");
-    scanf("%d %d %d", &first_number, &second_number, &third_number);
+    scanf("%d %d %d", &num1, &num2, &num3);
 
-    if (first_number > second_number && first_number > third_number) {
-        printf("%d is the maximum number", first_number);
-    } else if (second_number > first_number && second_number > third_number) {
-        printf("%d is the maximum number", second_number);
-    } else {
-        printf("%d is the maximum number", third_number);
+    int max_num = num1;
+    if (num2 > max_num) {
+        max_num = num2;
+    } if (num3 > max_num) {
+        max_num = num3;
     }
 
+    printf("%d is the maximum number\n", max_num);
     return 0;
 }
 ```
 
-The code first declares three variables to store the three numbers entered by the user. Then, it prompts the user to enter three numbers. The code then reads the three numbers entered by the user into the variables declared in step 1.
+The first step is to declare three variables, `num1`, `num2`, and `num3`, to store the three numbers. Then, the user is prompted to enter the three numbers. The `scanf()` function is used to read the three numbers from the user.
 
-Next, the code compares the three numbers and finds the maximum number. The code uses the `if` statement to compare the three numbers. If the first number is greater than the second number and the third number, then the first number is the maximum number. Otherwise, if the second number is greater than the first number and the third number, then the second number is the maximum number. Otherwise, the third number is the maximum number.
+The next step is to find the maximum number. The variable `max_num` is initialized to the value of `num1`. Then, the `if` statement is used to compare `num2` to `max_num`. If `num2` is greater than `max_num`, then `max_num` is updated to the value of `num2`. The same thing is done for `num3`.
 
-Finally, the code prints the maximum number.
+Finally, the `printf()` function is used to print the maximum number. The return value of `0` indicates that the program has terminated successfully.
 
-## Further Information
+**Conclusion:**
 
-If you have any queries about the problem or the solution, please feel free to comment in the repository.
+This code guide has explained how to find the maximum between three numbers. If you have any questions, please feel free to comment on the repository.
 
-I hope this helps!
+**Additional Notes:**
+
+* The `if` statement is a conditional statement that is used to check if a condition is true. If the condition is true, then the code inside the `if` statement is executed. If the condition is false, then the code inside the `if` statement is skipped.
+* The `scanf()` function is used to read input from the user. The `scanf()` function takes two arguments: the format string and the address of the variable where the input should be stored.
+* The `printf()` function is used to print output to the console. The `printf()` function takes a format string and the values that should be printed.
+
+I hope this code guide is helpful. Please let me know if you have any other questions.

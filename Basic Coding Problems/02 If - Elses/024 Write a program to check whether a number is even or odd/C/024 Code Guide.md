@@ -1,49 +1,46 @@
-# Here is a detailed guideline for the problem:
+# Here is the Code Guide for the program to check whether a number is even or odd:
 
-**Understanding the problem**
+**Problem:**
 
-The problem asks us to write a C program to check whether a number is even or odd. In other words, we need to determine whether the number is divisible by 2.
+The problem is to write a program that checks whether a number is even or odd.
 
-**Approaching the problem**
+**Code Explanation:**
 
-There are a few ways to approach this problem. One way is to use the modulus operator (%). The modulus operator returns the remainder of a division operation. For example, 10 % 2 = 0, because 10 is divisible by 2 with no remainder. Therefore, we can use the modulus operator to check whether a number is even or odd.
-
-Another way to approach this problem is to use the bitwise AND operator (&). The bitwise AND operator returns 1 if the two bits being compared are both 1, and 0 otherwise. For example, 10 & 1 = 0, because the least significant bit of 10 is 0. Therefore, we can use the bitwise AND operator to check whether the least significant bit of a number is 1.
-
-**Solving the problem**
-
-The code below solves the problem using the modulus operator:
+The code is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    int number;
 
-  int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
 
-  printf("Enter a number: ");
-  scanf("%d", &number);
+    if (number % 2 == 0) {
+        printf("%d is even.\n", number);
+    } else {
+        printf("%d is odd.\n", number);
+    }
 
-  if (number % 2 == 0) {
-    printf("%d is even.\n", number);
-  } else {
-    printf("%d is odd.\n", number);
-  }
-
-  return 0;
+    return 0;
 }
 ```
 
-The code first prompts the user to enter a number. Then, it uses the `scanf()` function to read the number from the user. Next, the code uses the `modulus operator` to check whether the number is even or odd. If the number is even, the code prints a message saying that the number is even. Otherwise, the code prints a message saying that the number is odd.
+The first line includes the `stdio.h` header file, which contains the `printf()` and `scanf()` functions.
 
-**Comments**
+The next line declares the `number` variable, which will store the number that the user enters.
 
-The code is well-commented, which makes it easy to understand. The comments explain what each part of the code does, which is helpful for beginners who are learning C.
+The third line prompts the user to enter a number.
 
-**Queries**
+The fourth line uses the `scanf()` function to read the number that the user enters.
 
-If you have any queries about the code, please feel free to comment on the repository. I will be happy to answer your questions.
+The fifth line uses the `if` statement to check whether the number is even. If the number is even, the `printf()` function will print the message "number is even". Otherwise, the `printf()` function will print the message "number is odd".
 
-**Conclusion**
+The last line returns the value 0 to indicate that the program has terminated successfully.
 
-This is a simple but challenging problem that can be solved using a variety of techniques. The code above solves the problem using the modulus operator, but you could also solve the problem using the bitwise AND operator. I hope this guideline has been helpful.
+**Conclusion:**
+
+This code can be used to check whether a number is even or odd. If you have any questions, please feel free to comment on the repository.
+
+I hope this Code Guide is helpful. Let me know if you have any other questions.

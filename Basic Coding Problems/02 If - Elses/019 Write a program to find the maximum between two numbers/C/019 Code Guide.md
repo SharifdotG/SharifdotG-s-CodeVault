@@ -1,50 +1,72 @@
-# Here is the detailed guideline for the problem:
+# Here is the Code Guide for the program to find the maximum between two numbers:
 
-## Understanding the Problem
+**The Problem**
 
-The problem is to write a C program to find the maximum between two numbers. This means that the program should take two numbers as input from the user and print the larger of the two numbers.
+The problem is to write a program that takes two numbers as input and prints the maximum number.
 
-## Approaching the Problem
+**Code Explanation**
 
-There are a few different ways to approach this problem. One way is to use the `if` statement to compare the two numbers. If the first number is larger, then the program would print that number. Otherwise, the program would print the second number.
-
-Another way to approach this problem is to use the `max()` function. The `max()` function takes two numbers as input and returns the larger of the two numbers. The program could then use the `max()` function to print the maximum number.
-
-## Solving the Problem
-
-The code below solves the problem using the `if` statement:
+The code is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-    
-    int first_number;
-    int second_number;
+    int first_number, second_number, max_number;
 
     printf("Enter two numbers: ");
     scanf("%d %d", &first_number, &second_number);
 
     if (first_number > second_number) {
-        printf("%d is greater than %d\n", first_number, second_number);
+        max_number = first_number;
     } else {
-        printf("%d is greater than %d\n", second_number, first_number);
+        max_number = second_number;
     }
+
+    printf("%d is the maximum number.\n", max_number);
 
     return 0;
 }
 ```
 
-This code first declares two variables, `first_number` and `second_number`, to store the two numbers entered by the user. The code then prompts the user to enter two numbers and reads the numbers entered by the user.
+The first step is to declare three variables: `first_number`, `second_number`, and `max_number`. The `first_number` and `second_number` variables will store the two numbers that are entered by the user. The `max_number` variable will store the maximum number.
 
-The code then uses the `if` statement to compare the two numbers. If the first number is larger, then the code prints the first number. Otherwise, the code prints the second number.
+The next step is to prompt the user to enter two numbers. This is done by the following line of code:
 
-## Testing the Code
+```c
+printf("Enter two numbers: ");
+```
 
-To test the code, you can run it with different sets of numbers. For example, you could run the code with the numbers 10 and 5. The code should print `10 is greater than 5`.
+The `scanf()` function is then used to read the two numbers from the user. The following line of code does this:
 
-## Asking for Help
+```c
+scanf("%d %d", &first_number, &second_number);
+```
 
-If you have any questions about the code, you can ask for help in the repository's discussion forum. The forum is a great place to get help from other users who are also learning C programming.
+The `%d` format specifier tells the `scanf()` function to read an integer value. The `&` symbol is used to pass the address of the variable to the `scanf()` function.
 
-I hope this guideline is helpful. Please let me know if you have any other questions.
+The next step is to find the maximum number. This is done by the following code:
+
+```c
+if (first_number > second_number) {
+    max_number = first_number;
+} else {
+    max_number = second_number;
+}
+```
+
+This code uses the `if...else` statement to compare the two numbers. If the first number is greater than the second number, then `max_number` is assigned the value of `first_number`. Otherwise, `max_number` is assigned the value of `second_number`.
+
+The final step is to print the maximum number. This is done by the following line of code:
+
+```c
+printf("%d is the maximum number.\n", max_number);
+```
+
+The `printf()` function is used to print the maximum number to the console. The `%d` format specifier tells the `printf()` function to print an integer value.
+
+**Conclusion**
+
+This Code Guide has explained the problem and the code in detail. If you have any questions, please feel free to comment in the repository.
+
+Thank you for reading!

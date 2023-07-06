@@ -1,67 +1,41 @@
-# Here is the guideline for the problem:
+# Here is the Code Guide for the problem of checking whether a number is negative, positive, or zero:
 
-## Understanding the Problem
+**The Problem**
 
-The problem is to write a C program to check whether a number is negative, positive or zero. The program should first prompt the user to enter a number. Then, the program should check whether the number is positive, negative or zero. Finally, the program should print a message indicating the type of the number.
+The problem is to write a program that checks whether a number is negative, positive, or zero. The program should first prompt the user to enter a number. Then, the program should use an if-else statement to check the sign of the number. If the number is greater than zero, the program should print the message "The number is positive." If the number is less than zero, the program should print the message "The number is negative." If the number is equal to zero, the program should print the message "The number is zero."
 
-## Approaching the Problem
+**Code Explanation**
 
-The following steps can be used to approach the problem:
-
-1. Define the variables that will be used in the program.
-2. Prompt the user to enter a number.
-3. Read the number from the user.
-4. Check whether the number is positive, negative or zero.
-5. Print a message indicating the type of the number.
-
-## Solving the Problem
-
-The following code solves the problem:
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
     int number;
-
     printf("Enter a number: ");
     scanf("%d", &number);
 
     if (number > 0) {
-        printf("The number is positive.");
-    }
-    else if (number < 0) {
-        printf("The number is negative.");
-    }
-    else {
-        printf("The number is zero.");
+        printf("The number is positive.\n");
+    } else if (number < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
     }
 
     return 0;
 }
 ```
 
-The code first defines the variables `number` to store the number entered by the user. Then, the code prompts the user to enter a number and reads the number from the user. Next, the code checks whether the number is positive, negative or zero using the following if statements:
+The first line of code includes the `stdio.h` header file, which contains the function `printf()`. The second line of code declares the `number` variable, which will store the number entered by the user. The third line of code prompts the user to enter a number. The fourth line of code uses the `scanf()` function to read the number entered by the user and store it in the `number` variable.
 
-```c
-if (number > 0) {
-    printf("The number is positive.");
-}
-else if (number < 0) {
-    printf("The number is negative.");
-}
-else {
-    printf("The number is zero.");
-}
-```
+The next three lines of code use an if-else statement to check the sign of the `number` variable. If the `number` variable is greater than zero, the first `if` statement will be executed. This statement will print the message "The number is positive." If the `number` variable is less than zero, the second `if` statement will be executed. This statement will print the message "The number is negative." If the `number` variable is equal to zero, the else statement will be executed. This statement will print the message "The number is zero."
 
-Finally, the code prints a message indicating the type of the number.
+The last line of code returns the value 0 from the `main()` function. This indicates that the program has terminated successfully.
 
-## Further Questions
+**Conclusion**
 
-If you have any further questions about the problem or the code, please feel free to comment in the repository.
+This Code Guide has explained how the program works in detail. If you have any questions about the code, please feel free to comment in the repository.
 
-## Conclusion
-
-This guideline has described how to understand, approach and solve the problem of writing a C program to check whether a number is negative, positive or zero. The code provided in the guideline can be used as a starting point for your own solution.
+Thank you for reading!
