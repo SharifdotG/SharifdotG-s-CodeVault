@@ -1,61 +1,44 @@
-# Here is the guideline for the C program to input any alphabet and check whether it is vowel or consonant:
+# Here is the code guide for the problem "Write a program to input any alphabet and check whether it is vowel or consonant."
 
-**Understanding the problem**
+## Problem
 
-The problem is to write a C program that will:
+The problem is to write a program that will accept an alphabet as input and then check whether it is a vowel or a consonant.
 
-1. Prompt the user to enter an alphabet.
-2. Check whether the alphabet entered by the user is a vowel or a consonant.
-3. Print a message indicating whether the alphabet is a vowel or a consonant.
+## Code Explanation
 
-**Approaching the problem**
-
-The problem can be solved by the following steps:
-
-1. Declare a variable to store the alphabet entered by the user.
-2. Prompt the user to enter an alphabet.
-3. Read the alphabet entered by the user and store it in the variable declared in step 1.
-4. Check whether the alphabet is a vowel.
-5. If the alphabet is a vowel, print a message indicating that the alphabet is a vowel.
-6. Otherwise, print a message indicating that the alphabet is a consonant.
-
-**Solving the problem**
-
-The following code solves the problem:
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    char letter;
 
-  char letter;
+    printf("Enter any alphabet: ");
+    scanf("%c", &letter);
 
-  printf("Enter any alphabet: ");
-  scanf("%c", &letter);
+    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' || letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U') {
+        printf("The alphabet is a vowel.\n");
+    } else {
+        printf("The alphabet is a consonant.\n");
+    }
 
-  if (letter == 'a' || letter == 'A' || letter == 'e' || letter == 'E' || letter == 'i' || letter == 'I' || letter == 'o' || letter == 'O' || letter == 'u' || letter == 'U') {
-
-    printf("The alphabet is a vowel.\n");
-
-  } else {
-
-    printf("The alphabet is a consonant.\n");
-  }
-
-  return 0;
+    return 0;
 }
 ```
 
-**Explaining the code**
+The first line of code includes the `stdio.h` header file, which contains the definition of the `printf()` and `scanf()` functions.
 
-The code first declares a variable `letter` to store the alphabet entered by the user. Then, it prompts the user to enter an alphabet. The `scanf()` function is used to read the alphabet entered by the user and store it in the `letter` variable.
+The next line of code declares a variable named `letter` of type `char`. This variable will store the alphabet that the user enters.
 
-The next step is to check whether the alphabet is a vowel. The `if` statement checks whether the `letter` variable is equal to any of the lowercase or uppercase vowels. If it is, the `if` statement prints a message indicating that the alphabet is a vowel. Otherwise, the `if` statement is skipped and the `else` statement is executed. The `else` statement prints a message indicating that the alphabet is a consonant.
+The third line of code prints a message to the user asking them to enter an alphabet.
 
-Finally, the `return` statement returns the value 0 to indicate that the program has terminated successfully.
+The fourth line of code uses the `scanf()` function to read the user's input and store it in the `letter` variable.
 
-**Questions and comments**
+The fifth line of code uses an `if` statement to check whether the value of the `letter` variable is equal to any of the 10 lowercase or uppercase vowels. If it is, then the program prints a message saying that the alphabet is a vowel. Otherwise, the program prints a message saying that the alphabet is a consonant.
 
-If you have any questions or comments about the code, please feel free to post them in the repository. I will be happy to help.
+The sixth line of code returns the value 0, which indicates that the program has completed successfully.
 
-Thank you for your interest in my code!
+## Conclusion
+
+This code guide has explained the problem and the code in detail. If you have any questions, please feel free to comment in the repository.

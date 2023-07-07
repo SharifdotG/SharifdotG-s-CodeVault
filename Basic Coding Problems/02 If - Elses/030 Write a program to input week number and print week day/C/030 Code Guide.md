@@ -1,22 +1,17 @@
-# Here is the guideline for the C program to input week number and print week day:
+# Here is the code guide for the problem "Write a program to input week number and print week day":
 
-## Understanding the problem
+## The Problem
 
-The problem is to write a C program that takes a week number as input and prints the corresponding week day. The week number can be any number from 1 to 7, where 1 is Sunday, 2 is Monday, and so on.
+The problem is to write a program that will input a week number and print the corresponding day of the week. The week number can be any integer between 1 and 7, where 1 is Sunday, 2 is Monday, and so on.
 
-## Approaching the problem
+## Code Explanation
 
-The first step is to declare an integer variable to store the week number. Then, we need to prompt the user to enter the week number and read the input using the `scanf()` function. Next, we need to use an `if` statement to check if the week number is valid. If the week number is valid, we can simply print the corresponding week day. Otherwise, we need to print an error message.
-
-## Solving the problem
-
-The following code solves the problem:
+The code for this problem is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
     int week_number;
 
     printf("Enter week number (1-7): ");
@@ -44,16 +39,18 @@ int main() {
 }
 ```
 
-This code first declares an integer variable called `week_number` to store the week number. Then, it prompts the user to enter the week number and reads the input using the `scanf()` function. Next, it uses an `if` statement to check if the week number is valid. If the week number is valid, the code prints the corresponding week day. Otherwise, the code prints an error message.
+The first line of code includes the `stdio.h` header file, which contains the declarations for the `printf()` and `scanf()` functions.
 
-## Further assistance
+The next line of code declares the `week_number` variable, which will store the week number entered by the user.
 
-If you have any further questions, please feel free to comment on the repository. I will be happy to help.
+The next few lines of code prompt the user to enter the week number and then read the value into the `week_number` variable.
 
-## Code comments
+The next block of code uses an `if...else if...else` statement to check the value of the `week_number` variable and print the corresponding day of the week. If the value of `week_number` is 1, the program prints "Sunday". If the value of `week_number` is 2, the program prints "Monday", and so on. If the value of `week_number` is not between 1 and 7, the program prints "Invalid Input".
 
-The code is well-commented, so you should be able to understand how it works. However, if you have any questions, please feel free to comment on the repository.
+The last line of code returns 0 to indicate that the program has completed successfully.
 
 ## Conclusion
 
-This is a simple C program that can be used to input week number and print week day. The code is well-commented and easy to understand. If you have any questions, please feel free to comment on the repository.
+This code guide provides a detailed explanation of the code for the problem "Write a program to input week number and print week day". If you have any questions about the code, please feel free to comment on the repository.
+
+Thank you for reading!

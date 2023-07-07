@@ -1,60 +1,48 @@
-# Here is the guideline for the C program to check whether a character is uppercase or lowercase alphabet:
+# Here is the code guide for the program to check whether a character is uppercase or lowercase alphabet:
 
-## Understanding the Problem
+## The Problem
 
-The problem is to write a C program that checks whether a character is uppercase or lowercase alphabet. The program should prompt the user to enter a character, and then check if the character is in the range of uppercase alphabets `('A' to 'Z')` or lowercase alphabets `('a' to 'z')`. If the character is in one of these ranges, the program should print a message indicating that the character is an uppercase or lowercase alphabet. Otherwise, the program should print a message indicating that the character is not an alphabet.
+The problem is to write a program that checks whether a character is uppercase or lowercase alphabet. The program should first prompt the user to enter a character. Then, the program should check the ASCII value of the character. If the ASCII value of the character is between 65 and 90, then the character is uppercase alphabet. If the ASCII value of the character is between 97 and 122, then the character is lowercase alphabet. Otherwise, the character is not an alphabet.
 
-## Approaching the Problem
+## Code Explanation
 
-The following steps can be used to approach this problem:
-
-1. Declare a variable to store the character that the user enters.
-2. Prompt the user to enter a character.
-3. Get the character from the user.
-4. Check if the character is in the range of uppercase alphabets.
-5. Check if the character is in the range of lowercase alphabets.
-6. Print a message indicating whether the character is an uppercase or lowercase alphabet, or not an alphabet.
-
-## Solving the Problem
-
-The following code solves the problem:
+The code for the program is as follows:
 
 ```c
 #include <stdio.h>
 
 int main() {
+    char character;
 
-  char character;
+    printf("Enter a character: ");
+    scanf("%c", &character);
 
-  printf("Enter a character: ");
-  scanf("%c", &character);
+    if (character >= 'A' && character <= 'Z') {
+        printf("The character is uppercase alphabet.\n");
+    } else if (character >= 'a' && character <= 'z') {
+        printf("The character is lowercase alphabet.\n");
+    } else {
+        printf("The character is not an alphabet.\n");
+    }
 
-  if (character >= 'A' && character <= 'Z') {
-    printf("The character is uppercase alphabet.\n");
-  } else if (character >= 'a' && character <= 'z') {
-    printf("The character is lowercase alphabet.\n");
-  } else {
-    printf("The character is not an alphabet.\n");
-  }
-
-  return 0;
+    return 0;
 }
 ```
 
-This code first declares a variable `character` to store the character that the user enters. Then, it prompts the user to enter a character and gets the character from the user. Next, it checks if the character is in the range of uppercase alphabets by using the following condition:
+The first line of code, `#include <stdio.h>`, includes the `stdio.h` header file, which contains the declarations for the `printf()` and `scanf()` functions.
 
-```c
-if (character >= 'A' && character <= 'Z')
-```
+The next line of code, `int main()`, declares the `main()` function, which is the entry point for the program.
 
-If the character is in the range of uppercase alphabets, the program prints a message indicating that the character is an uppercase alphabet. Otherwise, the program checks if the character is in the range of lowercase alphabets by using the following condition:
+The next few lines of code prompt the user to enter a character and store the character in the `character` variable.
 
-```c
-else if (character >= 'a' && character <= 'z')
-```
+The next line of code, `if (character >= 'A' && character <= 'Z')`, checks if the ASCII value of the `character` variable is between 65 and 90. If it is, then the character is uppercase alphabet and the program prints the message "The character is uppercase alphabet."
 
-If the character is in the range of lowercase alphabets, the program prints a message indicating that the character is a lowercase alphabet. Otherwise, the program prints a message indicating that the character is not an alphabet.
+The next line of code, `else if (character >= 'a' && character <= 'z')`, checks if the ASCII value of the `character` variable is between 97 and 122. If it is, then the character is lowercase alphabet and the program prints the message "The character is lowercase alphabet."
 
-## Further Questions
+The else statement, `else`, is executed if the character is not an alphabet. In this case, the program prints the message "The character is not an alphabet."
 
-If you have any further questions about this problem, please feel free to comment in the repository. I will be happy to help.
+The last line of code, `return 0;`, returns the value 0 from the `main()` function, which indicates that the program terminated successfully.
+
+## Conclusion
+
+This code guide provides a detailed explanation of the program to check whether a character is uppercase or lowercase alphabet. If you have any questions about the code, please feel free to comment in the repository.
