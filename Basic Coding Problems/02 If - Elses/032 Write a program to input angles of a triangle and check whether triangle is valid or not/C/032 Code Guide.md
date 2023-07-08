@@ -1,22 +1,23 @@
-# Here is the guideline for the problem:
+# Here is the code guide for the C program to input angles of a triangle and check whether triangle is valid or not:
 
-**Problem Understanding**
+## The Problem
 
-The problem is to write a C program to input angles of a triangle and check whether triangle is valid or not. A valid triangle is a triangle whose three angles add up to 180 degrees.
+A triangle is a three-sided polygon. The sum of the interior angles of a triangle is always equal to 180 degrees. A triangle is considered valid if the sum of its three angles is equal to 180 degrees and all three angles are greater than 0 degrees.
 
-**Approach**
+## Code Explanation
 
-The approach to solving this problem is to first prompt the user to enter the angles of the triangle. Then, the program will read the angles from the user and check whether they form a valid triangle. A triangle is valid if the sum of its three angles is 180 degrees, and all three angles are positive.
+The code first declares three variables, `angle_a`, `angle_b`, and `angle_c`, to store the angles of the triangle. It then prompts the user to enter the values of these angles. The values are then read from the user using the `scanf()` function.
 
-**Solution**
+The next step is to check whether the sum of the three angles is equal to 180 degrees. If it is, then the triangle is valid. Otherwise, the triangle is not valid.
 
-The solution to this problem is the following C program:
+Finally, the program prints a message indicating whether the triangle is valid or not.
+
+Here is a more detailed explanation of the code:
 
 ```c
 #include <stdio.h>
 
 int main() {
-
     int angle_a, angle_b, angle_c;
 
     printf("Enter the angles of the triangle: ");
@@ -32,26 +33,18 @@ int main() {
 }
 ```
 
-This program first declares three variables to store the angles of the triangle. Then, it prompts the user to enter the angles of the triangle. Next, it reads the angles from the user and checks whether they form a valid triangle. If the angles form a valid triangle, the program prints "The triangle is valid.". Otherwise, the program prints "The triangle is not valid.".
+The `#include <stdio.h>` statement tells the compiler to include the `stdio.h` header file, which contains declarations for the `printf()` and `scanf()` functions.
 
-**Code Explanation**
+The `int main()` function is the main function of the program. It is where the program starts and ends.
 
-The code for this problem is fairly straightforward. The main function first declares three variables to store the angles of the triangle. Then, it prompts the user to enter the angles of the triangle. Next, it reads the angles from the user and checks whether they form a valid triangle. The check for a valid triangle is done using the following code:
+The `printf()` function is used to print a message to the console. In this case, it is used to print a message prompting the user to enter the angles of the triangle.
 
-```c
-if (angle_a + angle_b + angle_c == 180 && angle_a > 0 && angle_b > 0 && angle_c > 0) {
-    printf("The triangle is valid.");
-} else {
-    printf("The triangle is not valid.");
-}
-```
+The `scanf()` function is used to read values from the user. In this case, it is used to read the values of the angles of the triangle from the user.
 
-This code checks whether the sum of the three angles is 180 degrees, and whether all three angles are positive. If both of these conditions are met, then the triangle is valid. Otherwise, the triangle is not valid.
+The `if` statement is used to check whether the sum of the three angles is equal to 180 degrees. If it is, then the `printf()` function is used to print a message indicating that the triangle is valid. Otherwise, the `printf()` function is used to print a message indicating that the triangle is not valid.
 
-**Queries**
+The `return 0;` statement tells the compiler that the program has completed successfully.
 
-If you have any queries about this problem, please feel free to comment in the repository. I will be happy to answer your questions.
+## Conclusion
 
-**Conclusion**
-
-I hope this guideline helps you understand the problem and how to solve it. If you have any other questions, please feel free to ask.
+This code guide provides a detailed explanation of the C program to input angles of a triangle and check whether triangle is valid or not. If you have any questions, please feel free to comment in the repository.
