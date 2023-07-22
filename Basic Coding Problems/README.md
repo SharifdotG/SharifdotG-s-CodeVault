@@ -104,11 +104,11 @@ Note that two different soldiers may be placed in the same camp.
 
 Input
 
-The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 100$$$) — the number of test cases.
+The first line contains a single integer $$$t$$$ ($$$1 \\leq t \\leq 100$$$) — the number of test cases.
 
-The first line of each test case contains two positive integers $$$n$$$ and $$$m$$$ ($$$2 \\leq n \\leq 2 \\cdot 10^5$$$; $$$1 \\leq m \\leq n$$$) — the number of soldiers, and the number of conditions respectively.
+The first line of each test case contains two positive integers $$$n$$$ and $$$m$$$ ($$$2 \\leq n \\leq 2 \\cdot 10^5$$$; $$$1 \\leq m \\leq n$$$) — the number of soldiers, and the number of conditions respectively.
 
-Then $$$m$$$ lines follow, each of them containing $$$3$$$ integers: $$$a\_i$$$, $$$b\_i$$$, $$$d\_i$$$ ($$$a\_i \\neq b\_i$$$; $$$1 \\leq a\_i, b\_i \\leq n$$$; $$$-10^9 \\leq d\_i \\leq 10^9$$$) — denoting the conditions explained in the statement. Note that if $$$d\_i$$$ is positive, $$$a\_i$$$ should be $$$d\_i$$$ meters in front of $$$b\_i$$$ and if it is negative, $$$a\_i$$$ should be $$$-d\_i$$$ meters behind $$$b\_i$$$.
+Then $$$m$$$ lines follow, each of them containing $$$3$$$ integers: $$$a\_i$$$, $$$b\_i$$$, $$$d\_i$$$ ($$$a\_i \\neq b\_i$$$; $$$1 \\leq a\_i, b\_i \\leq n$$$; $$$-10^9 \\leq d\_i \\leq 10^9$$$) — denoting the conditions explained in the statement. Note that if $$$d\_i$$$ is positive, $$$a\_i$$$ should be $$$d\_i$$$ meters in front of $$$b\_i$$$ and if it is negative, $$$a\_i$$$ should be $$$-d\_i$$$ meters behind $$$b\_i$$$.
 
 Note that the sum of $$$n$$$ over all test cases doesn't exceed $$$2 \\cdot 10^5$$$.
 
@@ -187,7 +187,7 @@ $(function () { Codeforces.addMathJaxListener(function () { let $problem = $("di
 
 The only programming contests Web 2.0 platform
 
-Server time: Jul/22/2023 11:43:25 (i1).
+Server time: Jul/22/2023 11:46:20 (i1).
 
 Desktop version, switch to [mobile version](?mobile=true).
 
