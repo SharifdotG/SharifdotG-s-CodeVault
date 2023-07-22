@@ -12,15 +12,15 @@ The code is as follows:
 #include <stdio.h>
 
 int main() {
-    int first_number, second_number, sum;
+    int firstNumber, secondNumber, sum;
 
     printf("Enter the first number: ");
-    scanf("%d", &first_number);
+    scanf("%d", &firstNumber);
 
     printf("Enter the second number: ");
-    scanf("%d", &second_number);
+    scanf("%d", &secondNumber);
 
-    sum = first_number + second_number;
+    sum = firstNumber + secondNumber;
 
     printf("The sum of the two numbers is: %d\n", sum);
 
@@ -32,24 +32,24 @@ The first line, `#include <stdio.h>`, tells the compiler to include the `stdio.h
 
 The next line, `int main() {`, marks the beginning of the `main()` function, which is the starting point of the program.
 
-The next three lines, `int first_number, second_number, sum;`, declare three variables: `first_number`, `second_number`, and `sum`. The `first_number` and `second_number` variables will store the two numbers entered by the user, and the `sum` variable will store the sum of the two numbers.
+The next three lines, `int firstNumber, secondNumber, sum;`, declare three variables: `firstNumber`, `secondNumber`, and `sum`. The `firstNumber` and `secondNumber` variables will store the two numbers entered by the user, and the `sum` variable will store the sum of the two numbers.
 
 The next three lines,
 
 ```c
 printf("Enter the first number: ");
-scanf("%d", &first_number);
+scanf("%d", &firstNumber);
 
 printf("Enter the second number: ");
-scanf("%d", &second_number);
+scanf("%d", &secondNumber);
 ```
 
-prompt the user to enter the two numbers, and then store the user's input in the `first_number` and `second_number` variables.
+prompt the user to enter the two numbers, and then store the user's input in the `firstNumber` and `secondNumber` variables.
 
 The next line,
 
 ```c
-sum = first_number + second_number;
+sum = firstNumber + secondNumber;
 ```
 
 calculates the sum of the two numbers and stores the result in the `sum` variable.

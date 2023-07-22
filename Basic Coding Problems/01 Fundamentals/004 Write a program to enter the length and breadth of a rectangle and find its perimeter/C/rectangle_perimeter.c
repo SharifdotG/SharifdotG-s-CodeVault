@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int length, breadth, perimeter;
+    int rectangleLength, rectangleBreadth, rectanglePerimeter;
 
     printf("Enter the length of the rectangle: ");
-    scanf("%d", &length);
+    scanf("%d", &rectangleLength);
 
     printf("Enter the breadth of the rectangle: ");
-    scanf("%d", &breadth);
+    scanf("%d", &rectangleBreadth);
 
-    perimeter = 2 * (length + breadth);
+    rectanglePerimeter = 2 * (rectangleLength + rectangleBreadth);
 
-    printf("The perimeter of the rectangle is: %d\n", perimeter);
+    printf("The perimeter of the rectangle is: %d\n", rectanglePerimeter);
 
     return 0;
 }

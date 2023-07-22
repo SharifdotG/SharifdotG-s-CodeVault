@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int first_number, second_number;
+    int firstNumber, secondNumber;
 
     printf("Enter two numbers: ");
-    scanf("%d %d", &first_number, &second_number);
+    scanf("%d %d", &firstNumber, &secondNumber);
 
-    int sum = first_number + second_number;
-    int difference = first_number - second_number;
-    int product = first_number * second_number;
-    int quotient = first_number / second_number;
-    int remainder = first_number % second_number;
+    int sum = firstNumber + secondNumber;
+    int difference = firstNumber - secondNumber;
+    int product = firstNumber * secondNumber;
+    int quotient = firstNumber / secondNumber;
+    int remainder = firstNumber % secondNumber;
 
     printf("Sum: %d\n", sum);
     printf("Difference: %d\n", difference);

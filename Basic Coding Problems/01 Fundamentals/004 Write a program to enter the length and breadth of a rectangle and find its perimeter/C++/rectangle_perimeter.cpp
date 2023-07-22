@@ -3,17 +3,17 @@
 using namespace std;
 
 int main() {
-    int length, breadth, perimeter;
+    int rectangleLength, rectangleBreadth, rectanglePerimeter;
 
     cout << "Enter the length of the rectangle: ";
-    cin >> length;
+    cin >> rectangleLength;
 
     cout << "Enter the breadth of the rectangle: ";
-    cin >> breadth;
+    cin >> rectangleBreadth;
 
-    perimeter = 2 * (length + breadth);
+    rectanglePerimeter = 2 * (rectangleLength + rectangleBreadth);
 
-    cout << "The perimeter of the rectangle is: " << perimeter << endl;
+    cout << "The perimeter of the rectangle is: " << rectanglePerimeter << endl;
 
     return 0;
 }

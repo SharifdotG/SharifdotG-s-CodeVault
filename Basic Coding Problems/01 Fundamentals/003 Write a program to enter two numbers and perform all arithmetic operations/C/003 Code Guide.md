@@ -12,16 +12,16 @@ The code for this problem is as follows:
 #include <stdio.h>
 
 int main() {
-    int first_number, second_number;
+    int firstNumber, secondNumber;
 
     printf("Enter two numbers: ");
-    scanf("%d %d", &first_number, &second_number);
+    scanf("%d %d", &firstNumber, &secondNumber);
 
-    int sum = first_number + second_number;
-    int difference = first_number - second_number;
-    int product = first_number * second_number;
-    int quotient = first_number / second_number;
-    int remainder = first_number % second_number;
+    int sum = firstNumber + secondNumber;
+    int difference = firstNumber - secondNumber;
+    int product = firstNumber * secondNumber;
+    int quotient = firstNumber / secondNumber;
+    int remainder = firstNumber % secondNumber;
 
     printf("Sum: %d\n", sum);
     printf("Difference: %d\n", difference);
@@ -33,18 +33,18 @@ int main() {
 }
 ```
 
-The first step in the code is to declare two variables, `first_number` and `second_number`. These variables will store the two numbers that the user enters.
+The first step in the code is to declare two variables, `firstNumber` and `secondNumber`. These variables will store the two numbers that the user enters.
 
 The next step is to prompt the user to enter the two numbers. This is done using the `printf()` function. The `printf()` function takes two arguments: the first argument is the text that we want to display to the user, and the second argument is the variable that we want to store the user's input in.
 
 Once the user has entered the two numbers, we can perform the arithmetic operations on them. We do this using the following code:
 
 ```c
-int sum = first_number + second_number;
-int difference = first_number - second_number;
-int product = first_number * second_number;
-int quotient = first_number / second_number;
-int remainder = first_number % second_number;
+int sum = firstNumber + secondNumber;
+int difference = firstNumber - secondNumber;
+int product = firstNumber * secondNumber;
+int quotient = firstNumber / secondNumber;
+int remainder = firstNumber % secondNumber;
 ```
 
 This code uses the arithmetic operators `+`, `-`, `*`, `/`, and `%` to perform the addition, subtraction, multiplication, division, and remainder operations on the two numbers.

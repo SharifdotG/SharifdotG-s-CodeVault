@@ -3,16 +3,16 @@
 using namespace std;
 
 int main() {
-    int first_number, second_number;
+    int firstNumber, secondNumber;
 
     cout << "Enter two numbers: ";
-    cin >> first_number >> second_number;
+    cin >> firstNumber >> secondNumber;
 
-    int sum = first_number + second_number;
-    int difference = first_number - second_number;
-    int product = first_number * second_number;
-    int quotient = first_number / second_number;
-    int remainder = first_number % second_number;
+    int sum = firstNumber + secondNumber;
+    int difference = firstNumber - secondNumber;
+    int product = firstNumber * secondNumber;
+    int quotient = firstNumber / secondNumber;
+    int remainder = firstNumber % secondNumber;
 
     cout << "Sum: " << sum << endl;
     cout << "Difference: " << difference << endl;

@@ -11,7 +11,7 @@ The code for the rectangle perimeter program is as follows:
 ```java
 import java.util.Scanner;
 
-public class rectangle_perimeter {
+public class RectanglePerimeter {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

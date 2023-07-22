@@ -3,15 +3,15 @@
 using namespace std;
 
 int main() {
-    int first_number, second_number, sum;
+    int firstNumber, secondNumber, sum;
 
     cout << "Enter the first number: ";
-    cin >> first_number;
+    cin >> firstNumber;
 
     cout << "Enter the second number: ";
-    cin >> second_number;
+    cin >> secondNumber;
 
-    sum = first_number + second_number;
+    sum = firstNumber + secondNumber;
 
     cout << "The sum of the two numbers is: " << sum << endl;
 

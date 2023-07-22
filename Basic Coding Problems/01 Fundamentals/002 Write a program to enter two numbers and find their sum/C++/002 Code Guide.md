@@ -14,15 +14,15 @@ The code for the program is as follows:
 using namespace std;
 
 int main() {
-    int first_number, second_number, sum;
+    int firstNumber, secondNumber, sum;
 
     cout << "Enter the first number: ";
-    cin >> first_number;
+    cin >> firstNumber;
 
     cout << "Enter the second number: ";
-    cin >> second_number;
+    cin >> secondNumber;
 
-    sum = first_number + second_number;
+    sum = firstNumber + secondNumber;
 
     cout << "The sum of the two numbers is: " << sum << endl;
 
@@ -32,16 +32,16 @@ int main() {
 
 The first line of code, `#include <iostream>`, includes the `iostream` header file, which contains the `cout` and `cin` objects that are used to output and input data. The next line of code, `using namespace std;`, tells the compiler to use the `std` namespace, which contains all of the standard C++ library functions.
 
-The `main()` function is the entry point for the program. The first line of the `main()` function, `int first_number, second_number, sum;`, declares three integer variables: `first_number`, `second_number`, and `sum`. The `first_number` and `second_number` variables are used to store the two numbers that the user enters. The `sum` variable is used to store the sum of the two numbers.
+The `main()` function is the entry point for the program. The first line of the `main()` function, `int firstNumber, secondNumber, sum;`, declares three integer variables: `firstNumber`, `secondNumber`, and `sum`. The `firstNumber` and `secondNumber` variables are used to store the two numbers that the user enters. The `sum` variable is used to store the sum of the two numbers.
 
 The next three lines of code,
 
 ```c++
 cout << "Enter the first number: ";
-cin >> first_number;
+cin >> firstNumber;
 
 cout << "Enter the second number: ";
-cin >> second_number;
+cin >> secondNumber;
 ```
 
 prompt the user to enter the two numbers. The `cout` object is used to output text to the console. The `cin` object is used to input data from the console.
@@ -49,7 +49,7 @@ prompt the user to enter the two numbers. The `cout` object is used to output te
 The next line of code,
 
 ```c++
-sum = first_number + second_number;
+sum = firstNumber + secondNumber;
 ```
 
 adds the two numbers and stores the result in the `sum` variable.

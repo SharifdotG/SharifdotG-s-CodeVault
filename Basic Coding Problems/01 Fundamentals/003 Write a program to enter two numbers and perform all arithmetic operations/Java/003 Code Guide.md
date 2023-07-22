@@ -11,12 +11,12 @@ The code for the program is as follows:
 ```java
 import java.util.Scanner;
 
-public class arithmetic {
+public class Arithmetic {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter two numbers: ");
+        System.out.print("Enter two numbers: ");
         int firstNumber = scanner.nextInt();
         int secondNumber = scanner.nextInt();
 

@@ -14,17 +14,17 @@ The code for this problem is as follows:
 using namespace std;
 
 int main() {
-    int length, breadth, perimeter;
+    int rectangleLength, rectangleBreadth, rectanglePerimeter;
 
     cout << "Enter the length of the rectangle: ";
-    cin >> length;
+    cin >> rectangleLength;
 
     cout << "Enter the breadth of the rectangle: ";
-    cin >> breadth;
+    cin >> rectangleBreadth;
 
-    perimeter = 2 * (length + breadth);
+    rectanglePerimeter = 2 * (rectangleLength + rectangleBreadth);
 
-    cout << "The perimeter of the rectangle is: " << perimeter << endl;
+    cout << "The perimeter of the rectangle is: " << rectanglePerimeter << endl;
 
     return 0;
 }
@@ -34,27 +34,27 @@ The first line of code, `#include <iostream>`, tells the compiler to include the
 
 The next line of code, `using namespace std;`, tells the compiler to use the `std` namespace. This namespace contains all of the standard C++ library functions, including `cout` and `cin`.
 
-The next three lines of code, `int length, breadth, perimeter;`, declare three variables of type `int`. The variables `length` and `breadth` will be used to store the length and breadth of the rectangle, respectively. The variable `perimeter` will be used to store the perimeter of the rectangle.
+The next three lines of code, `int rectangleLength, rectangleBreadth, rectanglePerimeter;`, declare three variables of type `int`. The variables `rectangleLength` and `rectangleBreadth` will be used to store the length and breadth of the rectangle, respectively. The variable `rectangleBreadth` will be used to store the perimeter of the rectangle.
 
 The next three lines of code,
 ```c++
 cout << "Enter the length of the rectangle: ";
-cin >> length;
+cin >> rectangleLength;
 
 cout << "Enter the breadth of the rectangle: ";
-cin >> breadth;
+cin >> rectangleBreadth;
 ```
 prompt the user to enter the length and breadth of the rectangle. The `cout` object is used to output the prompt, and the `cin` object is used to input the user's response.
 
 The next line of code,
 ```c++
-perimeter = 2 * (length + breadth);
+rectangleBreadth = 2 * (rectangleLength + rectangleBreadth);
 ```
 calculates the perimeter of the rectangle. The perimeter of a rectangle is equal to twice the sum of the length and breadth. The `2 *` operator multiplies the sum of the length and breadth by 2.
 
 The next line of code,
 ```c++
-cout << "The perimeter of the rectangle is: " << perimeter << endl;
+cout << "The perimeter of the rectangle is: " << rectangleBreadth << endl;
 ```
 outputs the perimeter of the rectangle. The `cout` object is used to output the perimeter, and the `endl` manipulator is used to insert a newline character at the end of the output.
 

@@ -3,62 +3,62 @@
 using namespace std;
 
 int main() {
-    char character;
-    unsigned char unsigned_character;
-    short short_integer;
-    int integer;
-    unsigned int unsigned_integer;
-    long long_integer;
-    unsigned long unsigned_long;
-    unsigned long long unsigned_long_long;
-    float float_value;
-    double double_value;
-    long double long_double_value;
+    char Character;
+    unsigned char UnsignedCharacter;
+    short ShortInteger;
+    int Integer;
+    unsigned int UnsignedInteger;
+    long LongInteger;
+    unsigned long UnsignedLong;
+    unsigned long long UnsignedLongLong;
+    float FloatValue;
+    double DoubleValue;
+    long double LongDoubleValue;
 
     cout << "Enter a character: ";
-    cin >> character;
+    cin >> Character;
 
     cout << "Enter an unsigned character: ";
-    cin >> unsigned_character;
+    cin >> UnsignedCharacter;
 
     cout << "Enter a short integer: ";
-    cin >> short_integer;
+    cin >> ShortInteger;
 
     cout << "Enter an integer: ";
-    cin >> integer;
+    cin >> Integer;
 
     cout << "Enter an unsigned integer: ";
-    cin >> unsigned_integer;
+    cin >> UnsignedInteger;
 
     cout << "Enter a long integer: ";
-    cin >> long_integer;
+    cin >> LongInteger;
 
     cout << "Enter an unsigned long integer: ";
-    cin >> unsigned_long;
+    cin >> UnsignedLong;
 
     cout << "Enter an unsigned long long integer: ";
-    cin >> unsigned_long_long;
+    cin >> UnsignedLongLong;
 
     cout << "Enter a float: ";
-    cin >> float_value;
+    cin >> FloatValue;
 
     cout << "Enter a double: ";
-    cin >> double_value;
+    cin >> DoubleValue;
 
     cout << "Enter a long double: ";
-    cin >> long_double_value;
+    cin >> LongDoubleValue;
 
-    cout << "\nThe character is: " << character << endl;
-    cout << "The unsigned character is: " << unsigned_character << endl;
-    cout << "The short integer is: " << short_integer << endl;
-    cout << "The integer is: " << integer << endl;
-    cout << "The unsigned integer is: " << unsigned_integer << endl;
-    cout << "The long integer is: " << long_integer << endl;
-    cout << "The unsigned long integer is: " << unsigned_long << endl;
-    cout << "The unsigned long long integer is: " << unsigned_long_long << endl;
-    cout << "The float is: " << float_value << endl;
-    cout << "The double is: " << double_value << endl;
-    cout << "The long double is: " << long_double_value << endl;
+    cout << "\nThe character is: " << Character << endl;
+    cout << "The unsigned character is: " << UnsignedCharacter << endl;
+    cout << "The short integer is: " << ShortInteger << endl;
+    cout << "The integer is: " << Integer << endl;
+    cout << "The unsigned integer is: " << UnsignedInteger << endl;
+    cout << "The long integer is: " << LongInteger << endl;
+    cout << "The unsigned long integer is: " << UnsignedLong << endl;
+    cout << "The unsigned long long integer is: " << UnsignedLongLong << endl;
+    cout << "The float is: " << FloatValue << endl;
+    cout << "The double is: " << DoubleValue << endl;
+    cout << "The long double is: " << LongDoubleValue << endl;
 
     return 0;
 }

@@ -1,53 +1,52 @@
-# Here is a detailed guideline for the problem:
+# Here is the code guide for the problem of checking whether a triangle is equilateral, isosceles, or scalene:
 
-**Understanding the problem**
+## The Problem
 
-The problem asks you to write a C program to check whether a triangle is equilateral, isosceles, or scalene. An equilateral triangle has all three sides equal, an isosceles triangle has two sides equal, and a scalene triangle has no sides equal.
+A triangle is a polygon with three sides and three vertices. The sides of a triangle are connected to each other at their vertices. The sum of the lengths of any two sides of a triangle must be greater than the length of the third side.
 
-**Approaching the problem**
+There are three types of triangles: equilateral, isosceles, and scalene.
 
-The first step is to declare three variables to store the three sides of the triangle. Then, you need to prompt the user to enter the three sides of the triangle. Once you have the three sides of the triangle, you can check if the triangle is equilateral, isosceles, or scalene.
+* An equilateral triangle has three sides of equal length.
+* An isosceles triangle has two sides of equal length.
+* A scalene triangle has no sides of equal length.
 
-**Solving the problem**
+## Code Explanation
 
-To check if the triangle is equilateral, you can use the following code:
+The code below checks whether a triangle is equilateral, isosceles, or scalene.
 
 ```c
-if (side_a == side_b && side_b == side_c) {
-    printf("The triangle is equilateral.\n");
+#include <stdio.h>
+
+int main() {
+    int side_a, side_b, side_c;
+
+    printf("Enter the three sides of the triangle: ");
+    scanf("%d %d %d", &side_a, &side_b, &side_c);
+
+    if (side_a == side_b && side_b == side_c) {
+        printf("The triangle is equilateral.\n");
+    } else if (side_a == side_b || side_a == side_c || side_b == side_c) {
+        printf("The triangle is isosceles.\n");
+    } else {
+        printf("The triangle is scalene.\n");
+    }
+
+    return 0;
 }
 ```
 
-This code checks if all three sides of the triangle are equal. If they are, then the triangle is equilateral.
+The first step in the code is to declare three variables, `side_a`, `side_b`, and `side_c`, to store the lengths of the three sides of the triangle.
 
-To check if the triangle is isosceles, you can use the following code:
+The next step is to prompt the user to enter the lengths of the three sides of the triangle. The user's input is then stored in the `side_a`, `side_b`, and `side_c` variables.
 
-```c
-else if (side_a == side_b || side_a == side_c || side_b == side_c) {
-    printf("The triangle is isosceles.\n");
-}
-```
+The next step is to check whether the triangle is equilateral. This is done by checking if all three sides of the triangle are equal. If all three sides are equal, then the `if` statement is executed and the message "The triangle is equilateral." is printed to the console.
 
-This code checks if any two of the sides of the triangle are equal. If any two sides are equal, then the triangle is isosceles.
+If the triangle is not equilateral, then the `if` statement is skipped and the next step is to check whether the triangle is isosceles. This is done by checking if any two sides of the triangle are equal. If any two sides are equal, then the `else if` statement is executed and the message "The triangle is isosceles." is printed to the console.
 
-If the triangle is not equilateral or isosceles, then it must be scalene. You can check this by using the following code:
+If the triangle is not equilateral or isosceles, then it must be scalene. This is because the only other type of triangle is scalene, and if the triangle is not equilateral or isosceles, then it must be scalene. Therefore, the `else` statement is executed and the message "The triangle is scalene." is printed to the console.
 
-```c
-else {
-    printf("The triangle is scalene.\n");
-}
-```
+The final step in the code is to return 0, which indicates that the program has completed successfully.
 
-This code prints a message that the triangle is scalene if the triangle is not equilateral or isosceles.
+## Conclusion
 
-**Explaining how the code works**
-
-The code works by first declaring three variables to store the three sides of the triangle. Then, it prompts the user to enter the three sides of the triangle. Once the three sides of the triangle are entered, the code checks if the triangle is equilateral, isosceles, or scalene. If the triangle is equilateral, the code prints a message that the triangle is equilateral. If the triangle is isosceles, the code prints a message that the triangle is isosceles. If the triangle is scalene, the code prints a message that the triangle is scalene.
-
-**Questions**
-
-If you have any questions about the problem or the code, please feel free to comment in the repository. I will be happy to answer your questions.
-
-**Conclusion**
-
-I hope this guideline helps you understand the problem and how to solve it. If you have any other questions, please feel free to ask me.
+This code guide has explained how the code works in detail. If you have any questions about the code, please feel free to comment in the repository.

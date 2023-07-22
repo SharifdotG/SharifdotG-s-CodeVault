@@ -11,7 +11,7 @@ The code for this problem is as follows:
 ```java
 import java.util.Scanner;
 
-public class input_output {
+public class InputOutput {
     public static void main(String[] args) {
         byte byteValue;
         char character;

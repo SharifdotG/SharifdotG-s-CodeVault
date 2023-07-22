@@ -2,63 +2,63 @@
 
 int main() {
     char character;
-    unsigned char unsigned_character;
-    short short_integer;
+    unsigned char unsignedCharacter;
+    short shortInteger;
     int integer;
-    unsigned int unsigned_integer;
-    long long_integer;
-    unsigned long unsigned_long;
-    unsigned long long unsigned_long_long;
-    float float_value;
-    double double_value;
-    long double long_double_value;
+    unsigned int unsignedInteger;
+    long longInteger;
+    unsigned long unsignedLong;
+    unsigned long long unsignedLongLong;
+    float floatValue;
+    double doubleValue;
+    long double longDoubleValue;
 
     printf("Enter a character: ");
     character = getchar();
     getchar();
 
     printf("Enter an unsigned character: ");
-    unsigned_character = getchar();
+    unsignedCharacter = getchar();
     getchar();
 
     printf("Enter a short integer: ");
-    scanf("%hd", &short_integer);
+    scanf("%hd", &shortInteger);
 
     printf("Enter an integer: ");
     scanf("%d", &integer);
 
     printf("Enter an unsigned integer: ");
-    scanf("%u", &unsigned_integer);
+    scanf("%u", &unsignedInteger);
 
     printf("Enter a long integer: ");
-    scanf("%ld", &long_integer);
+    scanf("%ld", &longInteger);
 
     printf("Enter an unsigned long integer: ");
-    scanf("%lu", &unsigned_long);
+    scanf("%lu", &unsignedLong);
 
     printf("Enter an unsigned long long integer: ");
-    scanf("%llu", &unsigned_long_long);
+    scanf("%llu", &unsignedLongLong);
 
     printf("Enter a float: ");
-    scanf("%f", &float_value);
+    scanf("%f", &floatValue);
 
     printf("Enter a double: ");
-    scanf("%lf", &double_value);
+    scanf("%lf", &doubleValue);
 
     printf("Enter a long double: ");
-    scanf("%Lf", &long_double_value);
+    scanf("%Lf", &longDoubleValue);
 
     printf("\nThe character is: %c\n", character);
-    printf("The unsigned character is: %c\n", unsigned_character);
-    printf("The short integer is: %hd\n", short_integer);
+    printf("The unsigned character is: %c\n", unsignedCharacter);
+    printf("The short integer is: %hd\n", shortInteger);
     printf("The integer is: %d\n", integer);
-    printf("The unsigned integer is: %u\n", unsigned_integer);
-    printf("The long integer is: %ld\n", long_integer);
-    printf("The unsigned long integer is: %lu\n", unsigned_long);
-    printf("The unsigned long long integer is: %llu\n", unsigned_long_long);
-    printf("The float is: %f\n", float_value);
-    printf("The double is: %lf\n", double_value);
-    printf("The long double is: %Lf\n", long_double_value);
+    printf("The unsigned integer is: %u\n", unsignedInteger);
+    printf("The long integer is: %ld\n", longInteger);
+    printf("The unsigned long integer is: %lu\n", unsignedLong);
+    printf("The unsigned long long integer is: %llu\n", unsignedLongLong);
+    printf("The float is: %f\n", floatValue);
+    printf("The double is: %lf\n", doubleValue);
+    printf("The long double is: %Lf\n", longDoubleValue);
 
     return 0;
 }

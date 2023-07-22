@@ -1,22 +1,14 @@
-# Here is a detailed guideline for the problem:
+# Here is the code guide for the program to check whether a triangle is valid or not:
 
-**Understanding the problem**
+## The Problem
 
-The problem is to write a C program to input all sides of a triangle and check whether the triangle is valid or not. A valid triangle is a triangle in which the sum of any two sides is greater than the third side.
+A triangle is a geometric shape with three sides. The sum of any two sides of a triangle must be greater than the third side. If this condition is not met, then the triangle is not valid.
 
-**Approaching the problem**
+The problem is to write a program that takes as input the three sides of a triangle and outputs whether the triangle is valid or not.
 
-The first step is to declare three variables to store the three sides of the triangle. The next step is to prompt the user to enter the three sides of the triangle. Then, we can use the following logic to check if the triangle is valid:
+## Code Explanation
 
-```c
-int is_valid = (side_a + side_b > side_c) && (side_a + side_c > side_b) && (side_b + side_c > side_a);
-```
-
-This logic checks if the sum of any two sides of the triangle is greater than the third side. If it is, then the triangle is valid. Otherwise, the triangle is not valid.
-
-**Solving the problem**
-
-The code below solves the problem:
+The code for the program is as follows:
 
 ```c
 #include <stdio.h>
@@ -27,9 +19,7 @@ int main() {
     printf("Enter the three sides of a triangle: ");
     scanf("%d %d %d", &side_a, &side_b, &side_c);
 
-    int is_valid = (side_a + side_b > side_c) && (side_a + side_c > side_b) && (side_b + side_c > side_a);
-
-    if (is_valid) {
+    if (side_a + side_b > side_c && side_a + side_c > side_b && side_b + side_c > side_a) {
         printf("The triangle is valid.");
     } else {
         printf("The triangle is not valid.");
@@ -39,21 +29,16 @@ int main() {
 }
 ```
 
-This code first declares three variables to store the three sides of the triangle. Then, it prompts the user to enter the three sides of the triangle. Next, it uses the logic mentioned above to check if the triangle is valid. Finally, it prints a message indicating whether the triangle is valid or not.
+The first step in the code is to declare three variables to store the three sides of the triangle. The variables are named `side_a`, `side_b`, and `side_c`.
 
-**Explaining the code**
+The next step is to prompt the user to enter the three sides of the triangle. The `printf()` function is used to print a message to the console. The `scanf()` function is used to read the user's input and store it in the three variables.
 
-The code above is well-commented, so it should be easy to understand. However, here is a brief explanation of the code:
+The next step is to check whether the triangle is valid. The `if` statement checks whether the sum of any two sides of the triangle is greater than the third side. If all three conditions are met, then the triangle is valid. Otherwise, the triangle is not valid.
 
-* The `main()` function first declares three variables to store the three sides of the triangle.
-* Then, it prompts the user to enter the three sides of the triangle.
-* Next, it uses the `is_valid` variable to check if the triangle is valid. The `is_valid` variable is initialized to 0. If the sum of any two sides of the triangle is greater than the third side, then the `is_valid` variable is set to 1. Otherwise, the `is_valid` variable remains at 0.
-* Finally, the code prints a message indicating whether the triangle is valid or not.
+The final step in the code is to print a message to the console indicating whether the triangle is valid or not. The `printf()` function is used to print a message to the console.
 
-**Questions**
+## Conclusion
 
-If you have any questions about the problem or the code, please feel free to comment in the repository. I will be happy to help you.
+This code guide has explained the problem and the code for the program to check whether a triangle is valid or not. I hope this code guide is helpful. If you have any questions, please feel free to comment on the repository.
 
-**Conclusion**
-
-I hope this guideline is helpful. Please let me know if you have any other questions.
+Thank you for reading!

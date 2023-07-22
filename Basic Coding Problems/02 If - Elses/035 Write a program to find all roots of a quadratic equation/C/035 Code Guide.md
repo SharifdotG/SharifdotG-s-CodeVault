@@ -1,70 +1,74 @@
-# Here is a detailed guideline for the problem:
+# Here is the code guide for the program to find all roots of a quadratic equation:
 
-**Understanding the problem**
+## The Problem
 
-The problem asks you to write a C program to find all roots of a quadratic equation. A quadratic equation is an equation of the form `ax^2 + bx + c = 0`, where `a`, `b`, and `c` are real numbers. The roots of a quadratic equation are the values of `x` that satisfy the equation.
-
-**Approaching the problem**
-
-The first step to solving this problem is to calculate the discriminant of the quadratic equation. The discriminant is a value that tells you the nature of the roots of the equation. If the discriminant is positive, then the equation has two real roots. If the discriminant is zero, then the equation has one repeated real root. If the discriminant is negative, then the equation has two complex roots.
-
-Once you have calculated the discriminant, you can then use the quadratic formula to calculate the roots of the equation. The quadratic formula is:
+A quadratic equation is an equation of the form
 
 ```c
-root = (-b ± sqrt(b^2 - 4ac)) / 2a
+ax^2 + bx + c = 0
 ```
 
-where a, b, and c are the coefficients of the quadratic equation.
+where `a`, `b`, and `c` are real numbers. The roots of a quadratic equation are the values of `x` that make the equation equal to zero.
 
-**Solving the problem**
+## Code Explanation
 
-The code below solves the problem:
+The code to find all roots of a quadratic equation is as follows:
 
 ```c
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main()
+{
+    float a, b, c;
+    float discriminant, root1, root2, real_part, imaginary_part;
 
-    float coefficientA, coefficientB, coefficientC;
-    float discriminant;
-    float root1, root2;
-    float realPart, imaginaryPart;
+    printf("Enter the value of a, b, c: ");
+    scanf("%f %f %f", &a, &b, &c);
 
-    printf("Enter the value of coefficientA, coefficientB, coefficientC: ");
-    scanf("%f %f %f", &coefficientA, &coefficientB, &coefficientC);
-
-    discriminant = coefficientB * coefficientB - 4 * coefficientA * coefficientC;
+    discriminant = b * b - 4 * a * c;
 
     if (discriminant > 0) {
-        root1 = (-coefficientB + sqrt(discriminant)) / (2 * coefficientA);
-        root2 = (-coefficientB - sqrt(discriminant)) / (2 * coefficientA);
+        root1 = (-b + sqrt(discriminant)) / 2 * a;
+        root2 = (-b - sqrt(discriminant)) / 2 * a;
         printf("The roots are: %.2f and %.2f\n", root1, root2);
     } else if (discriminant == 0) {
-        root1 = root2 = -coefficientB / (2 * coefficientA);
+        root1 = root2 = -b / 2 * a;
         printf("The roots are: %.2f and %.2f\n", root1, root2);
     } else {
-        realPart = -coefficientB / (2 * coefficientA);
-        imaginaryPart = sqrt(-discriminant) / (2 * coefficientA);
-        printf("The roots are: %.2f + %.2fi and %.2f - %.2fi\n", realPart, imaginaryPart, realPart, imaginaryPart);
+        real_part = -b / 2 * a;
+        imaginary_part = sqrt(-discriminant) / 2 * a;
+        printf("The roots are: %.2f + %.2fi and %.2f - %.2fi\n", real_part, imaginary_part, real_part, imaginary_part);
     }
 
     return 0;
 }
 ```
 
-This code first prompts the user to enter the values of the coefficients of the quadratic equation. Then, it calculates the discriminant of the equation. If the discriminant is positive, then the code calculates the two real roots of the equation using the quadratic formula. If the discriminant is zero, then the code calculates the one repeated real root of the equation. If the discriminant is negative, then the code calculates the two complex roots of the equation. Finally, the code prints the roots of the equation.
+The first step in the code is to declare the variables that will be used. These variables are `a`, `b`, `c`, `discriminant`, `root1`, `root2`, `real_part`, and `imaginary_part`.
 
-**Explaining how the code works**
+The next step is to prompt the user to enter the values of `a`, `b`, and `c`. The values are then stored in the corresponding variables.
 
-The code works by first calculating the discriminant of the quadratic equation. The discriminant is a value that tells you the nature of the roots of the equation. If the discriminant is positive, then the equation has two real roots. If the discriminant is zero, then the equation has one repeated real root. If the discriminant is negative, then the equation has two complex roots.
+The next step is to calculate the discriminant, which is defined as `b^2 - 4ac`. The discriminant determines the nature of the roots of the quadratic equation. If the discriminant is positive, then the roots are real and distinct. If the discriminant is equal to zero, then the roots are real and equal. If the discriminant is negative, then the roots are imaginary and distinct.
 
-Once the discriminant has been calculated, the code then uses the quadratic formula to calculate the roots of the equation. The quadratic formula is a formula that can be used to calculate the roots of any quadratic equation.
+The next step is to use the discriminant to determine the roots of the quadratic equation. If the discriminant is positive, then the roots are calculated using the following formulas:
 
-The code then prints the roots of the equation. If the equation has two real roots, then the code prints the two roots as two separate numbers. If the equation has one repeated real root, then the code prints the root once. If the equation has two complex roots, then the code prints the two roots as two complex numbers.
+```c
+root1 = (-b + sqrt(discriminant)) / 2 * a
+root2 = (-b - sqrt(discriminant)) / 2 * a
+```
 
-**Questions**
+If the discriminant is equal to zero, then the roots are both equal to `-b / 2 * a`.
 
-If you have any questions about the problem or the code, please feel free to comment in the repository. I will be happy to answer your questions.
+If the discriminant is negative, then the roots are calculated using the following formulas:
 
-Thank you for your interest in the problem. I hope this guideline is helpful.
+```c
+real_part = -b / 2 * a
+imaginary_part = sqrt(-discriminant) / 2 * a
+```
+
+The final step is to print the roots of the quadratic equation. The roots are printed in the format `x1, x2`.
+
+## Conclusion
+
+This code guide has provided a detailed explanation of the code to find all roots of a quadratic equation. If you have any questions, please feel free to comment on the repository.

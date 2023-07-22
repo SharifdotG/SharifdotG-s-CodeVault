@@ -14,16 +14,16 @@ The code for the program is as follows:
 using namespace std;
 
 int main() {
-    int first_number, second_number;
+    int firstNumber, secondNumber;
 
     cout << "Enter two numbers: ";
-    cin >> first_number >> second_number;
+    cin >> firstNumber >> secondNumber;
 
-    int sum = first_number + second_number;
-    int difference = first_number - second_number;
-    int product = first_number * second_number;
-    int quotient = first_number / second_number;
-    int remainder = first_number % second_number;
+    int sum = firstNumber + secondNumber;
+    int difference = firstNumber - secondNumber;
+    int product = firstNumber * secondNumber;
+    int quotient = firstNumber / secondNumber;
+    int remainder = firstNumber % secondNumber;
 
     cout << "Sum: " << sum << endl;
     cout << "Difference: " << difference << endl;
@@ -39,9 +39,9 @@ The first line of code, `#include <iostream>`, includes the `iostream` header fi
 
 The next line of code, `using namespace std;`, tells the compiler that we are using the `std` namespace, which contains all of the standard C++ library functions.
 
-The `main()` function is the entry point of the program. It first declares two variables, `first_number` and `second_number`, to store the two numbers that the user will enter.
+The `main()` function is the entry point of the program. It first declares two variables, `firstNumber` and `secondNumber`, to store the two numbers that the user will enter.
 
-The next line of code, `cout << "Enter two numbers: ";`, prompts the user to enter two numbers. The `cin >>` operator then reads the two numbers from the console and stores them in the `first_number` and `second_number` variables.
+The next line of code, `cout << "Enter two numbers: ";`, prompts the user to enter two numbers. The `cin >>` operator then reads the two numbers from the console and stores them in the `firstNumber` and `secondNumber` variables.
 
 The next few lines of code calculate the sum, difference, product, quotient, and remainder of the two numbers. The `+`, `-`, `*`, `/`, and `%` operators are used to perform the arithmetic operations.
 

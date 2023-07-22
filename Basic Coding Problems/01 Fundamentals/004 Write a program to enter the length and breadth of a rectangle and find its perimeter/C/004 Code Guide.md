@@ -7,10 +7,10 @@ The problem is to write a program that takes the length and breadth of a rectang
 The perimeter of a rectangle is the total length of all the sides of the rectangle. It can be calculated using the following formula:
 
 ```c
-perimeter = 2 * (length + breadth)
+rectanglePerimeter = 2 * (rectangleLength + rectangleBreadth);
 ```
 
-where `length` is the length of the rectangle and `breadth` is the breadth of the rectangle.
+where `rectangleLength` is the length of the rectangle and `rectangleBreadth` is the breadth of the rectangle.
 
 ## Code Explanation
 
@@ -20,27 +20,27 @@ The code for this problem is as follows:
 #include <stdio.h>
 
 int main() {
-    int length, breadth, perimeter;
+    int rectangleLength, rectangleBreadth, rectanglePerimeter;
 
     printf("Enter the length of the rectangle: ");
-    scanf("%d", &length);
+    scanf("%d", &rectangleLength);
 
     printf("Enter the breadth of the rectangle: ");
-    scanf("%d", &breadth);
+    scanf("%d", &rectangleBreadth);
 
-    perimeter = 2 * (length + breadth);
+    rectanglePerimeter = 2 * (rectangleLength + rectangleBreadth);
 
-    printf("The perimeter of the rectangle is: %d\n", perimeter);
+    printf("The perimeter of the rectangle is: %d\n", rectanglePerimeter);
 
     return 0;
 }
 ```
 
-The first step in the code is to declare the variables that will be used. These variables are `length`, `breadth`, and `perimeter`. The `length` and `breadth` variables will store the length and breadth of the rectangle, respectively. The `perimeter` variable will store the perimeter of the rectangle.
+The first step in the code is to declare the variables that will be used. These variables are `rectangleLength`, `rectangleBreadth`, and `perimeter`. The `rectangleLength` and `rectangleBreadth` variables will store the length and breadth of the rectangle, respectively. The `` variable will store the perimeter of the rectangle.
 
 The next step in the code is to get the input from the user. This is done using the `printf()` and `scanf()` functions. The `printf()` function is used to print a message to the user, and the `scanf()` function is used to read input from the user.
 
-The next step in the code is to calculate the perimeter of the rectangle. This is done using the `perimeter = 2 * (length + breadth)` formula.
+The next step in the code is to calculate the perimeter of the rectangle. This is done using the ` = 2 * (rectangleLength + rectangleBreadth)` formula.
 
 The final step in the code is to print the perimeter of the rectangle. This is done using the `printf()` function.
 
