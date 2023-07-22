@@ -3,62 +3,64 @@
 using namespace std;
 
 int main() {
-    char Character;
-    unsigned char UnsignedCharacter;
-    short ShortInteger;
-    int Integer;
-    unsigned int UnsignedInteger;
-    long LongInteger;
-    unsigned long UnsignedLong;
-    unsigned long long UnsignedLongLong;
-    float FloatValue;
-    double DoubleValue;
-    long double LongDoubleValue;
+    char character;
+    unsigned char unsignedCharacter;
+    short shortInteger;
+    int integer;
+    unsigned int unsignedInteger;
+    long longInteger;
+    unsigned long unsignedLong;
+    unsigned long long unsignedLongLong;
+    float floatValue;
+    double doubleValue;
+    long double longDoubleValue;
 
     cout << "Enter a character: ";
-    cin >> Character;
+    character = getchar();
+    getchar();
 
     cout << "Enter an unsigned character: ";
-    cin >> UnsignedCharacter;
+    unsignedCharacter = getchar();
+    getchar();
 
     cout << "Enter a short integer: ";
-    cin >> ShortInteger;
+    cin >> shortInteger;
 
     cout << "Enter an integer: ";
-    cin >> Integer;
+    cin >> integer;
 
     cout << "Enter an unsigned integer: ";
-    cin >> UnsignedInteger;
+    cin >> unsignedInteger;
 
     cout << "Enter a long integer: ";
-    cin >> LongInteger;
+    cin >> longInteger;
 
     cout << "Enter an unsigned long integer: ";
-    cin >> UnsignedLong;
+    cin >> unsignedLong;
 
     cout << "Enter an unsigned long long integer: ";
-    cin >> UnsignedLongLong;
+    cin >> unsignedLongLong;
 
     cout << "Enter a float: ";
-    cin >> FloatValue;
+    cin >> floatValue;
 
     cout << "Enter a double: ";
-    cin >> DoubleValue;
+    cin >> doubleValue;
 
     cout << "Enter a long double: ";
-    cin >> LongDoubleValue;
+    cin >> longDoubleValue;
 
-    cout << "\nThe character is: " << Character << endl;
-    cout << "The unsigned character is: " << UnsignedCharacter << endl;
-    cout << "The short integer is: " << ShortInteger << endl;
-    cout << "The integer is: " << Integer << endl;
-    cout << "The unsigned integer is: " << UnsignedInteger << endl;
-    cout << "The long integer is: " << LongInteger << endl;
-    cout << "The unsigned long integer is: " << UnsignedLong << endl;
-    cout << "The unsigned long long integer is: " << UnsignedLongLong << endl;
-    cout << "The float is: " << FloatValue << endl;
-    cout << "The double is: " << DoubleValue << endl;
-    cout << "The long double is: " << LongDoubleValue << endl;
+    cout << "\nThe character is: " << character << endl;
+    cout << "The unsigned character is: " << unsignedCharacter << endl;
+    cout << "The short integer is: " << shortInteger << endl;
+    cout << "The integer is: " << integer << endl;
+    cout << "The unsigned integer is: " << unsignedInteger << endl;
+    cout << "The long integer is: " << longInteger << endl;
+    cout << "The unsigned long integer is: " << unsignedLong << endl;
+    cout << "The unsigned long long integer is: " << unsignedLongLong << endl;
+    cout << "The float is: " << floatValue << endl;
+    cout << "The double is: " << doubleValue << endl;
+    cout << "The long double is: " << longDoubleValue << endl;
 
     return 0;
 }
