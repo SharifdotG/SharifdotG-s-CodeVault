@@ -188,9 +188,7 @@ Here are some external resources that can further enhance your understanding of 
 If you want to contribute to this repository, you are welcome to do so! Here are the guidelines for contributing:
 
 1. Fork this repository to your GitHub account.
-2. Create a new branch for your changes: `git checkout -b
-
- my-feature`.
+2. Create a new branch for your changes: `git checkout -b my-feature`.
 3. Make your changes and commit them with descriptive commit messages.
 4. Push your changes to your forked repository: `git push origin my-feature`.
 5. Create a pull request from your branch to the main repository's `main` branch.
