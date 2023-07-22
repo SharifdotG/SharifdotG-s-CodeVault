@@ -41,5 +41,7 @@ public class InputOutput {
         System.out.println("The long integer is: " + longInteger);
         System.out.println("The float is: " + floatValue);
         System.out.println("The double is: " + doubleValue);
+
+        scanner.close();
     }
 }
