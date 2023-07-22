@@ -13,7 +13,6 @@ Print `YES`, if the boys can divide the watermelon into two parts, each of them 
 
 **Examples:**
 
-```
 Input | Output
 ------- | --------
 8 | YES
