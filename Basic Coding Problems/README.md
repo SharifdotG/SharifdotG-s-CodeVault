@@ -1,75 +1,42 @@
-# 282A. Bit++
+Sure, here is the converted codeforces problem text in a way you can implement it in README.md in GitHub:
 
-## Problem Statement
 
-The classic programming language of Bitland is Bit++. This language is so peculiar and complicated.
+# 158A. Next Round
 
-* The language has exactly one variable, called `x`.
-* There are two operations:
-    * `++` increases the value of `x` by 1.
-    * `--` decreases the value of `x` by 1.
-* A statement in Bit++ is a sequence, consisting of exactly one operation and one variable `x`. The statement is written without spaces, that is, it can only contain characters `+`, `-`, and `X`. Executing a statement means applying the operation it contains.
-* A program in Bit++ is a sequence of statements, each of them needs to be executed. Executing a program means executing all the statements it contains.
+## Problem
 
-You are given a program in language Bit++. The initial value of `x` is 0. Execute the program and find its final value (the value of the variable when the program is executed).
+A total of `n` participants took part in the contest (`$n \ge k$`), and you already know their scores. Calculate how many participants will advance to the next round.
 
 ## Input
 
-The first line contains a single integer `n` (`1 ≤ n ≤ 150`) — the number of statements in the program.
+The first line of the input contains two integers `n` and `k` (`$1 \le k \le n \le 50$`) separated by a single space.
 
-Next `n` lines contain a statement each. Each statement contains exactly one operation `++` or `--` and exactly one variable `x` (denoted as letter «X»). Thus, there are no empty statements. The operation and the variable can be written in any order.
+The second line contains `n` space-separated integers `a_1, a_2, \dots, a_n` (`$0 \le a_i \le 100$`), where `a_i` is the score earned by the participant who got the `i`-th place. The given sequence is non-increasing (that is, for all `i` from 1 to `n - 1` the following condition is fulfilled: `a_i \ge a_{i + 1}`).
 
 ## Output
 
-Print a single integer — the final value of `x`.
+Output the number of participants who advance to the next round.
 
 ## Examples
 
 ```
 input
-1
-++X
+8 5
+10 9 8 7 7 7 5 5
 output
-1
+6
 ```
 
 ```
 input
-2
-X++
---X
+4 2
+0 0 0 0
 output
 0
 ```
 
-```
-input
-3
-++X
-X--
---X
-output
--1
-```
+## Note
 
-## Solution
+In the first example the participant on the 5th place earned 7 points. As the participant on the 6th place also earned 7 points, there are 6 advancers.
 
-The solution to this problem is to simply iterate through the statements in the program and apply the corresponding operation to the variable `x`. The final value of `x` will be the value of the variable after all the statements have been executed.
-
-Here is an implementation of the solution in Python:
-
-```python
-def solve(n):
-    x = 0
-    for i in range(n):
-        statement = input()
-        if statement[0] == "+":
-            x += 1
-        elif statement[0] == "-":
-            x -= 1
-    return x
-
-print(solve(int(input())))
-```
-
-This solution can be easily modified to work in other programming languages as well.
+In the second example nobody got a positive score.
