@@ -25,7 +25,7 @@ Print a single integer — the final value of `x`.
 
 ## Examples
 
-
+```
 input
 1
 ++X
@@ -50,7 +50,7 @@ X--
 --X
 output
 -1
-
+```
 
 ## Solution
 
