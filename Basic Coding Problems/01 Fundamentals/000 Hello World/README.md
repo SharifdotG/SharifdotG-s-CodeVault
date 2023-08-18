@@ -46,5 +46,3 @@ Remember, this is a foundational challenge. Focus on understanding the basic str
 
 ## Final Remarks:
 I encourage you to take a shot at solving this challenge on your own first. Building the solution step by step and experimenting with the code will greatly enhance your learning experience. Once you've given it your best shot, feel free to check out my GitHub profile at [SharifdotG](https://github.com/SharifdotG) for further insights and solutions. Happy coding!
-
-Feel free to copy and paste the above Markdown code into your GitHub repository's README.md or the appropriate section where you want to provide the Code Hint for your "Hello World" problem. Make sure to replace `[SharifdotG](https://github.com/SharifdotG)` with your own GitHub profile link.
