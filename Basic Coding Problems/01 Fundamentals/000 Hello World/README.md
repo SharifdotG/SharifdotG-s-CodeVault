@@ -1,103 +1,50 @@
 # CODE HINT - Read This Before You See The Code!
 
-## Problem Description:
-The task is to write a program that performs input and output operations for all basic data types in programming. This includes integers, floating-point numbers, characters, strings, and boolean values. The program should prompt the user to enter values of each data type and then display them back to the user. This exercise will help you become familiar with the various input/output functions available in programming languages and their usage.
+## Problem Name: Hello World
 
-## Example Input and Output:
-**Example 1:**
+### Problem Description:
+I'm presenting you with a classic "Hello World" challenge. Your task is to write a program that takes no input and prints the famous phrase "Hello, World!" to the console. This is a fundamental starting point in any programming language.
+
+### Example Input and Output:
+Example 1:
+Input: None
+Output: Hello, World!
+
+### Constraints:
+- You should not take any input for this challenge.
+- The output must exactly match the provided example.
+
+### Understand the Problem:
+To tackle this problem, break it down into simpler components. Consider:
+- What's the main goal of the program?
+- What should the program take as input, if anything?
+- What should the program output?
+- How can you achieve this output using code?
+
+### Plan the Approach:
+A simple approach involves using the print function to display the desired message. Think about the syntax and conventions of the programming language you're using.
+
+### Algorithm:
+1. Open a new code file.
+2. Write the necessary code to print "Hello, World!" to the console.
+3. Ensure that the syntax is correct and the code is ready for execution.
+
+### Pseudocode:
 ```
-Enter an integer: 42
-Enter a floating-point number: 3.14
-Enter a character: A
-Enter a string: Hello, World!
-Enter a boolean (True/False): True
-
---- Output ---
-Integer: 42
-Floating-point: 3.14
-Character: A
-String: Hello, World!
-Boolean: True
-```
-
-## Constraints:
-- The input values will be within the range supported by the respective data types in the chosen programming language.
-
-## Step-by-Step Guide:
-
-### Step 1: Understand the Problem:
-To solve this problem, we need to create a program that takes user input for all basic data types and then displays the entered values. We'll use standard input/output functions to achieve this. Before writing the code, it's essential to understand each basic data type and the functions for input/output.
-
-### Step 2: Plan the Approach:
-We'll use a simple approach where we prompt the user to enter values for each data type one by one. Then, we'll read the input and store it in appropriate variables. Finally, we'll display the entered values using output functions.
-
-### Step 3: Algorithm:
-1. Prompt the user to enter an integer and read the input into a variable.
-2. Prompt the user to enter a floating-point number and read the input into another variable.
-3. Prompt the user to enter a character and read the input into a character variable.
-4. Prompt the user to enter a string and read the input into a string variable.
-5. Prompt the user to enter a boolean value (True/False) and read the input into a boolean variable.
-6. Display the entered values using output functions.
-
-### Step 4: Pseudocode:
-```
-Prompt for an integer input
-Read the input as an integer and store it in 'integerVar'
-
-Prompt for a floating-point input
-Read the input as a floating-point number and store it in 'floatVar'
-
-Prompt for a character input
-Read the input as a character and store it in 'charVar'
-
-Prompt for a string input
-Read the input as a string and store it in 'stringVar'
-
-Prompt for a boolean input
-Read the input as a boolean and store it in 'boolVar'
-
-Display 'integerVar', 'floatVar', 'charVar', 'stringVar', and 'boolVar'
+START
+    PRINT "Hello, World!"
+END
 ```
 
-### Step 5: Test Cases:
-**Test Case 1:**
-```
-Enter an integer: 100
-Enter a floating-point number: 3.14159
-Enter a character: Z
-Enter a string: Testing Inputs and Outputs
-Enter a boolean (True/False): False
+### Test Cases:
+Test Case 1:
+Input: None
+Output: Hello, World!
 
---- Output ---
-Integer: 100
-Floating-point: 3.14159
-Character: Z
-String: Testing Inputs and Outputs
-Boolean: False
-```
-
-**Test Case 2:**
-```
-Enter an integer: -42
-Enter a floating-point number: 2.71828
-Enter a character: X
-Enter a string: Hello
-Enter a boolean (True/False): True
-
---- Output ---
-Integer: -42
-Floating-point: 2.71828
-Character: X
-String: Hello
-Boolean: True
-```
-
-## Hints:
-- When reading input for each data type, use the appropriate input function based on the programming language you are using (e.g., `scanf` in C, `input` in Python, `cin` in C++, `Scanner` in Java, etc.).
-- Don't forget to import any necessary libraries or headers depending on the chosen programming language.
-- For displaying the output, use the appropriate output function or statement (e.g., `printf` in C, `print` in Python, `cout` in C++, `System.out.println` in Java, etc.).
-- Ensure that the input and output statements are clear and user-friendly to make the program more interactive.
-- Test your program with different data inputs to ensure it handles various scenarios correctly.
+### Additional Guidance:
+Remember, this is a foundational challenge. Focus on understanding the basic structure of the code and the logic behind it. Experiment with different variations to deepen your understanding.
 
 ## Final Remarks:
-This coding challenge is an excellent opportunity to practice working with basic data types and input/output operations. Before checking the provided code, try to solve the problem on your own. Understanding the logic and algorithms behind the solution is essential for becoming a proficient programmer. Once you have given it your best shot, you can refer to the code to see a possible implementation. Happy coding!
+I encourage you to take a shot at solving this challenge on your own first. Building the solution step by step and experimenting with the code will greatly enhance your learning experience. Once you've given it your best shot, feel free to check out my GitHub profile at [SharifdotG](https://github.com/SharifdotG) for further insights and solutions. Happy coding!
+
+Feel free to copy and paste the above Markdown code into your GitHub repository's README.md or the appropriate section where you want to provide the Code Hint for your "Hello World" problem. Make sure to replace `[SharifdotG](https://github.com/SharifdotG)` with your own GitHub profile link.
