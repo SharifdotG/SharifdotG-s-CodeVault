@@ -14,5 +14,7 @@ public class RectanglePerimeter {
         int perimeter = 2 * (length + breadth);
 
         System.out.println("The perimeter of the rectangle is: " + perimeter);
+
+        scanner.close();
     }
 }
