@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class README {
+public class ArithmeticOperations {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -20,5 +20,7 @@ public class README {
         System.out.println("Product: " + product);
         System.out.println("Quotient: " + quotient);
         System.out.println("Remainder: " + remainder);
+
+        scanner.close();
     }
 }
