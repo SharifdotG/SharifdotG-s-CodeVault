@@ -2,6 +2,7 @@
     "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
     "files.associations": {
         "stdio.h": "c",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }
