@@ -3,50 +3,28 @@
 using namespace std;
 
 int main() {
-    int numberOfLevels;
+    int numberOfLevels, numberOfLevelsXCanPass, numberOfLevelsYCanPass, level;
     cin >> numberOfLevels;
-
-    int numberOfLevelsXCanPass;
     cin >> numberOfLevelsXCanPass;
 
-    int levelsXCanPass[numberOfLevelsXCanPass];
-    for (int i = 0; i < numberOfLevelsXCanPass; i++) {
-        cin >> levelsXCanPass[i];
+    set<int> levelsXCanPass;
+
+    while (numberOfLevelsXCanPass--) {
+        cin >> level;
+        levelsXCanPass.insert(level);
     }
 
-    int numberOfLevelsYCanPass;
     cin >> numberOfLevelsYCanPass;
 
-    int levelsYCanPass[numberOfLevelsYCanPass];
-    for (int i = 0; i < numberOfLevelsYCanPass; i++) {
-        cin >> levelsYCanPass[i];
+    while (numberOfLevelsYCanPass--) {
+        cin >> level;
+        levelsXCanPass.insert(level);
     }
 
-    int levelsXAndYCanPass[numberOfLevelsXCanPass + numberOfLevelsYCanPass];
-
-    for (int i = 0; i < numberOfLevelsXCanPass; i++) {
-        levelsXAndYCanPass[i] = levelsXCanPass[i];
-    }
-
-    for (int i = 0; i < numberOfLevelsYCanPass; i++) {
-        levelsXAndYCanPass[numberOfLevelsXCanPass + i] = levelsYCanPass[i];
-    }
-
-    sort(levelsXAndYCanPass, levelsXAndYCanPass + numberOfLevelsXCanPass + numberOfLevelsYCanPass);
-
-    bool canPassAllLevels = true;
-
-    for (int i = 0; i < numberOfLevels; i++) {
-        if (levelsXAndYCanPass[i] != i + 1) {
-            canPassAllLevels = false;
-            break;
-        }
-    }
-
-    if (canPassAllLevels) {
-        cout << "I become the guy.";
+    if (levelsXCanPass.size() == numberOfLevels) {
+        cout << "I become the guy." << endl;
     } else {
-        cout << "Oh, my keyboard!";
+        cout << "Oh, my keyboard!" << endl;
     }
     
     return 0;
