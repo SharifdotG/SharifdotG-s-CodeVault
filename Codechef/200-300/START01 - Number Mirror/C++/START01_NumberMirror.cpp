@@ -3,7 +3,9 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    cout << n;
+    int N;
+    cin >> N;
+    cout << N;
+    
+    return 0;
 }
