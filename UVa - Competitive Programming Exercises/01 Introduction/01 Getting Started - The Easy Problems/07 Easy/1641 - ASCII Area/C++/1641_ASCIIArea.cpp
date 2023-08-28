@@ -4,26 +4,24 @@ using namespace std;
 
 int main() {
     int height, width;
-    
-    while (cin >> height >> width && height != 0 && width != 0) {
-        char character;
-        int area = 0;
-        
+
+    while (cin >> height >> width) {
+        string line;
+        bool flag = false;
+        double sum = 0.0;
+
         for (int i = 0; i < height; i++) {
-            int count = 0;
-            
+            cin >> line;
+
             for (int j = 0; j < width; j++) {
-                cin >> character;
-                
-                if (character == '.') {
-                    count++;
-                }
+                if (line[j] == '/' || line[j] == '\\') {
+                    flag = !flag;
+                    sum += 0.5;
+                } else if (flag && line[j] == '.') sum += 1.0;
             }
-            
-            area += count;
         }
-        
-        cout << area << endl;
+
+        cout << sum << endl;
     }
     
     return 0;
