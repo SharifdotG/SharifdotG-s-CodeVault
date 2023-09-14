@@ -2,5 +2,6 @@
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp"
-    }
+    },
+    "C_Cpp.default.compilerPath": "C:\\mingw64\\bin\\g++.exe"
 }
