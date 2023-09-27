@@ -11,7 +11,9 @@ print("Before swapping:")
 print("First number:", firstNumber)
 print("Second number:", secondNumber)
 
-firstNumber, secondNumber = secondNumber, firstNumber
+temp = firstNumber
+firstNumber = secondNumber
+secondNumber = temp
 
 print("After swapping:")
 print("First number:", firstNumber)

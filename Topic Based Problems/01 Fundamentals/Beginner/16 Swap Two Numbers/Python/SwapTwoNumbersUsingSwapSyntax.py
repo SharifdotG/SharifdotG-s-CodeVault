@@ -1,7 +1,7 @@
 """
-File: SwapTwoNumbersUsingFunction.py
+File: SwapTwoNumbersUsingSwapSyntax.py
 Author: SharifdotG (sharifmdyousuf007@gmail.com)
-Description: Swap Two Numbers in Python without using functions
+Description: Swap Two Numbers in Python using Swap Syntax
 Version: 1.0
 Date: 2023-09-24
 """
