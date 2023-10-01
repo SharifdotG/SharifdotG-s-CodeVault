@@ -3,14 +3,18 @@
 using namespace std;
 
 int main() {
-    int timeInSeconds;
-    cin >> timeInSeconds;
+    int ageInDays;
+    cin >> ageInDays;
 
-    int hours = timeInSeconds / 3600;
-    int minutes = (timeInSeconds % 3600) / 60;
-    int seconds = (timeInSeconds % 3600) % 60;
+    int years = ageInDays / 365;
+    ageInDays -= years * 365;
 
-    cout << hours << ":" << minutes << ":" << seconds << endl;
+    int months = ageInDays / 30;
+    ageInDays -= months * 30;
+
+    cout << years << " ano(s)" << endl;
+    cout << months << " mes(es)" << endl;
+    cout << ageInDays << " dia(s)" << endl;
     
     return 0;
 }
