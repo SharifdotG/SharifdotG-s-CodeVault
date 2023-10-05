@@ -1,93 +1,293 @@
 # CODE HINT - Read This Before You See The Code!
 
 ## Problem Description
-You are tasked with writing a program that performs arithmetic operations between two numbers. Your program should take two numbers as input and perform various arithmetic operations on them. The goal is to create a versatile calculator that can add, subtract, multiply, divide, and find the remainder between two numbers.
 
-## Example Input and Output
+Welcome to the world of arithmetic operations! In this coding challenge, you will be tasked with performing various arithmetic operations between two numbers. The goal is to write a program that can take two numbers as input and then perform addition, subtraction, multiplication, and division on them. 
+
+The program should be able to handle both integer and floating-point numbers, and it should provide the results of these operations as accurately as possible.
+
+### Input
+
+Your program will take two numbers as input. These numbers can be integers (whole numbers) or floating-point numbers (numbers with decimal points). You can assume that the input will be valid, meaning that there will always be two numbers provided.
+
+### Output
+
+For each of the four arithmetic operations (addition, subtraction, multiplication, and division), your program should produce a result. The output should be in the form of a floating-point number, even if the input numbers are integers. The output should be rounded to a reasonable number of decimal places (e.g., 2 decimal places).
+
+### Example Input and Output
+
 **Input:**
+
 ```
-Number 1: 10
-Number 2: 5
+Number 1: 5
+Number 2: 3
 ```
 
 **Output:**
+
 ```
-Addition: 10 + 5 = 15
-Subtraction: 10 - 5 = 5
-Multiplication: 10 * 5 = 50
-Division: 10 / 5 = 2.0
-Remainder: 10 % 5 = 0
+Addition Result: 8.00
+Subtraction Result: 2.00
+Multiplication Result: 15.00
+Division Result: 1.67
 ```
 
-## Constraints
-- The input numbers are integers.
-- The division operation should return a floating-point number.
+### Constraints
+
+- The input numbers will be in the range [-10^9, 10^9].
+- For division, the second number (the divisor) will never be zero.
+
+## Mathematics Used
+
+To solve this problem, you'll need to use some basic mathematical operations:
+
+- Addition: The addition of two numbers is represented as `a + b`.
+- Subtraction: The subtraction of two numbers is represented as `a - b`.
+- Multiplication: The multiplication of two numbers is represented as `a * b`.
+- Division: The division of two numbers is represented as `a / b`.
+
+In the case of division, it's important to note that you should handle division by zero gracefully and not allow it to crash your program. You can use mathematical notation to express these operations clearly.
 
 ## Understand the Problem
-Before jumping into writing code, let's break down the problem:
 
-1. You're given two numbers.
-2. You need to perform five different arithmetic operations: addition, subtraction, multiplication, division, and remainder.
-3. The input should be taken from the user, and the results should be displayed clearly.
+Before diving into the code, let's break down the problem into smaller components and understand what needs to be done.
+
+1. **Input Handling**: You need to read two numbers as input from the user. Ensure that the input is valid (i.e., two numbers are provided).
+
+2. **Arithmetic Operations**:
+   - Addition: Add the two numbers.
+   - Subtraction: Subtract the second number from the first.
+   - Multiplication: Multiply the two numbers.
+   - Division: Divide the first number by the second.
+
+3. **Output Formatting**: Display the results of these operations with the appropriate labels (e.g., "Addition Result: 8.00"). Ensure that the results are presented as floating-point numbers with a fixed number of decimal places.
+
+Now that we understand the problem, let's explore possible approaches to solving it.
 
 ## Possible Approaches
-There are multiple ways to solve this problem:
 
-1. **Simple Approach:** You can use basic arithmetic operators in your programming language to perform each operation separately.
+There are several ways to approach this problem, but the key is to perform each arithmetic operation separately while handling the input and output gracefully.
 
-2. **Function-Based Approach:** You can create separate functions for each operation to keep your code organized and modular.
+### Approach 1: Simple Sequential Calculation
 
-3. **Switch Statement Approach:** If your programming language supports switch statements, you can use one to select which operation to perform based on user input.
+In this approach, you can simply perform each arithmetic operation one after the other, taking care to format the output correctly. This approach is straightforward and easy to implement.
+
+### Approach 2: Function-Based Calculation
+
+Another approach is to create separate functions for each arithmetic operation (addition, subtraction, multiplication, and division). You can then call these functions with the input numbers and return the results. This approach makes the code more modular and organized.
+
+### Approach 3: Using a Switch Statement
+
+If you're familiar with switch statements in programming, you can use one to select the arithmetic operation based on user input. This approach can make your code more concise and efficient.
+
+Now that we have these approaches in mind, let's plan our approach for solving the problem.
 
 ## Plan the Approach
-Let's take the simple approach for this guide. We'll use basic arithmetic operators to perform each operation. You'll need to:
 
-- Read two numbers from the user.
-- Perform addition by adding the two numbers.
-- Perform subtraction by subtracting the second number from the first.
-- Perform multiplication by multiplying the two numbers.
-- Perform division by dividing the first number by the second.
-- Perform remainder by finding the remainder when the first number is divided by the second.
+For this code hint, let's choose Approach 1: Simple Sequential Calculation. We'll start by taking user input, perform each arithmetic operation one by one, and then format and display the results.
+
+### Input Handling
+
+1. Read two numbers from the user. You can use standard input functions or methods depending on your programming language.
+
+2. Check if the input is valid. Ensure that both numbers are provided, and they are valid numeric values.
+
+### Arithmetic Operations
+
+3. Perform each arithmetic operation sequentially:
+   - Addition: `result = num1 + num2`
+   - Subtraction: `result = num1 - num2`
+   - Multiplication: `result = num1 * num2`
+   - Division: `result = num1 / num2`
+
+4. Round the result to a reasonable number of decimal places (e.g., 2 decimal places). You can use built-in functions for rounding or implement rounding manually.
+
+### Output Formatting
+
+5. Display the results of each operation with appropriate labels. Ensure that the results are presented as floating-point numbers with fixed decimal places.
+
+Now that we have a clear plan, let's move on to the algorithm.
 
 ## Algorithm
-Here's a high-level algorithm for the simple approach:
 
-1. Prompt the user to enter the first number and store it in a variable.
-2. Prompt the user to enter the second number and store it in another variable.
-3. Calculate the addition by adding the two numbers and store the result.
-4. Calculate the subtraction by subtracting the second number from the first and store the result.
-5. Calculate the multiplication by multiplying the two numbers and store the result.
-6. Calculate the division by dividing the first number by the second and store the result.
-7. Calculate the remainder by finding the remainder when the first number is divided by the second and store the result.
-8. Display the results for each operation.
+Here's the algorithm for solving this problem:
+
+1. **Input Handling**:
+   - Read `num1` and `num2` from the user.
+
+2. **Addition**:
+   - Calculate `addition_result` as `num1 + num2`.
+
+3. **Subtraction**:
+   - Calculate `subtraction_result` as `num1 - num2`.
+
+4. **Multiplication**:
+   - Calculate `multiplication_result` as `num1 * num2`.
+
+5. **Division**:
+   - Calculate `division_result` as `num1 / num2`.
+
+6. **Output Formatting**:
+   - Display the results with labels in the following format:
+     - `Addition Result: <addition_result_formatted>`
+     - `Subtraction Result: <subtraction_result_formatted>`
+     - `Multiplication Result: <multiplication_result_formatted>`
+     - `Division Result: <division_result_formatted>`
+
+   - Ensure that the results are presented as floating-point numbers with a fixed number of decimal places (e.g., 2 decimal places).
+
+Now, let's proceed to write pseudocode for this algorithm.
 
 ## Pseudocode
-Here's a pseudocode representation of the algorithm:
 
 ```plaintext
-1. Input first_number
-2. Input second_number
-3. addition_result = first_number + second_number
-4. subtraction_result = first_number - second_number
-5. multiplication_result = first_number * second_number
-6. division_result = first_number / second_number
-7. remainder_result = first_number % second_number
-8. Output "Addition:", first_number, "+", second_number, "=", addition_result
-9. Output "Subtraction:", first_number, "-", second_number, "=", subtraction_result
-10. Output "Multiplication:", first_number, "*", second_number, "=", multiplication_result
-11. Output "Division:", first_number, "/", second_number, "=", division_result
-12. Output "Remainder:", first_number, "%", second_number, "=", remainder_result
+1. Read num1 from the user
+2. Read num2 from the user
+
+3. addition_result = num1 + num2
+4. subtraction_result = num1 - num2
+5. multiplication_result = num1 * num2
+
+6. if num2 is not equal to 0:
+     division_result = num1 / num2
+   else:
+     division_result = "Undefined"  # Handle division by zero gracefully
+
+7. addition_result_formatted = round(addition_result, 2)  # Round to 2 decimal places
+8. subtraction_result_formatted = round(subtraction_result, 2)
+9. multiplication_result_formatted = round(multiplication_result, 2)
+10. division_result_formatted = round(division_result, 2)
+
+11. Display "Addition Result:", addition_result_formatted
+12. Display "Subtraction Result:", subtraction_result_formatted
+13. Display "Multiplication Result:", multiplication_result_formatted
+14. Display "Division Result:", division_result_formatted
 ```
 
-## Test Cases
-Test your program with various test cases, including edge cases:
+This pseudocode outlines the complete logic for solving the problem. It reads the input, performs the
 
-- Test with positive integers.
-- Test with negative integers.
-- Test with zero as one of the numbers.
-- Test with non-integer floating-point numbers.
+ arithmetic operations, handles division by zero gracefully, rounds the results, and formats the output correctly.
+
+## Test Cases
+
+Let's create some test cases to ensure our program works correctly. These test cases will cover various scenarios, including both positive and negative numbers, integer and floating-point numbers, and division by zero.
+
+**Test Case 1:**
+
+**Input:**
+
+```
+Number 1: 5
+Number 2: 3
+```
+
+**Expected Output:**
+
+```
+Addition Result: 8.00
+Subtraction Result: 2.00
+Multiplication Result: 15.00
+Division Result: 1.67
+```
+
+**Test Case 2:**
+
+**Input:**
+
+```
+Number 1: -7.5
+Number 2: 2
+```
+
+**Expected Output:**
+
+```
+Addition Result: -5.50
+Subtraction Result: -9.50
+Multiplication Result: -15.00
+Division Result: -3.75
+```
+
+**Test Case 3:**
+
+**Input:**
+
+```
+Number 1: 10
+Number 2: 0
+```
+
+**Expected Output:**
+
+```
+Addition Result: 10.00
+Subtraction Result: 10.00
+Multiplication Result: 0.00
+Division Result: Undefined
+```
+
+**Test Case 4:**
+
+**Input:**
+
+```
+Number 1: 0
+Number 2: 0.25
+```
+
+**Expected Output:**
+
+```
+Addition Result: 0.25
+Subtraction Result: -0.25
+Multiplication Result: 0.00
+Division Result: 0.00
+```
+
+**Test Case 5:**
+
+**Input:**
+
+```
+Number 1: 100
+Number 2: -20
+```
+
+**Expected Output:**
+
+```
+Addition Result: 80.00
+Subtraction Result: 120.00
+Multiplication Result: -2000.00
+Division Result: -5.00
+```
+
+## Troubleshooting
+
+Here are some common issues or errors you might encounter and how to handle them:
+
+1. **Input Validation**: Make sure to validate the input to ensure that it's numeric. Handle cases where the user enters non-numeric values gracefully.
+
+2. **Division by Zero**: Handle division by zero by checking if the second number is zero before performing division.
+
+3. **Rounding**: Ensure that you round the results to the correct number of decimal places. Use a round function or method provided by your programming language.
+
+4. **Labeling**: Check that the labels for the results (e.g., "Addition Result:") are correctly formatted and displayed.
+
+5. **Output Format**: Ensure that the output is in the specified format with the correct number of decimal places.
+
+6. **Edge Cases**: Test your program with extreme values, such as very large or very small numbers, to ensure it can handle them.
+
+Remember to follow the pseudocode and algorithm closely to avoid these issues.
 
 ## Final Remarks
-Now that you have a clear plan and pseudocode, try implementing the solution in your preferred programming language. Understanding the problem and having a structured approach is key to writing clean and efficient code.
 
-For further guidance and to check out more coding challenges, you can visit [SharifdotG's GitHub Profile](https://github.com/SharifdotG). Happy coding!
+Congratulations on understanding the problem, planning your approach, and writing pseudocode for this coding challenge! You've laid a solid foundation for implementing the solution in your preferred programming language.
+
+Before you proceed to write the actual code, take some time to think about how you can implement each step in your chosen programming language. Follow best coding practices, and if you encounter any issues, refer back to the troubleshooting section for guidance.
+
+Remember that the problem-solving process is not just about writing code but also about understanding the problem, designing a solution, and testing it thoroughly. Keep challenging yourself with coding problems, and you'll continue to improve your programming skills.
+
+Now, it's your turn to code and see your solution in action. Best of luck with your coding journey!
+
+**Follow my GitHub Profile [SharifdotG](https://github.com/SharifdotG) for more coding challenges, projects, and resources to enhance your programming skills. Happy coding!**
