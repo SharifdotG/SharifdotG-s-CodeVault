@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "*.tcc": "cpp"
     },
     "C_Cpp.default.compilerPath": "C:\\mingw64\\bin\\g++.exe"
 }
