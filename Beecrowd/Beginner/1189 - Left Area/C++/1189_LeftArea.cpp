@@ -11,7 +11,7 @@ int main() {
         for (int j = 0; j < 12; j ++) {
             cin >> matrix[i][j];
 
-            if (i < 5 && j >= i + 1 && j <= 10 - i) {
+            if (i > j && i + j < 11) {
                 sum += matrix[i][j];
             }
         }
