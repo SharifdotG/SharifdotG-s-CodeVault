@@ -1,12 +1,3 @@
-/**
- * @file PoundstoKilograms.java
- * @author SharifdotG
- * @brief Pounds to Kilograms in Java
- * @version 1.0
- * @date 2023-09-24
- * 
- */
-
 import java.util.Scanner;
 
 public class PoundstoKilograms {

@@ -1,14 +1,3 @@
-/**
- * @file SquareRoot.java
- * @author SharifdotG (sharifmdyousuf007@gmail.com)
- * @brief Square Root in Java
- * @version 1.0
- * @date 2023-09-24
- * 
- * Copyright (c) 2023
- * 
- */
-
 import java.util.Scanner;
 
 public class SquareRoot {

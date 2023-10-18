@@ -1,13 +1,3 @@
-/**
- * @file TriangleAngle.java
- * @author SharifdotG (sharifmdyousuf007@gmail.com)
- * @brief Triangle Angle in Java
- * @version 1.0
- * @date 2023-09-24
- * 
- * Copyright (c) 2023
- */
-
 import java.util.Scanner;
 
 public class TriangleAngle {

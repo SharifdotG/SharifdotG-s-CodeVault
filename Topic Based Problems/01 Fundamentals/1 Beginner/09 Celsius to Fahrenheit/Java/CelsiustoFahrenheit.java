@@ -1,11 +1,3 @@
-/**
- * @file CelsiustoFahrenheit.java
- * @author SharifdotG
- * @brief Celsius to Fahrenheit in Java
- * @version 1.0
- * @date 2023-09-24
- */
-
 import java.util.Scanner;
 
 public class CelsiustoFahrenheit {

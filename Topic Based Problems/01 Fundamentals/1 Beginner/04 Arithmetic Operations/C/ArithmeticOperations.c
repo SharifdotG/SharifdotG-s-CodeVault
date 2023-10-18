@@ -1,13 +1,3 @@
-/**
- * @file ArithmeticOperations.c
- * @author SharifdotG (sharifmdyousuf007@gmail.com)
- * @brief Arithmetic Operations in C
- * @version 1.0
- * @date 2023-09-24
- * 
- * Copyright (c) 2023
- */
-
 #include <stdio.h>
 
 int main() {

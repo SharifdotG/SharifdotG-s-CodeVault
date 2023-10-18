@@ -6,22 +6,30 @@ int main() {
     int height, width;
 
     while (cin >> height >> width) {
-        string line;
-        bool flag = false;
-        double sum = 0.0;
+        char ascii[height][width];
 
         for (int i = 0; i < height; i++) {
-            cin >> line;
-
             for (int j = 0; j < width; j++) {
-                if (line[j] == '/' || line[j] == '\\') {
-                    flag = !flag;
-                    sum += 0.5;
-                } else if (flag && line[j] == '.') sum += 1.0;
+                cin >> ascii[i][j];
             }
         }
 
-        cout << sum << endl;
+        int area = 0;
+
+        for (int i = 0; i < height; i++) {
+            bool flag = false;
+
+            for (int j = 0; j < width; j++) {
+                if (ascii[i][j] == 47 || ascii[i][j] == 92) {
+                    flag = !flag;
+                    area++;
+                }
+
+                if (flag && ascii[i][j] == '.') area += 2;
+            }
+        }
+
+        cout << area / 2 << endl;
     }
     
     return 0;

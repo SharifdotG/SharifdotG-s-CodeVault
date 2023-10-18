@@ -1,14 +1,3 @@
-/**
- * @file PowerCalculation.java
- * @brief Power Calculation in Java
- * @version 1.0
- * @date 2023-09-24
- * 
- * This program calculates the power of a base to an exponent in Java.
- * 
- * @author SharifdotG (sharifmdyousuf007@gmail.com)
- */
-
 import java.util.Scanner;
 
 public class PowerCalculation {

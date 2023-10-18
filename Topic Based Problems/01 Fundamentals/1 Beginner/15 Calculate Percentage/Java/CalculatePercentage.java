@@ -1,13 +1,3 @@
-/**
- * @file CalculatePercentage.java
- * @brief Calculate Percentage in Java
- * @version 1.0
- * @date 2023-09-24
- * 
- * @author SharifdotG (sharifmdyousuf007@gmail.com)
- * @see <a href="https://docs.oracle.com/javase/tutorial/getStarted/application/index.html">Getting Started with Applications</a>
- */
-
 import java.util.Scanner;
 
 public class CalculatePercentage {

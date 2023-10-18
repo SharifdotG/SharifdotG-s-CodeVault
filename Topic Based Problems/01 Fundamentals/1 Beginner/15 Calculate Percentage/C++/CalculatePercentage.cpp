@@ -1,14 +1,3 @@
-/**
- * @file CalculatePercentage.cpp
- * @author SharifdotG (sharifmdyousuf007@gmail.com)
- * @brief Calculate Percentage in C++
- * @version 1.0
- * @date 2023-09-24
- * 
- * @copyright Copyright (c) 2023
- * 
- */
-
 #include <iostream>
 #include <iomanip>
 

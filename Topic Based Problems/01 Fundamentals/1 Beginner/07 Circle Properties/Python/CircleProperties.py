@@ -1,12 +1,3 @@
-# CircleProperties.py
-"""
-@file CircleProperties.py
-@author SharifdotG (sharifmdyousuf007@gmail.com)
-@brief Circle Properties in Python
-@version 1.0
-@date 2023-09-24
-"""
-
 import math
 
 radius = float(input("Enter radius: "))

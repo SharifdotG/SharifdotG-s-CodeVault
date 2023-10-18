@@ -1,10 +1,3 @@
-# DaysConversion.py
-"""
-@brief Days Conversion in Python
-@version 1.0
-@date 2023-09-24
-"""
-
 days = int(input("Enter days: "))
 
 print("Years:", days // 365)

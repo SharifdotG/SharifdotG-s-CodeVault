@@ -3,36 +3,29 @@
 using namespace std;
 
 int main() {
-    int testCases, columns, northMostRow, southMostRow, difference;
+    int testCases;
+    bool flag;
     cin >> testCases;
-
     while (testCases--) {
-        cin >> columns;
-        cin >> northMostRow >> southMostRow;
+        int comlumns, northRow, southRow, difference;
+        cin >> comlumns;
 
-        difference = northMostRow - southMostRow;
+        flag = true;
 
-        columns--;
+        cin >> northRow >> southRow;
+        difference = northRow - southRow;
 
-        bool flag = true;
+        for (int i = 1; i < comlumns; i++) {
+            cin >> northRow >> southRow;
 
-        while (columns--) {
-            cin >> northMostRow >> southMostRow;
+            if (difference != northRow - southRow) flag = false;
 
-            if (difference != northMostRow - southMostRow) {
-                flag = false;
-            }
         }
 
-        if (flag) {
-            cout << "yes" << endl;
-        } else {
-            cout << "no" << endl;
-        }
+        if (flag) cout << "yes" << endl;
+        else cout << "no" << endl;
 
-        if (testCases) {
-            cout << endl;
-        }
+        if (testCases) cout << endl;
     }
     
     return 0;

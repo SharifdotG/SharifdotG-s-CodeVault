@@ -1,14 +1,3 @@
-/**
- * @file SwapTwoNumbersUsingTemp.cpp
- * @author SharifdotG (sharifmdyousuf007@gmail.com)
- * @brief Swap Two Numbers in C++ using third variable
- * @version 1.0
- * @date 2023-09-24
- * 
- * @copyright Copyright (c) 2023
- * 
- */
-
 #include <iostream>
 
 using namespace std;

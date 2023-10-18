@@ -1,11 +1,3 @@
-"""
-File: SwapTwoNumbersUsingSwapSyntax.py
-Author: SharifdotG (sharifmdyousuf007@gmail.com)
-Description: Swap Two Numbers in Python using Swap Syntax
-Version: 1.0
-Date: 2023-09-24
-"""
-
 first_number = int(input("Enter first number: "))
 second_number = int(input("Enter second number: "))
 

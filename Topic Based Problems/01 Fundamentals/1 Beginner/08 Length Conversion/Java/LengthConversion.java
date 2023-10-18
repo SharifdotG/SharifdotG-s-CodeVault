@@ -1,14 +1,3 @@
-/**
- * @file LengthConversion.java
- * @author SharifdotG (sharifmdyousuf007@gmail.com)
- * @brief Length Conversion in Java
- * @version 1.0
- * @date 2023-09-24
- * 
- * @copyright Copyright (c) 2023
- * 
- */
-
 import java.util.Scanner;
 
 public class LengthConversion {

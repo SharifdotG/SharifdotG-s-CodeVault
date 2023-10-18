@@ -1,13 +1,3 @@
-/**
- * @file AreaofaSquare.java
- * @brief Area of a Square in Java
- * @version 1.0
- * @date 2023-09-24
- * @author SharifdotG
- * @email sharifmdyousuf007@gmail.com
- * @license Copyright (c) 2023
- */
-
 import java.util.Scanner;
 
 public class AreaofaSquare {

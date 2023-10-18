@@ -1,14 +1,3 @@
-/**
- * @file SquareRoot.c
- * @author SharifdotG (sharifmdyousuf007@gmail.com)
- * @brief Square Root in C
- * @version 1.0
- * @date 2023-09-24
- * 
- * Copyright (c) 2023
- * 
- */
-
 #include <stdio.h>
 #include <math.h>
 

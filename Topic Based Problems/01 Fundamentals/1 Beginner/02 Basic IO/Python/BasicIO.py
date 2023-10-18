@@ -1,11 +1,3 @@
-"""
-File: BasicIO.py
-Author: SharifdotG (sharifmdyousuf007@gmail.com)
-Description: Basic Input Output in Python
-Version: 1.0
-Date: 2023-09-24
-"""
-
 print("Enter stringValue: ")
 stringValue = input()
 
