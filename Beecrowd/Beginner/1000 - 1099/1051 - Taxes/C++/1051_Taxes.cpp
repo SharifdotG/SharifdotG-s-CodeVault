@@ -24,7 +24,7 @@ int main() {
     }
 
     if (tax == 0) cout << "Isento" << endl;
-    else printf("R$ %.2lf\n", tax);
+    else cout << "R$ " << fixed << setprecision(2) << tax << endl;
     
     return 0;
 }

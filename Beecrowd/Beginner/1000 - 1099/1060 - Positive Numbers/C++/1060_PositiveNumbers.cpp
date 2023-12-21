@@ -8,6 +8,7 @@ int main() {
 
     for (int i = 0; i < 6; i++) {
         cin >> number;
+        
         if (number > 0) positiveNumbers++;
     }
 
