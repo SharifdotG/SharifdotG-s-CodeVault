@@ -7,6 +7,7 @@ int main() {
 
     while (cin >> s && s != "END") {
         int i = 1;
+        
         while (s != "1") {
             s = to_string(s.size());
             i++;

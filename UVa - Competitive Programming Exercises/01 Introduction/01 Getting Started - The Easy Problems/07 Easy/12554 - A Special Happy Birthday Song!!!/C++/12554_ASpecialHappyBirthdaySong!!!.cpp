@@ -5,34 +5,40 @@ using namespace std;
 int main() {
     int peoples;
     cin >> peoples;
+
+    string names[peoples];
+    for (int i = 0; i < peoples; i++) {
+        cin >> names[i];
+    }
+
+    string song[16] = {
+        "Happy", "birthday", "to", "you",
+        "Happy", "birthday", "to", "you",
+        "Happy", "birthday", "to", "Rujia",
+        "Happy", "birthday", "to", "you"
+    };
     
-    vector<string> names(peoples);
-    for (int i = 0; i < peoples; i++) cin >> names[i];
+    int songIndex = 0, nameIndex = 0, songCount = 0;
 
-    vector<string> song = {"Happy", "birthday", "to", "you", "Happy", "birthday", "to", "you", "Happy", "birthday", "to", "Rujia", "Happy", "birthday", "to", "you"};
-
-    int songIndex = 0;
-    int nameIndex = 0;
-
-    while (nameIndex < peoples) {
+    while (songCount < peoples) {
         cout << names[nameIndex] << ": " << song[songIndex] << endl;
 
         songIndex++, nameIndex++;
 
-        if (songIndex == song.size()) songIndex = 0;
+        if (songIndex == 16) songIndex = 0;
         if (nameIndex == peoples) nameIndex = 0;
+
+        songCount++;
     }
 
-    while (songIndex != 0) {
-        cout << names[nameIndex] << ": " << song[songIndex] << endl;
+    if (songIndex != 0) {
+        while (songIndex < 16) {
+            cout << names[nameIndex] << ": " << song[songIndex] << endl;
 
-        songIndex++;
+            songIndex++, nameIndex++;
 
-        if (songIndex == song.size()) songIndex = 0;
-
-        nameIndex++;
-
-        if (nameIndex == peoples) nameIndex = 0;
+            if (nameIndex == peoples) nameIndex = 0;
+        }
     }
     
     return 0;
