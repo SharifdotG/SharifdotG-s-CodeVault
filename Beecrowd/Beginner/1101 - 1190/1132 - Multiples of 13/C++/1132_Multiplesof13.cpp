@@ -9,7 +9,9 @@ int main() {
     if (value1 > value2) swap(value1, value2);
 
     for (int i = value1; i <= value2; i++) {
-        if (i % 13 != 0) sum += i;
+        if (i % 13 != 0) {
+            sum += i;
+        }
     }
 
     cout << sum << endl;

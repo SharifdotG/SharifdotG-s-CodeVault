@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    int number, total = 0, totalC = 0, totalR = 0, totalS = 0;
+    int number, total = 0, totalCoelho = 0, totalRato = 0, totalSapo = 0;
     cin >> number;
 
     while (number--) {
@@ -13,19 +13,19 @@ int main() {
 
         total += amount;
 
-        if (type == 'C') totalC += amount;
-        else if (type == 'R') totalR += amount;
-        else if (type == 'S') totalS += amount;
+        if (type == 'C') totalCoelho += amount;
+        else if (type == 'R') totalRato += amount;
+        else if (type == 'S') totalSapo += amount;
     }
 
     cout << "Total: " << total << " cobaias" << endl;
-    cout << "Total de coelhos: " << totalC << endl;
-    cout << "Total de ratos: " << totalR << endl;
-    cout << "Total de sapos: " << totalS << endl;
+    cout << "Total de coelhos: " << totalCoelho << endl;
+    cout << "Total de ratos: " << totalRato << endl;
+    cout << "Total de sapos: " << totalSapo << endl;
     cout << fixed << setprecision(2);
-    cout << "Percentual de coelhos: " << (double) totalC / total * 100 << " %" << endl;
-    cout << "Percentual de ratos: " << (double) totalR / total * 100 << " %" << endl;
-    cout << "Percentual de sapos: " << (double) totalS / total * 100 << " %" << endl;
+    cout << "Percentual de coelhos: " << (double) totalCoelho / total * 100 << " %" << endl;
+    cout << "Percentual de ratos: " << (double) totalRato / total * 100 << " %" << endl;
+    cout << "Percentual de sapos: " << (double) totalSapo / total * 100 << " %" << endl;
     
     return 0;
 }

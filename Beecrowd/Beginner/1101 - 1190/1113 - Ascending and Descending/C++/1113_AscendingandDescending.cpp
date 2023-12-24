@@ -10,8 +10,9 @@ int main() {
 
         if (value1 == value2) break;
 
-        if (value1 > value2) cout << "Decrescente" << endl;
-        else cout << "Crescente" << endl;
+        if (value1 > value2) {
+            cout << "Decrescente" << endl;
+        } else cout << "Crescente" << endl;
     }
     
     return 0;
