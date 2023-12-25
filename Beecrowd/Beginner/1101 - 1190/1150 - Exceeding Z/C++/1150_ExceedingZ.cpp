@@ -3,10 +3,14 @@
 using namespace std;
 
 int main() {
-    int x, z, sum = 0, count = 0;
+    int x, z;
     cin >> x >> z;
 
-    while (z <= x) cin >> z;
+    while (z <= x) {
+        cin >> z;
+    }
+
+    int sum = 0, count = 0;
 
     for (int i = x; sum <= z; i++) {
         sum += i;
