@@ -15,6 +15,7 @@ int main() {
             }
         } else {
             number++;
+            
             for (int i = 0; i < 5; i++) {
                 sum += number;
                 number += 2;

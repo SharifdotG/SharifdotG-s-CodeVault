@@ -13,6 +13,7 @@ int main() {
 
     for (int i = 1; i < numberOfPeople; i++) {
         cin >> theonAnswer;
+        
         if (theonAnswer < minimum) {
             minimum = theonAnswer;
             theonAnswerPosition = i;

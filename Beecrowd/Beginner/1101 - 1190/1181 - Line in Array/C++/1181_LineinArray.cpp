@@ -12,12 +12,14 @@ int main() {
         for (int j = 0; j < 12; j ++) {
             cin >> number;
             
-            if (i == line) sum += number;
+            if (i == line) {
+                sum += number;
+            }
         }
     }
 
-    if (operation == 'S') printf("%.1lf\n", sum);
-    else printf("%.1lf\n", sum / 12.0);
+    if (operation == 'S') cout << fixed << setprecision(1) << sum << endl;
+    else cout << fixed << setprecision(1) << sum / 12.0 << endl;
     
     return 0;
 }

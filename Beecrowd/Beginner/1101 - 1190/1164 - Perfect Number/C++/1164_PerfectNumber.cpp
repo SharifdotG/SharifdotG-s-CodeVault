@@ -11,11 +11,14 @@ int main() {
         cin >> number;
 
         for (int j = 1; j < number; j++) {
-            if (number % j == 0) sum += j;
+            if (number % j == 0) {
+                sum += j;
+            }
         }
         
-        if (sum == number) cout << number << " eh perfeito" << endl;
-        else cout << number << " nao eh perfeito" << endl;
+        if (sum == number) {
+            cout << number << " eh perfeito" << endl;
+        } else cout << number << " nao eh perfeito" << endl;
     }
     
     return 0;

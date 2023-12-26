@@ -8,6 +8,7 @@ int main() {
 
     for (int i = 0; i < 100; i++) {
         cout << "N[" << i << "] = " << fixed << setprecision(4) << number << endl;
+        
         number /= 2;
     }
     

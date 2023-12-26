@@ -23,7 +23,9 @@ int main() {
             }
         }
 
-        if (years <= 100) cout << years << " anos." << endl;
+        if (years <= 100) {
+            cout << years << " anos." << endl;
+        }
     }
     
     return 0;

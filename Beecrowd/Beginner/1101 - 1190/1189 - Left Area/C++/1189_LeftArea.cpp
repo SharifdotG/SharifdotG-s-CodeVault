@@ -17,8 +17,8 @@ int main() {
         }
     }
 
-    if (operation == 'S') printf("%.1lf\n", sum);
-    else printf("%.1lf\n", sum / 30.0);
+    if (operation == 'S') cout << fixed << setprecision(1) << sum << endl;
+    else cout << fixed << setprecision(1) << sum / 30 << endl;
 
     return 0;
 }

@@ -18,6 +18,7 @@ int main() {
         else if (caw == "***") cawValue += 7;
         else if (caw == "caw caw") {
             cout << cawValue << endl;
+            
             cawValue = 0;
             cawCounter++;
         }

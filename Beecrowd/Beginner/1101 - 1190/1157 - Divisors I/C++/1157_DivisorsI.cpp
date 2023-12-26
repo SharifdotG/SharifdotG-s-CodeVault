@@ -7,7 +7,9 @@ int main() {
     cin >> number;
 
     for (int i = 1; i <= number; i++) {
-        if (number % i == 0) cout << i << endl;
+        if (number % i == 0) {
+            cout << i << endl;
+        }
     }
     
     return 0;

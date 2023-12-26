@@ -11,12 +11,14 @@ int main() {
         for (int j = 0; j < 12; j ++) {
             cin >> matrix[i][j];
             
-            if (j > 11 - i) sum += matrix[i][j];
+            if (j > 11 - i) {
+                sum += matrix[i][j];
+            }
         }
     }
 
-    if (operation == 'S') printf("%.1lf\n", sum);
-    else printf("%.1lf\n", sum / 66.0);
+    if (operation == 'S') cout << fixed << setprecision(1) << sum << endl;
+    else cout << fixed << setprecision(1) << sum / 66.0 << endl;
     
     return 0;
 }
