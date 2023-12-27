@@ -6,8 +6,8 @@ int main() {
     int students;
     cin >> students;
 
-    vector<int> student(students);
-    vector<double> grade(students);
+    int student[students];
+    double grade[students];
 
     for (int i = 0; i < students; i++) {
         cin >> student[i] >> grade[i];

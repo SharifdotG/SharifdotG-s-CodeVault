@@ -10,8 +10,9 @@ int main() {
         string action;
         cin >> action;
 
-        if (action == "fechou") tabs++;
-        else tabs--;
+        if (action == "fechou") {
+            tabs++;
+        } else tabs--;
     }
 
     cout << tabs << endl;

@@ -11,16 +11,19 @@ int main() {
 
         cin >> hour >> minute >> event;
 
-        if (hour < 10) cout << "0" << hour;
-        else cout << hour;
+        if (hour < 10) {
+            cout << "0" << hour;
+        } else cout << hour;
 
         cout << ":";
 
-        if (minute < 10) cout << "0" << minute;
-        else cout << minute;
+        if (minute < 10) {
+            cout << "0" << minute;
+        } else cout << minute;
 
-        if (event == 1) cout << " - A porta abriu!" << endl;
-        else cout << " - A porta fechou!" << endl;
+        if (event == 1) {
+            cout << " - A porta abriu!" << endl;
+        } else cout << " - A porta fechou!" << endl;
     }
 
     return 0;

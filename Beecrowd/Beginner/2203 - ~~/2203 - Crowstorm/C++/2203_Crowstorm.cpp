@@ -9,8 +9,9 @@ int main() {
         double distance = sqrt(pow(invaderX - fiddlesticksX, 2) + pow(invaderY - fiddlesticksY, 2)) + invaderSpeed * 1.5;
         double range = castingRadius + crowRadius;
 
-        if (distance <= range) cout << "Y" << endl;
-        else cout << "N" << endl;
+        if (distance <= range) {
+            cout << "Y" << endl;
+        } else cout << "N" << endl;
     }
 
     return 0;

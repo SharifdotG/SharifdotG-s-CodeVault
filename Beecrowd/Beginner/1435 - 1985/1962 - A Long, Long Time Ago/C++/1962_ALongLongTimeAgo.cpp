@@ -10,8 +10,9 @@ int main() {
         int yearsPassed;
         cin >> yearsPassed;
 
-        if (yearsPassed < 2015) cout << 2015 - yearsPassed << " D.C." << endl;
-        else cout << yearsPassed - 2014 << " A.C." << endl;
+        if (yearsPassed < 2015) {
+            cout << 2015 - yearsPassed << " D.C." << endl;
+        } else cout << yearsPassed - 2014 << " A.C." << endl;
     }
 
     return 0;

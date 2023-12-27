@@ -6,10 +6,13 @@ int main() {
     int month, day;
 
     while (cin >> month >> day) {
-        if (month == 12 && day == 25) cout << "E natal!" << endl;
-        else if (month == 12 && day == 24) cout << "E vespera de natal!" << endl;
-        else if (month == 12 && day > 25) cout << "Ja passou!" << endl;
-        else {
+        if (month == 12 && day == 25) {
+            cout << "E natal!" << endl;
+        } else if (month == 12 && day == 24) {
+            cout << "E vespera de natal!" << endl;
+        } else if (month == 12 && day > 25) {
+            cout << "Ja passou!" << endl;
+        } else {
             int days = 0;
 
             if (month == 1) days = 360 - day;

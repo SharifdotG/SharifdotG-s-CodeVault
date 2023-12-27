@@ -15,6 +15,7 @@ int main() {
     for (int i = 0; i < speed - 1; i++) {
         if (rpm[i] > rpm[i + 1]) {
             cout << i + 2 << endl;
+            
             return 0;
         }
     }

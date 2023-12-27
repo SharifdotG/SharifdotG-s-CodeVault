@@ -92,5 +92,6 @@
         "valarray": "cpp",
         "variant": "cpp"
     },
-    "C_Cpp.default.compilerPath": "C:\\mingw64\\bin\\g++.exe"
+    "C_Cpp.default.compilerPath": "C:\\mingw64\\bin\\g++.exe",
+    "java.debug.settings.onBuildFailureProceed": true
 }

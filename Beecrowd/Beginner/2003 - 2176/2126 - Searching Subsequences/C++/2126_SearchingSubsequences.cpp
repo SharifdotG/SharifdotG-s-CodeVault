@@ -11,23 +11,23 @@ int main() {
             pos = sequence.find(subsequence, pos);
 
             if (pos != -1) {
-                count++;
-                pos++;
+                count++, pos++;
             }
         }
 
         cout << "Caso #" << i << ":" << endl;
 
-        if (count == 0) cout << "Nao existe subsequencia" << endl;
-        else {
+        if (count == 0) {
+            cout << "Nao existe subsequencia" << endl;
+        } else {
             cout << "Qtd.Subsequencias: " << count << endl;
             cout << "Pos: " << sequence.rfind(subsequence) + 1 << endl;
         }
         
         cout << endl;
 
-        count = 0;
-        pos = 0;
+        count = 0, pos = 0;
+
         i++;
     }
 

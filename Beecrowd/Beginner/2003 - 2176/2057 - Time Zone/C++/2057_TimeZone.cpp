@@ -9,7 +9,9 @@ int main() {
     int result = timeOfDeparture + travelTime + timeZone;
 
     if (result < 0) result += 24;
-    else if (result >= 24) result -= 24;
+    else if (result >= 24) {
+        result -= 24;
+    }
 
     cout << result << endl;
 

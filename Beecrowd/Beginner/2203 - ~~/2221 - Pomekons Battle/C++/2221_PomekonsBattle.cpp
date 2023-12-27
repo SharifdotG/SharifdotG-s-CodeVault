@@ -17,10 +17,14 @@ int main() {
         cin >> attackGuarte >> defenseGuarte >> levelGuarte;
 
         double dabriel = (attackDabriel + defenseDabriel) / 2.0;
-        if (levelDabriel % 2 == 0) dabriel += bonus;
+        if (levelDabriel % 2 == 0) {
+            dabriel += bonus;
+        }
 
         double guarte = (attackGuarte + defenseGuarte) / 2.0;
-        if (levelGuarte % 2 == 0) guarte += bonus;
+        if (levelGuarte % 2 == 0) {
+            guarte += bonus;
+        }
 
         if (dabriel > guarte) cout << "Dabriel" << endl;
         else if (guarte > dabriel) cout << "Guarte" << endl;

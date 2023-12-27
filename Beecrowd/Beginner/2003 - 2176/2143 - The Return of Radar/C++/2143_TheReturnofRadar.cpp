@@ -12,8 +12,9 @@ int main() {
             int people;
             cin >> people;
 
-            if (people % 2 == 0) cout << (people - 2) * 2 + 2 << endl;
-            else cout << (people - 1) * 2 + 1 << endl;
+            if (people % 2 == 0) {
+                cout << (people - 2) * 2 + 2 << endl;
+            } else cout << (people - 1) * 2 + 1 << endl;
         }
     }
 

@@ -9,11 +9,14 @@ int main() {
     int count = 0;
 
     for (int i = 0; i < binary.length(); i++) {
-        if (binary[i] == '1') count++;
+        if (binary[i] == '1') {
+            count++;
+        }
     }
 
-    if (count % 2 == 0) cout << binary << "0" << endl;
-    else cout << binary << "1" << endl;
+    if (count % 2 == 0) {
+        cout << binary << "0" << endl;
+    } else cout << binary << "1" << endl;
 
     return 0;
 }

@@ -10,8 +10,9 @@ int main() {
 
         for (int j = 1; j <= lastValue; j++) sum += j;
 
-        if (lastValue == 0) cout << "Caso " << i << ": " << sum << " numero" << endl;
-        else cout << "Caso " << i << ": " << sum << " numeros" << endl;
+        if (lastValue == 0) {
+            cout << "Caso " << i << ": " << sum << " numero" << endl;
+        } else cout << "Caso " << i << ": " << sum << " numeros" << endl;
 
         cout << 0;
 

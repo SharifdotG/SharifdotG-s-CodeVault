@@ -16,8 +16,9 @@ int main() {
 
     for (int i = 0; i < cameras; i++) {
         for (int j = 0; j < cameras; j++) {
-            if (grid[i][j] + grid[i][j + 1] + grid[i + 1][j] + grid[i + 1][j + 1] >= 2) cout << "S";
-            else cout << "U";
+            if (grid[i][j] + grid[i][j + 1] + grid[i + 1][j] + grid[i + 1][j + 1] >= 2) {
+                cout << "S";
+            } else cout << "U";
         }
 
         cout << endl;
