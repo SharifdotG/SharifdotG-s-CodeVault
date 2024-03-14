@@ -2,47 +2,57 @@
 
 using namespace std;
 
-void sieve(long long start, long long end) {
-    long long limit = sqrt(end) + 1;
-    long long prime[limit + 1];
-    memset(prime, 0, sizeof(prime));
+vector<long long> primes;
+vector<bool> isPrime;
 
-    for (long long i = 2; i <= limit; i++) {
-        if (!prime[i]) {
-            for (long long j = i * i; j <= limit; j += i) {
-                prime[j] = 1;
+void sieve(long long n) {
+    isPrime.assign(n + 1, true);
+    isPrime[0] = isPrime[1] = false;
+
+    for (long long i = 2; i <= n; i++) {
+        if (isPrime[i]) {
+            primes.push_back(i);
+
+            for (long long j = i * i; j <= n; j += i) {
+                isPrime[j] = false;
             }
         }
     }
+}
 
-    long long range = end - start + 1;
-    long long arr[range + 1];
-    memset(arr, 0, sizeof(arr));
+vector<long long> segmentedSieve(long long start, long long end) {
+    vector<long long> result;
 
-    for (long long i = 2; i <= limit; i++) {
-        if (!prime[i]) {
-            long long j = start / i;
-            j *= i;
+    if (start == 1) {
+        start++;
+    }
 
-            if (j < start) {
-                j += i;
-            }
+    vector<bool> isPrime(end - start + 1, true);
 
-            for (; j <= end; j += i) {
-                if (j != i) {
-                    arr[j - start] = 1;
-                }
-            }
+    for (long long i = 0; primes[i] * primes[i] <= end; i++) {
+        long long currentPrime = primes[i];
+        long long base = (start / currentPrime) * currentPrime;
+
+        if (base < start) {
+            base += currentPrime;
+        }
+
+        for (long long j = base; j <= end; j += currentPrime) {
+            isPrime[j - start] = false;
+        }
+
+        if (base == currentPrime) {
+            isPrime[base - start] = true;
         }
     }
 
-    for (long long i = start; i <= end; i++) {
-        if (!arr[i - start] && i != 1) {
-            cout << i << " ";
+    for (long long i = 0; i <= end - start; i++) {
+        if (isPrime[i]) {
+            result.push_back(i + start);
         }
     }
 
-    cout << endl;
+    return result;
 }
 
 int main() {
@@ -52,8 +62,15 @@ int main() {
     while (testCases--) {
         long long start, end;
         cin >> start >> end;
+        
+        sieve(sqrt(end) + 1);
+        vector<long long> result = segmentedSieve(start, end);
 
-        sieve(start, end);
+        for (long long i = 0; i < result.size(); i++) {
+            cout << result[i] << " ";
+        }
+
+        cout << endl;
     }
     
     return 0;
