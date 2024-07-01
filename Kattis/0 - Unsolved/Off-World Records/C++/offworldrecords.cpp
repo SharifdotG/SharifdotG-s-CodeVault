@@ -3,19 +3,30 @@
 using namespace std;
 
 int main() {
-    long long highJumps, currentRecord, previousRecord, records = 0;
+    int highJumps, currentRecord, previousRecord;
     cin >> highJumps >> currentRecord >> previousRecord;
 
-    while (highJumps--) {
-        long long height;
-        cin >> height;
+    int heights[highJumps];
+    for (int i = 0; i < highJumps; i++) {
+        cin >> heights[i];
+    }
 
-        if (height > currentRecord + previousRecord) {
-            records++;
+    int newRecords = 0;
+    for (int i = 0; i < highJumps; i++) {
+        if (heights[i] > currentRecord + previousRecord) {
+            newRecords++;
+
+            previousRecord = currentRecord;
+            currentRecord = heights[i];
+        } else if (heights[i] > currentRecord) {
+            previousRecord = currentRecord;
+            currentRecord = heights[i];
+        } else if (heights[i] > previousRecord) {
+            previousRecord = heights[i];
         }
     }
 
-    cout << records << endl;
+    cout << newRecords << endl;
 
     return 0;
 }
