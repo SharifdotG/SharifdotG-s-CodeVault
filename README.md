@@ -36,7 +36,7 @@
 
 - **Version 0.2.0**:
   - Added 17 new Online Judges!
-  - Updated the `README.md` file with the new information
+  - Finally updated the `README.md` file with the the new description of the repository and the table of contents.
   - Total Problems Solved: 1000+
 - **Version 0.1.0**:
   - Initial release with 7 Online Judges
