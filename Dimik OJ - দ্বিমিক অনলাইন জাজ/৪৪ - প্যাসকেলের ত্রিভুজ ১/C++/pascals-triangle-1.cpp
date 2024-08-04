@@ -2,6 +2,14 @@
 
 using namespace std;
 
+int binomialCoefficient(int n, int k) {
+    if (k == 0 || k == n) {
+        return 1;
+    }
+
+    return binomialCoefficient(n - 1, k - 1) + binomialCoefficient(n - 1, k);
+}
+
 int main() {
     int testCases;
     cin >> testCases;
@@ -9,22 +17,20 @@ int main() {
     while (testCases--) {
         int n;
         cin >> n;
-
-        if (n == 0) {
-            cout << "1" << endl;
-            continue;
-        }
-
-        if (n == 1) {
-            cout << "2 + 1" << endl;
-            continue;
-        }
         
-        for (int i = n; i >= 2; i--) {
-            cout << "2^" << i << " + ";
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= i; j++) {
+                if (binomialCoefficient(i, j ) == 1 && i == j) {
+                    cout << "1";
+                } else {
+                    cout << binomialCoefficient(i, j) << " ";
+                }
+            }
+            
+            cout << endl;
         }
 
-        cout << "2 + 1" << endl;
+        cout << endl;
     }
 
     return 0;

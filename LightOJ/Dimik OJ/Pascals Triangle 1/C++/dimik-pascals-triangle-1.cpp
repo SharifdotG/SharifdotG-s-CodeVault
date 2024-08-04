@@ -2,6 +2,14 @@
 
 using namespace std;
 
+int binomialCoefficient(int n, int k) {
+    if (k == 0 || k == n) {
+        return 1;
+    }
+
+    return binomialCoefficient(n - 1, k - 1) + binomialCoefficient(n - 1, k);
+}
+
 int main() {
     int testCases;
     cin >> testCases;
@@ -10,14 +18,15 @@ int main() {
         int n;
         cin >> n;
         
-        // Left Traingle style of Pascal's Triangle
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <= n; i++) {
             for (int j = 0; j <= i; j++) {
-                cout << i + 1 << " ";
+                cout << binomialCoefficient(i, j) << " ";
             }
             
             cout << endl;
         }
+
+        cout << endl;
     }
 
     return 0;
