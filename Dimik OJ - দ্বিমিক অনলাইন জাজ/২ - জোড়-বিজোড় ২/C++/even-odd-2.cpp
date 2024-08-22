@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    long long testCases;
+    int testCases;
     cin >> testCases;
 
     while (testCases--) {

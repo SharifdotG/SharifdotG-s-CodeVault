@@ -1,9 +1,9 @@
 testCases = int(input())
 
 for _ in range(testCases):
-    number = int(input())
+    number = input()
 
-    if number % 2 == 0:
+    if int(number[-1]) % 2 == 0:
         print("even")
     else:
         print("odd")
