@@ -111,8 +111,8 @@ SharifdotG's CodeVault is designed with one mission: **To make problem-solving f
 
 Feel free to reach out, ask questions, or suggest new ideas:
 
-- [GitHub: SharifdotG](https://github.com/SharifdotG) 🌟
-- [LinkedIn: Sharif Yousuf](https://www.linkedin.com/in/sharifdotg/) 💼
-- [Twitter: @SharifdotG](https://twitter.com/SharifdotG) 🐦
+- **GitHub:** [**SharifdotG**](https://github.com/SharifdotG) 🌟
+- **LinkedIn:** [**Sharif Yousuf**](https://www.linkedin.com/in/sharifdotg/) 💼
+- **Twitter:** [**@SharifdotG**](https://twitter.com/SharifdotG) 🐦
 
 ### **Happy coding! 🚀**
