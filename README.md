@@ -1,6 +1,6 @@
 # **SharifdotG's CodeVault - Version 0.3.0** 🚀
 
-Welcome to **SharifdotG's CodeVault**, your **one-stop solution** for solving coding problems! 🧑‍💻 Whether you're a beginner or an experienced programmer, this repository offers **1250+ coding solutions** across **25+ Online Judges**, covering a range of topics from data structures to algorithms. 🌐
+Welcome to **SharifdotG's CodeVault**, your **one-stop solution** for solving coding problems! 🧑‍💻 Whether you're a beginner or an experienced programmer, this repository offers **1300+ coding solutions** across **25+ Online Judges**, covering a range of topics from data structures to algorithms. 🌐
 
 ---
 
@@ -8,7 +8,7 @@ Welcome to **SharifdotG's CodeVault**, your **one-stop solution** for solving co
 
 SharifdotG's CodeVault is designed to help developers practice, learn, and master problem-solving skills. The solutions provided are optimized for performance and clarity, and are available in **multiple programming languages** such as **C**, **C++**, **Java**, **Python**, **Rust**, and more.
 
-- **Over 1250 problems** solved 🧩
+- **Over 1300 problems** solved 🧩
 - **25+ Online Judges** supported 🌍
 - Solutions in **C, C++, Java, Python, Rust**, and more 💻
 
@@ -73,7 +73,7 @@ Here’s a overview of the Online Judges currently supported by **SharifdotG's C
 
 ### **Version 0.3.0 (December 2024)**
 
-- 🎯 **Total Problems Solved:** **1250+** 🎉
+- 🎯 **Total Problems Solved:** **1300+** 🎉
 
 ### *Version 0.2.0 (July 2024)*
 
