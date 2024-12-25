@@ -1,0 +1,57 @@
+Solve the problem in C++:
+
+Problem Statement:
+You will be given an R×C grid of asterisks (*) and dots (.). The grid is the top-left view of an infinitely repeating pattern of diamonds. And, it is guaranteed that at least one asterisk will be present on the grid given to you.
+The size of a diamond is defined by an integer D.
+When D=1,
+*
+When D=2,
+.*.
+***
+.*.
+When D=3,
+..*..
+.***.
+*****
+.***.
+..*..
+When D=4,
+...*...
+..***..
+.*****.
+*******
+.*****.
+..***..
+...*...
+And, so on.
+Given such a grid you have the determine the D for the diamond.
+
+Input Format:
+The input will start with two integers R and C (1≤R,C≤10).
+
+The following 
+R
+R lines will contain 
+C
+C characters each (either asterisks or dots), representing the grid.
+
+Output Format:
+Print the size of the diamond in the pattern in the grid as defined in the problem statement.
+
+Example:
+Input:
+10 10
+..*....*..
+.***..***.
+**********
+.***..***.
+..*....*..
+..*....*..
+.***..***.
+**********
+.***..***.
+..*....*..
+Output:
+3
+
+Time Limit per test: 1 second, Memory Limit per test: 512 MB
