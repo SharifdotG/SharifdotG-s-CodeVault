@@ -89,7 +89,7 @@ Each programming language offers unique advantages for different types of proble
 
 ### **For Beginners**
 
-1. Start with [Topic Based Problems](Topic%20Based%20Problems/) → [01 Fundamentals](Topic%20Based%20Problems/01%20Fundamentals/1%20Beginner/)
+1. Start with beginner problems in any judge folder (e.g., Beecrowd, Codeforces, AtCoder)
 2. Begin with **Hello World** and progress through **Basic I/O**, **Arithmetic Operations**
 3. Choose your preferred programming language (C++ recommended for competitive programming)
 4. Read the detailed README guides for each problem
@@ -104,7 +104,7 @@ Each programming language offers unique advantages for different types of proble
 
 1. Focus on [LeetCode](LeetCode/) style problems
 2. Study [HackerRank](HackerRank/) coding challenges
-3. Practice data structure implementations in [Topic Based Problems](Topic%20Based%20Problems/)
+3. Practice data structure implementations in Beecrowd, Codeforces, or CSES
 
 ---
 
@@ -135,7 +135,7 @@ Here’s a overview of the Online Judges currently supported by **SharifdotG's C
 | 19 | [Timus Online Judge](https://acm.timus.ru/) | ![Timus Online Judge](https://img.shields.io/badge/Timus%20Online%20Judge-3466F6?style=for-the-badge&logo=timus%20online%20judge&logoColor=white) | 🇷🇺 Russia | [Solutions](/Timus/) | ![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | 17 |
 | 20 | [TopCoder](https://arena.topcoder.com/#/u/dashboard) | ![TopCoder](https://img.shields.io/badge/TopCoder-9FE210?style=for-the-badge&logo=topcoder&logoColor=white) | 🇺🇸 USA | [Solutions](TopCoder) | ![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | 0 |
 | 21 | [Toph](https://toph.co/) | ![Toph](https://img.shields.io/badge/Toph-FFFFFF?style=for-the-badge&logo=toph&logoColor=white) | 🇧🇩 Bangladesh | [Solutions](Toph) | ![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | 76 |
-| 22 | [Topic Based Problems](https://docs.google.com/document/d/17YamB4P5xWlnLGKSzF9l5AhkaTaYb4vCJhbh_S_FrFA/edit?usp=sharing) | ![Topic Based Problems](https://img.shields.io/badge/Topic%20Based%20Problems-000000?style=for-the-badge&logoColor=white) | 🇧🇩 Bangladesh | [Solutions](/Topic%20Based%20Problems/) | ![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) ![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white) | 22 |
+
 | 23 | [USACO](http://www.usaco.org/) | ![USACO](https://img.shields.io/badge/USACO-0100A1?style=for-the-badge&logo=usaco&logoColor=white) | 🇺🇸 USA | [Solutions](USACO) | ![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | 0 |
 | 24 | [UVa](https://onlinejudge.org/) | ![UVa](https://img.shields.io/badge/UVa-FF0069?style=for-the-badge&logo=uva&logoColor=white) | 🇺🇸 USA | [Solutions](UVa) | ![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | 57 |
 | 25 | [Yosupo - Library Checker](https://judge.yosupo.jp/) | ![Yosupo - Library Checker](https://img.shields.io/badge/Yosupo%20-%20Library%20Checker-4066FF?style=for-the-badge&logoColor=white) | 🇯🇵 Japan | [Solutions](/Yosupo%20-%20Library%20Checker/) | ![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | 3 |
@@ -193,7 +193,7 @@ Here’s a overview of the Online Judges currently supported by **SharifdotG's C
 ### **Most Active Categories**
 
 1. **Algorithmic Challenges**: Codeforces, AtCoder, CodeChef
-2. **Educational Content**: Topic Based Problems, Beecrowd
+2. **Educational Content**: Beecrowd
 3. **Interview Preparation**: HackerRank, LeetCode
 4. **Mathematical Programming**: Project Euler, mathematical contests
 5. **Contest Archives**: UVa, Kattis, SPOJ
@@ -340,7 +340,7 @@ Join our vibrant community of problem solvers and algorithmic thinkers! Whether 
 
 **🎯 Ready to begin?** Choose your path:
 
-**[📝 Start with Fundamentals](Topic%20Based%20Problems/01%20Fundamentals/1%20Beginner/)** | **[🏆 Challenge Yourself](Codeforces/)** | **[� Explore All Judges](#-complete-judge-directory)**
+**Start with Fundamentals in any judge folder (e.g., Beecrowd, Codeforces, AtCoder)** | **[🏆 Challenge Yourself](Codeforces/)** | **[� Explore All Judges](#-complete-judge-directory)**
 
 **⭐ Don't forget to star this repository if you find it helpful!**
 
