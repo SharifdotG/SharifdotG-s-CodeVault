@@ -305,9 +305,9 @@ Join our vibrant community of problem solvers and algorithmic thinkers! Whether 
 
 [![GitHub](https://img.shields.io/badge/GitHub-SharifdotG-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SharifdotG)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sharif%20Yousuf-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sharifdotg/)
-[![Twitter](https://img.shields.io/badge/Twitter-@SharifdotG-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/SharifdotG)
+[![Twitter](https://img.shields.io/badge/Twitter-@SharifdotG-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/SharifdotG)
 
-**📧 Email**: [sharif@codevault.dev](mailto:sharif@codevault.dev) | **� Discussions**: [GitHub Discussions](https://github.com/SharifdotG/CodeVault/discussions)
+**📧 Email**: [sharifmdyousuf007@gmail.com](mailto:sharifmdyousuf007@gmail.com) | **� Discussions**: [GitHub Discussions](https://github.com/SharifdotG-s-CodeVault/discussions)
 
 </div>
 
