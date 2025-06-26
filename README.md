@@ -350,6 +350,6 @@ Join our vibrant community of problem solvers and algorithmic thinkers! Whether 
 
 ---
 
-**© 2025 SharifdotG's CodeVault | Version 0.3.0 | Made with ❤️ for the global programming community**
+**© 2025 SharifdotG's CodeVault | Version 0.4.0 | Made with ❤️ for the global programming community**
 
 </div>
