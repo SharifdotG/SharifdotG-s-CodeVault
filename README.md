@@ -142,42 +142,42 @@ Here’s a overview of the Online Judges currently supported by **SharifdotG's C
 
 ## **🔥 Recent Updates & Milestones**
 
-### **Version 0.3.0 (December 2024) - Major Milestone** 🎯
+### **Version 0.4.0 (June 2025) - Major Cleanup & Modernization** 🚀
 
-- **� 1300+ Problems Achieved**: Reached a major milestone with over 1300 solved problems
-- **📈 Repository Growth**: Now contains **3,842 source files** across **7 programming languages**
-- **🌍 Global Expansion**: Solutions from **25+ online judges** spanning **4 continents**
-- **📚 Enhanced Documentation**: **134 comprehensive README files** with detailed explanations
-- **🔧 Code Quality**: Improved code organization and added complexity analysis for educational value
+- **🧹 Major Cleanup**: Removed language-specific folders, redundant README files, and unnecessary source files for a cleaner, flatter structure
+- **�️ Simplified Organization**: All source files are now directly under their problem folders—no more language subfolders
+- **🗑️ Removed Redundancy**: Deleted all almost-empty template files, main.c, main.py, and language folders (C, C++, Java, Python, Rust, JavaScript, C#, etc.)
+- **� Fewer Folders**: Reduced folder count for easier navigation and maintenance
+- **📉 Leaner Codebase**: Only meaningful source files remain—no more boilerplate or placeholder code
+- **📈 Repository Growth**: Still over **1300+ problems** and **25+ online judges**
+- **🔧 Code Quality**: Maintained high standards for code clarity and documentation
 
 ### **📊 Current Statistics (June 2025)**
 
-- **Total Source Files**: 3,842
-- **Programming Languages**: 7 (C++, Python, C, Java, Rust, JavaScript, C#)
+- **Total Source Files**: Significantly reduced (lean and meaningful only)
+- **Programming Languages**: C++, Python, C, Java (others removed for clarity)
 - **Online Judges**: 25+ platforms
-- **Documentation Files**: 134 detailed README guides
-- **Repository Directories**: 7,849 organized folders
+- **Documentation Files**: Only the main README remains for simplicity
+- **Repository Directories**: Streamlined and minimal
+
+### *Version 0.3.0 (December 2024) - Previous Milestone*
+
+- **1300+ Problems Achieved**
+- **3,842 source files** across **7 programming languages**
+- **134 comprehensive README files**
 
 ### *Version 0.2.0 (July 2024) - Expansion Phase*
 
-- 🚀 **Added 17 new Online Judges** to enhance problem-solving experience
-- 🛠️ **Improved README structure** for cleaner and more informative presentation
-- 🎯 **Reached 1000+ Problems** milestone
-- 📖 **Enhanced documentation** with detailed explanations and complexity analysis
+- **Added 17 new Online Judges**
+- **Improved README structure**
+- **Reached 1000+ Problems** milestone
+- **Enhanced documentation**
 
 ### *Version 0.1.0 (June 2023) - Foundation*
 
-- ✨ **Initial release** with **7 Online Judges**
-- 📊 **250+ Problems** as starting foundation
-- 🏗️ **Repository structure** and organization established
-
-### **🎯 Upcoming Goals (Version 0.4.0)**
-
-- **🎯 Target**: 1500+ problems by end of 2025
-- **🌟 New Features**: Interactive problem difficulty tracker
-- **📱 Mobile Optimization**: Better mobile viewing experience
-- **🔍 Search Functionality**: Advanced filtering and search capabilities
-- **📈 Analytics Dashboard**: Visual progress tracking for learners
+- **Initial release** with **7 Online Judges**
+- **250+ Problems** as starting foundation
+- **Repository structure** and organization established
 
 ---
 
