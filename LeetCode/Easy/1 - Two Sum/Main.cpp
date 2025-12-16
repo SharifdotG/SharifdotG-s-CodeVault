@@ -5,23 +5,16 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> hash;
-
-        vector<int> result;
-
+        unordered_map<int, int> um;
         for (int i = 0; i < nums.size(); i++) {
-            int numberToFind = target - nums[i];
-
-            if (hash.find(numberToFind) != hash.end()) {
-                result.push_back(hash[numberToFind]);
-                result.push_back(i);
-
-                return result;
+            int sub = target - nums[i];
+            if (um.find(sub) != um.end()) {
+                return {um[sub], i};
             }
 
-            hash[nums[i]] = i;
+            um[nums[i]] = i;
         }
-        
-        return result;
+
+        return {};
     }
 };
